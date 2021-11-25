@@ -1,0 +1,512 @@
+@charset "UTF-8";
+/*
+████████╗██╗  ██╗███████╗
+╚══██╔══╝██║  ██║██╔════╝
+   ██║   ███████║█████╗  
+   ██║   ██╔══██║██╔══╝  
+   ██║   ██║  ██║███████╗
+   ╚═╝   ╚═╝  ╚═╝╚══════╝
+ ██████╗██╗  ██╗██████╗ ██╗███████╗████████╗███╗   ███╗ █████╗ ███████╗
+██╔════╝██║  ██║██╔══██╗██║██╔════╝╚══██╔══╝████╗ ████║██╔══██╗██╔════╝
+██║     ███████║██████╔╝██║███████╗   ██║   ██╔████╔██║███████║███████╗
+██║     ██╔══██║██╔══██╗██║╚════██║   ██║   ██║╚██╔╝██║██╔══██║╚════██║
+╚██████╗██║  ██║██║  ██║██║███████║   ██║   ██║ ╚═╝ ██║██║  ██║███████║
+ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝   ╚═╝   ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝
+██╗     ██╗ ██████╗ ██╗  ██╗████████╗██╗  ██╗ ██████╗ ██╗   ██╗███████╗███████╗
+██║     ██║██╔════╝ ██║  ██║╚══██╔══╝██║  ██║██╔═══██╗██║   ██║██╔════╝██╔════╝
+██║     ██║██║  ███╗███████║   ██║   ███████║██║   ██║██║   ██║███████╗█████╗  
+██║     ██║██║   ██║██╔══██║   ██║   ██╔══██║██║   ██║██║   ██║╚════██║██╔══╝  
+███████╗██║╚██████╔╝██║  ██║   ██║   ██║  ██║╚██████╔╝╚██████╔╝███████║███████╗
+╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚══════╝╚══════╝
+*/
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+@font-face {
+  font-family: 'PF Din Pro';
+  src: url("../fonts/PF_Din_Text_Comp_Pro/PFDinTextCompPro-Regular.ttf");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: 'PF Din Pro Light';
+  src: url("../fonts/PF_Din_Text_Comp_Pro/PFDinTextCompPro-Light.ttf");
+  font-style: normal;
+  font-weight: lighter; }
+@font-face {
+  font-family: 'PF Din Pro Bold';
+  src: url("../fonts/PF_Din_Text_Comp_Pro/z-PFDinTextCompPro-Bold.ttf");
+  font-style: normal;
+  font-weight: bold; }
+@font-face {
+  font-family: 'PF Din Pro Italic';
+  src: url("../fonts/PF_Din_Text_Comp_Pro/PFDinTextCompPro-Italic.ttf");
+  font-style: italic;
+  font-weight: normal; }
+body {
+  font-family: 'PF Din Pro', sans-serif;
+  color: #030404;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  letter-spacing: 1px; }
+
+.section-header {
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid; }
+  .section-header h2 {
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 15px; }
+  .section-header p {
+    font-family: 'PF Din Pro Light', sans-serif;
+    font-size: 30px;
+    text-align: center; }
+
+.section-gold-to-blue {
+  background: linear-gradient(to top, rgba(12, 32, 72, 0.4), rgba(178, 137, 81, 0.4)); }
+
+.section-blue-to-gold {
+  background: linear-gradient(to top, rgba(178, 137, 81, 0.4), rgba(12, 32, 72, 0.4)); }
+
+.section-blue-to-blue {
+  background: linear-gradient(to top, rgba(12, 32, 72, 0.4), rgba(12, 32, 72, 0.4)); }
+
+#nav {
+  background-color: #9EA5B6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100000000;
+  transition: all 0.3s ease-in-out; }
+  #nav .container .navbar-brand img {
+    transition: all 0.3s ease-in-out; }
+  #nav .navbar-nav .nav-item.active {
+    font-family: 'PF Din Pro Bold'; }
+  #nav .navbar-nav .nav-link:hover {
+    color: #0C1F48; }
+  #nav .navbar-nav .nav-item.active a {
+    color: #F1E7C5;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px #030404; }
+  #nav .nav-item {
+    font-size: 1.5rem; }
+  #nav .nav-item:nth-child(1),
+  #nav .nav-item:nth-child(2),
+  #nav .nav-item:nth-child(3),
+  #nav .nav-item:nth-child(4),
+  #nav .nav-item:nth-child(5) {
+    margin: 0px 0.5rem; }
+  #nav .nav-item {
+    text-align: center; }
+  #nav .navbar-toggler {
+    border: none; }
+    #nav .navbar-toggler span.navbar-toggler-icon {
+      background-image: url("../images/icons/menu.svg"); }
+    #nav .navbar-toggler:active {
+      transform: scale(0.9); }
+
+#showcase #xmas-carousel .carousel-indicators {
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  max-width: 300px;
+  margin: 0px auto !important;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center; }
+  #showcase #xmas-carousel .carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #F1E7C5;
+    opacity: 0.5; }
+    #showcase #xmas-carousel .carousel-indicators li:hover {
+      background-color: #B28951;
+      opacity: 1; }
+    #showcase #xmas-carousel .carousel-indicators li.active {
+      border: 2px solid #F1E7C5;
+      background-color: #4564C1;
+      transform: scale(1.3);
+      transition: transform 0.3s ease-in-out;
+      opacity: 1; }
+#showcase #xmas-carousel .carousel-control-prev,
+#showcase #xmas-carousel .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #F1E7C5;
+  opacity: 1; }
+  #showcase #xmas-carousel .carousel-control-prev i.fas,
+  #showcase #xmas-carousel .carousel-control-next i.fas {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #B28951; }
+  #showcase #xmas-carousel .carousel-control-prev:hover i.fas,
+  #showcase #xmas-carousel .carousel-control-next:hover i.fas {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out; }
+  #showcase #xmas-carousel .carousel-control-prev:active i.fas,
+  #showcase #xmas-carousel .carousel-control-next:active i.fas {
+    color: #B28951;
+    transform: scale(0.9); }
+#showcase #xmas-carousel .carousel-control-next {
+  right: 40px; }
+#showcase #xmas-carousel .carousel-control-prev {
+  left: 40px; }
+#showcase #xmas-carousel .carousel-inner {
+  margin-top: 102px;
+  height: calc(100vh - 102px);
+  transition: all 0.3s ease-in-out; }
+  #showcase #xmas-carousel .carousel-inner .carousel-item {
+    height: 100%; }
+  #showcase #xmas-carousel .carousel-inner .image-0 {
+    background: url("../images/ΠΑΡΚΟ/BANNERS/ΣΥΝΟΠΤΙΚΟ.jpg");
+    background-color: rgba(12, 31, 72, 0.4);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+  #showcase #xmas-carousel .carousel-inner .image-1 {
+    background: url("../images/ΠΑΡΚΟ/ΕΙΣΟΔΟΣ/ΕΙΣΟΔΟΣ.jpg");
+    background-position: center; }
+  #showcase #xmas-carousel .carousel-inner .image-2 {
+    background: url("../images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ3.jpg");
+    background-position: center; }
+  #showcase #xmas-carousel .carousel-inner .image-3 {
+    background: url("../images/ΠΑΡΚΟ/ΣΥΓΚΡΟΥΟΜΕΝΑ_ΠΙΣΤΑ3.jpg");
+    background-position: center; }
+  #showcase #xmas-carousel .carousel-inner .image-4 {
+    background: url("../images/ΠΑΡΚΟ/XMAS_VILLAGE.jpg");
+    background-position: center; }
+  #showcase #xmas-carousel .carousel-inner .image-5 {
+    background: url("../images/ΠΑΡΚΟ/ΒΙΒΛΙΟ.jpg");
+    background-position: center; }
+  #showcase #xmas-carousel .carousel-inner .image-6 {
+    background: url("../images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ_ΕΞΩ3.jpg");
+    background-position: center; }
+  #showcase #xmas-carousel .carousel-inner .image-7 {
+    background: url("../images/ΠΑΡΚΟ/BANNERS/ΑΝΑΛΥΤΙΚΟ.jpg");
+    background-color: rgba(12, 31, 72, 0.4);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+
+#timer {
+  background-color: rgba(178, 137, 81, 0.4); }
+  #timer .container .jumbotron {
+    background-color: rgba(178, 137, 81, 0.4);
+    margin-bottom: 0; }
+    #timer .container .jumbotron .row:nth-child(1) h1 {
+      font-size: 70px;
+      font-family: "PF Din Pro Light", sans-serif; }
+    #timer .container .jumbotron div.row:nth-child(2) .time h2 {
+      font-family: "PF Din Pro Bold";
+      font-size: 60px;
+      border-bottom: 2px solid #F1E7C5; }
+    #timer .container .jumbotron div.row:nth-child(2) .time p {
+      font-size: 25px; }
+    #timer .container .jumbotron .row:nth-child(3) div {
+      letter-spacing: 10px;
+      font-size: 100px; }
+
+#activities {
+  background-color: rgba(12, 31, 72, 0.4); }
+  #activities .container .row:nth-child(1) .section-header {
+    border-color: rgba(12, 31, 72, 0.4); }
+  #activities .container .row:nth-child(2),
+  #activities .container .row:nth-child(3) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+    margin: auto; }
+    #activities .container .row:nth-child(2) .custom-card,
+    #activities .container .row:nth-child(3) .custom-card {
+      border-radius: 10px;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+      overflow: hidden;
+      width: 100%;
+      background: rgba(241, 231, 197, 0.4);
+      background: #D3CFC0; }
+    #activities .container .row:nth-child(2) .custom-card-header img,
+    #activities .container .row:nth-child(3) .custom-card-header img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover; }
+    #activities .container .row:nth-child(2) .custom-card-body,
+    #activities .container .row:nth-child(3) .custom-card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      min-height: 250px;
+      background: #D3CFC0; }
+      #activities .container .row:nth-child(2) .custom-card-body span,
+      #activities .container .row:nth-child(3) .custom-card-body span {
+        color: #4564C1;
+        cursor: pointer; }
+      #activities .container .row:nth-child(2) .custom-card-body span.schedule,
+      #activities .container .row:nth-child(3) .custom-card-body span.schedule {
+        cursor: initial;
+        display: block;
+        text-align: left;
+        margin: 5px 0; }
+      #activities .container .row:nth-child(2) .custom-card-body span.schedule::before,
+      #activities .container .row:nth-child(3) .custom-card-body span.schedule::before {
+        content: "\f054";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+        font-size: 20px;
+        margin-right: 5px; }
+      #activities .container .row:nth-child(2) .custom-card-body h2,
+      #activities .container .row:nth-child(3) .custom-card-body h2 {
+        color: #0C1F48;
+        font-size: 30px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #B28951; }
+      #activities .container .row:nth-child(2) .custom-card-body p,
+      #activities .container .row:nth-child(3) .custom-card-body p {
+        color: #0C1F48;
+        text-align: justify;
+        font-size: 22px;
+        margin: auto 0px; }
+      #activities .container .row:nth-child(2) .custom-card-body a.btn,
+      #activities .container .row:nth-child(3) .custom-card-body a.btn {
+        color: #030404;
+        height: 100%;
+        margin-top: auto;
+        font-size: 22px;
+        letter-spacing: 2px;
+        transition: all 0.3s ease-in-out; }
+        #activities .container .row:nth-child(2) .custom-card-body a.btn:hover,
+        #activities .container .row:nth-child(3) .custom-card-body a.btn:hover {
+          font-family: "PF Din Pro Bold", sans-serif;
+          letter-spacing: 3px; }
+
+#covid {
+  background-color: rgba(178, 137, 81, 0.4); }
+  #covid .container .row:nth-child(1) .section-header {
+    border-color: rgba(178, 137, 81, 0.4); }
+  #covid .container .row:nth-child(2) .col-sm-4 p {
+    font-size: 22px; }
+
+#video {
+  position: relative;
+  min-height: 350px;
+  background: url("../images/ΠΑΡΚΟ/BANNERS/ΣΥΝΟΠΤΙΚΟ2.jpg");
+  background-attachment: fixed;
+  background-position: -63%;
+  background-repeat: repeat; }
+  #video .custom-row {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(12, 31, 72, 0.5); }
+    #video .custom-row .container {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      #video .custom-row .container h2 {
+        color: #F1E7C5;
+        text-align: center;
+        padding-bottom: 15px;
+        font-size: 45px; }
+      #video .custom-row .container p {
+        font-family: "PF Din Pro Light", sans-serif;
+        color: #F1E7C5;
+        text-align: center;
+        font-size: 28px; }
+      #video .custom-row .container a.video {
+        font-size: 30px; }
+
+#gallery {
+  background-color: rgba(12, 31, 72, 0.4); }
+  #gallery .container .row:nth-child(1) .section-header {
+    border-color: rgba(12, 31, 72, 0.4); }
+  #gallery .container .row:nth-child(2) .col-photos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 20px;
+    justify-items: center; }
+    #gallery .container .row:nth-child(2) .col-photos .gallery-item {
+      display: inline-block;
+      height: 100%; }
+      #gallery .container .row:nth-child(2) .col-photos .gallery-item img {
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+        transition: all 0.3s ease-in-out; }
+        #gallery .container .row:nth-child(2) .col-photos .gallery-item img:hover {
+          cursor: url("../images/icons/cursor.svg"), pointer;
+          z-index: 1000;
+          transform: scale(1.2);
+          transition: all 0.3s ease-in-out; }
+
+#contact {
+  background-color: rgba(178, 137, 81, 0.4); }
+  #contact .container .row:nth-child(1) .section-header {
+    border-color: rgba(178, 137, 81, 0.4); }
+
+#videoModal .modal-dialog .modal-content {
+  background-color: #B28951;
+  border: none; }
+  #videoModal .modal-dialog .modal-content .modal-body {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    position: relative;
+    padding: 35px 0; }
+    #videoModal .modal-dialog .modal-content .modal-body .close {
+      color: #F1E7C5;
+      position: absolute;
+      opacity: 1;
+      color: #0C1F48;
+      top: 2px;
+      right: 5px; }
+      #videoModal .modal-dialog .modal-content .modal-body .close span i.far {
+        color: #F1E7C5;
+        font-size: 30px; }
+
+@media (max-width: 1199px) {
+  #gallery .container .row:nth-child(2) .col-photos {
+    grid-template-columns: repeat(4, 1fr); }
+    #gallery .container .row:nth-child(2) .col-photos .gallery-item.last-item {
+      grid-column-start: span 4; } }
+@media (max-width: 991px) {
+  #timer .container .jumbotron .row:nth-child(1) h1 {
+    font-size: 60px; }
+  #timer .container .jumbotron div.row:nth-child(2) .time h2 {
+    font-family: "PF Din Pro Bold";
+    font-size: 50px; }
+  #timer .container .jumbotron div.row:nth-child(2) .time p {
+    font-size: 25px; }
+
+  #gallery .container .row:nth-child(2) .col-photos {
+    grid-template-columns: repeat(3, 1fr); }
+    #gallery .container .row:nth-child(2) .col-photos .gallery-item img {
+      width: 220px; }
+    #gallery .container .row:nth-child(2) .col-photos .gallery-item.last-item {
+      grid-column-start: span 3; } }
+@media (max-width: 768px) {
+  #timer .container .jumbotron .row:nth-child(1) h1 {
+    font-size: 44px; }
+
+  #activities .container .row:nth-child(2),
+  #activities .container .row:nth-child(3) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    width: 100%;
+    margin: auto; }
+
+  #gallery .container .row:nth-child(2) .col-photos {
+    grid-template-columns: repeat(3, 1fr); }
+    #gallery .container .row:nth-child(2) .col-photos .gallery-item img {
+      width: 150px; } }
+@media (max-width: 576px) {
+  #showcase #xmas-carousel .carousel-indicators {
+    max-width: 200px; }
+    #showcase #xmas-carousel .carousel-indicators li {
+      width: 15px;
+      height: 15px; }
+      #showcase #xmas-carousel .carousel-indicators li.active {
+        border: 1px solid #F1E7C5; }
+  #showcase #xmas-carousel .carousel-control-prev,
+  #showcase #xmas-carousel .carousel-control-next {
+    width: 30px;
+    height: 30px;
+    font-size: 1.5rem; }
+  #showcase #xmas-carousel .carousel-control-prev {
+    left: 15px; }
+  #showcase #xmas-carousel .carousel-control-next {
+    right: 15px; }
+  #showcase #xmas-carousel .carousel-inner .image-0 {
+    background: url("../images/ΠΑΡΚΟ/BANNERS/ΣΥΝΟΠΤΙΚΟ_mobile.jpg");
+    background-size: cover !important;
+    background-position: center; }
+  #showcase #xmas-carousel .carousel-inner .image-1 {
+    background: url("../images/ΠΑΡΚΟ/MOBILE/ΕΙΣΟΔΟΣ_ΔΩΡΑ_mobile.jpg");
+    background-size: cover !important; }
+  #showcase #xmas-carousel .carousel-inner .image-2 {
+    background: url("../images/ΠΑΡΚΟ/MOBILE/ΤΡΕΝΑΚΙ1_mobile.jpg");
+    background-size: cover !important; }
+  #showcase #xmas-carousel .carousel-inner .image-3 {
+    background: url("../images/ΠΑΡΚΟ/MOBILE/ΒΙΒΛΙΟ_ΨΑΓΜΕΝΗ_mobile.jpg");
+    background-size: cover !important; }
+  #showcase #xmas-carousel .carousel-inner .image-4 {
+    background: url("../images/ΠΑΡΚΟ/MOBILE/ΑΗ_ΒΑΣΙΛΗΣ1_mobile.jpg") !important;
+    background-size: cover !important; }
+  #showcase #xmas-carousel .carousel-inner .image-5 {
+    background: url("../images/ΠΑΡΚΟ/MOBILE/ΦΑΓΑΝΕΣ4_mobile.jpg");
+    background-size: cover !important; }
+  #showcase #xmas-carousel .carousel-inner .image-6 {
+    background: url("../images/ΠΑΡΚΟ/MOBILE/ΠΑΓΟΔΡΟΜΙΟ4_mobile.jpg");
+    background-size: cover !important; }
+  #showcase #xmas-carousel .carousel-inner .image-7 {
+    background: url("../images/ΠΑΡΚΟ/BANNERS/ΣΥΝΟΠΤΙΚΟ2_mobile.jpg");
+    background-color: #B28951;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important; } }
+@media (max-width: 502px) {
+  #timer .container .jumbotron .row:nth-child(1) h1 {
+    font-size: 35px; }
+  #timer .container .jumbotron div.row:nth-child(2) .time h2 {
+    font-family: "PF Din Pro Bold";
+    font-size: 45px; }
+  #timer .container .jumbotron div.row:nth-child(2) .time p {
+    font-size: 20px; }
+
+  #gallery .container .row:nth-child(2) .col-photos {
+    grid-template-columns: repeat(2, 1fr); }
+    #gallery .container .row:nth-child(2) .col-photos .gallery-item.last-item {
+      grid-column-start: span 2; }
+    #gallery .container .row:nth-child(2) .col-photos .gallery-item img {
+      width: 180px; } }
+@media (max-width: 430px) {
+  .mb-resp {
+    margin-bottom: 1rem; }
+
+  #timer .container .jumbotron .row:nth-child(1) {
+    padding-bottom: 32px !important; }
+    #timer .container .jumbotron .row:nth-child(1) h1 {
+      font-size: 35px; }
+  #timer .container .jumbotron div.row:nth-child(2) .col-3 {
+    flex-basis: 100% !important;
+    max-width: 100% !important; }
+  #timer .container .jumbotron div.row:nth-child(2) .time h2 {
+    font-family: "PF Din Pro Bold";
+    font-size: 45px; }
+  #timer .container .jumbotron div.row:nth-child(2) .time p {
+    font-size: 25px; }
+
+  #activities .container .row:nth-child(2) .custom-card .custom-card-body h2,
+  #activities .container .row:nth-child(3) .custom-card .custom-card-body h2 {
+    font-size: 28px; }
+  #activities .container .row:nth-child(2) .custom-card .custom-card-body p,
+  #activities .container .row:nth-child(2) .custom-card .custom-card-body a.btn,
+  #activities .container .row:nth-child(3) .custom-card .custom-card-body p,
+  #activities .container .row:nth-child(3) .custom-card .custom-card-body a.btn {
+    font-size: 20px; }
+
+  #video {
+    min-height: 500px; }
+
+  #gallery .container .row:nth-child(2) .col-photos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(13, 1fr); }
+    #gallery .container .row:nth-child(2) .col-photos .gallery-item img {
+      width: 150px; }
+    #gallery .container .row:nth-child(2) .col-photos .gallery-item.last-item {
+      grid-column-start: span 2; } }

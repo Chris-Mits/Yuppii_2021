@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="KEYWORDS" content="christmas,lighthouse,fun,games,home,the,is,content for the,content,for,this,this is,the content,for the,home page,this is the,page">
+	
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="alternate icon" href="/favicon.ico">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff8a01">
+	
+	<!-- FONT AWESOME CSS -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"> -->
+	
+	<!-- BOOTSTRAP CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	
+	<!-- PHOTOSWIPE CSS -->
+	<link rel="stylesheet" type="text/css" href="css/photoswipe/photoswipe.css">
+	
+	<!-- CUSTOM CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<title>The Christmas Lighthouse</title>
+</head>
+	<body id="body">
+		
+	<!-- ##### NAVIGATION ##### -->
+	<nav id="nav" class="py-3 navbar navbar-expand-md navbar-light">
+		<div class="container">
+			<a class="navbar-brand m-0 p-0" href="index.html">
+				<img
+					class="nav-logo" 
+					src="images/logos/X-MAS_LIGHTHOUSE_LOGO_(BLUE).svg"
+					height="70" 
+					alt="Logo" />
+			</a>
+			
+			<button 
+				class="navbar-toggler"
+				data-toggle="collapse"
+				data-target="#navbarCollapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div id="navbarCollapse" class="collapse navbar-collapse">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a href="#" class="nav-link">Το Πάρκο</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Παιχνίδια</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Παροχές</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Επικοινωνία</a>
+					</li>
+				</ul>
+			</div>
+		
+		</div>
+	</nav>
+	
+	<!-- ##### SECTION CAROUSEL ##### -->
+	<section id="showcase">
+		<div 
+			id="xmas-carousel" 
+			class="carousel slide" 
+			data-ride="carousel">
+			
+			<!-- CAROUSEL INDICATORS -->
+			<ol class="carousel-indicators">
+				<li 
+					class="active" 
+					data-target="#xmas-carousel"
+					data-slide-to="0">
+				</li>
+				
+				<li
+					data-target="#xmas-carousel"
+					data-slide-to="1">
+				</li>
+				
+				<li
+					data-target="#xmas-carousel"
+					data-slide-to="2">
+				</li>
+				
+				<li
+					data-target="#xmas-carousel"
+					data-slide-to="3">
+				</li>
+				
+				<li
+					data-target="#xmas-carousel"
+					data-slide-to="4">
+				</li>
+				
+				<li
+					data-target="#xmas-carousel"
+					data-slide-to="5">
+				</li>
+				
+				<li
+					data-target="#xmas-carousel"
+					data-slide-to="6">
+				</li>
+				
+				<li
+					data-target="#xmas-carousel"
+					data-slide-to="7">
+				</li>
+			</ol>
+			
+			<!-- CAROUSEL INNER CONTENT -->
+			<div class="carousel-inner">
+				
+				<div class="carousel-item image-0 active"></div>
+
+				<div class="carousel-item image-1"></div>
+
+				<div class="carousel-item image-2"></div>
+				
+				<div class="carousel-item image-3"></div>
+				
+				<div class="carousel-item image-4"></div>
+				
+				<div class="carousel-item image-5"></div>
+				
+				<div class="carousel-item image-6"></div>
+				
+				<div class="carousel-item image-7"></div>
+				
+			</div>
+			
+			<!-- CAROUSEL CONTROLS -->
+			<a 
+				class="carousel-control-prev"
+				href="#xmas-carousel"
+				data-slide="prev"
+				role="button">
+				<i class="fas fa-chevron-circle-left"></i>
+			</a>
+					
+			<a 
+				class="carousel-control-next"
+				href="#xmas-carousel"
+				data-slide="next"
+				role="button">
+				<i class="fas fa-chevron-circle-right"></i>
+			</a>
+		</div>
+	</section>
+	
+	<!-- ---- SECTION UNIFIER ---- -->
+	<section class="section-blue-to-gold py-5"></section>
+	
+	<!-- ##### SECTION TIMER ##### -->
+	<section id="timer" class="py-3">
+		<div class="container">
+			
+			<div class="jumbotron">
+				<!-- First Row -->
+				<div class="row justify-content-center align-items-center pb-5">
+					<h1 class="m-0 text-center text-xmas-blue-dark">Η Αντίστροφη Μέτρηση Ξεκίνησε!</h1>
+				</div>
+				<!-- Second Row -->
+				<div id="countdown" class="row countdown">
+					<div class="col-3 d-flex flex-column justify-content-center align-items-center time mb-resp">
+						<h2 id="days" class="text-xmas-blue-dark">00</h2>
+						<p class="m-0">Ημέρες</p>
+					</div>
+					<div class="col-3 d-flex flex-column justify-content-center align-items-center time mb-resp">
+						<h2 id="hours" class="text-xmas-blue-dark">00</h2>
+						<p class="m-0">Ώρες</p>
+					</div>
+					<div class="col-3 d-flex flex-column justify-content-center align-items-center time mb-resp">
+						<h2 id="minutes" class="text-xmas-blue-dark">00</h2>
+						<p class="m-0">Λεπτά</p>
+					</div>
+					<div class="col-3 d-flex flex-column justify-content-center align-items-center time mb-resp">
+						<h2 id="seconds" class="text-xmas-blue-dark">00</h2>
+						<p class="m-0">Δευτερόλεπτα</p>
+					</div>
+				</div>
+				<!-- Third Row -->
+				<!-- py-3 py-sm-5 -->
+				<div class="row justify-content-center align-items-center">
+					<div class="year text-xmas-gold-light"></div>
+				</div>
+			</div>
+		
+		</div>
+	</section>
+	
+	<!-- ---- SECTION UNIFIER ---- -->
+	<section class="section-gold-to-blue py-5"></section>
+	
+	<!-- ##### SECTION ACTIVITIES ##### -->
+	<section id="activities" class="py-3">
+		<div class="container">
+			
+			<!-- SECTION HEADER -->
+			<div class="row">
+				<div class="col">
+					<div class="section-header">
+						<h2>
+							Παιχνίδι δίχως όρια στο Christmas Lighthouse
+						</h2>
+						<p>
+							Tο Christmas Lighthouse στην Αλεξανδρούπολη σας περιμένει για μια αξέχαστη εμπειρία
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row mb-4">
+				<div class="custom-card">
+					<div class="custom-card-header">
+						<img
+							class="img-fluid"
+							src="../winter_edition/images/ΠΑΡΕΛΑΣΗ/DSC_9073.jpg" 
+							alt="Bumper Cars" />
+					</div>
+					<div class="custom-card-body">
+						<h2>
+							Παιχνίδια
+						</h2>
+						<p class="lead">
+							<!-- Mοναδικά παιχνίδια για μικρούς και μεγάλους σε ένα ασφαλές περιβάλλον όπου η διασκέδαση δεν έχει τέλος -->
+							Το Christmas Lighthouse ειναι μονόδρομος για την διασκέδαση των παιδιών σας και θα το βρείτε κάτω από τον Φάρο, στην παραλιακή της Αλεξανδρούπολης. Διαθέτει πάνω από 40 μοναδικά και διαφορετικά παιχνίδια από όλο τον κόσμο και μπορεί να φιλοξενήσει όλες τις ηλικίες
+						</p>
+						<!-- <a 
+							class="btn btn-xmas-gold-dark btn-block btn-lg" 
+							href="#"
+							data-toggle="modal" 
+							data-target="#gamesModal">
+							Περισσότερα
+						</a> -->
+					</div>
+				</div>
+				
+				<div class="custom-card">
+					<div class="custom-card-header">
+						<img
+							class="img-fluid"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΚΑΝΤΙΝΑ_ΣΑΛΑ3.jpg" 
+							alt="Coffee Place" />
+					</div>
+					<div class="custom-card-body">
+						<h2 class="m-0">
+							Το Café μας
+						</h2>
+						<p class="lead">
+							 <!-- Aπολαύστε ένα γευστικό διάλειμμα ενώ τα παιδιά σας παίζουν. Διαθέτουμε πλήρες μενού με snack και ροφήματα -->
+							 Απολαύστε ένα γευστικό διάλειμμα και δροσιστείτε με ένα αναψυκτικό στον ειδικά διαμορφωμένο χώρο του Café μας. Το μενού μας περιλαμβάνει μια μεγάλη ποικιλία από σάντουιτς, τοστ, χάμπουργκερ, χοτ ντογκ, πατάτες, βραστό καλαμπόκι, ποπ κορν, παγωτά, αναψυκτικά, σορμπέ, μπύρες, ποτά, καφέ και πολλά άλλα σνακ.
+						</p>
+						<!-- <a 
+							class="btn btn-xmas-gold-dark btn-block btn-lg" 
+							href="#"
+							data-toggle="modal" 
+							data-target="#gamesModal">
+							Περισσότερα
+						</a> -->
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="custom-card">
+					<div class="custom-card-header">
+						<img
+							class="img-fluid" 
+							src="../winter_edition/images/ΠΑΡΕΛΑΣΗ/DSC_8971.jpg" 
+							alt="Group" />
+					</div>
+					<div class="custom-card-body">
+						<h2>
+							Εκδρομές
+						</h2>
+						<p class="lead">
+							<!-- Προγραμματίστε την εκδρομή σας στο Υuppii Park για μια Yuppii εμπειρία με τους συμμαθητές σας -->
+							Το Christmas Lighthouse λειτουργεί με το εξής ωράριο:
+							<span class="schedule">Δευτέρα εώς Παρασκευή από τις 18:00 το απόγευμα</span>
+							<span class="schedule">Σάββατο και Κυριακή από τις 11:00 το πρωί</span>
+							Παρολαυτά, ειδικά για γκρουπ και σχολικές εκδρομές το πάρκο μπορεί να ανοίξει από το πρωί μετά απο τηλεφωνική επικοινωνία. Καλέστε μας ή επικοινωνήστε μαζί μας <span>εδώ</span>. Προσφέρουμε μια ποικιλία εκπτώσεων ανάλογα με το μέγεθος της ομάδας.
+						</p>
+						<!-- <a 
+							class="btn btn-xmas-gold-dark btn-block btn-lg" 
+							href="#"
+							data-toggle="modal" 
+							data-target="#gamesModal">
+							Περισσότερα
+						</a> -->
+					</div>
+				</div>
+				
+				<div class="custom-card">
+					<div class="custom-card-header">
+						<img 
+							class="img-fluid"
+							src="../winter_edition/images/ΠΑΡΕΛΑΣΗ/DSC_9118.jpg" 
+							alt="Party" />
+					</div>
+					<div class="custom-card-body">
+						<h2>
+							Παιδικά Πάρτυ
+						</h2>
+						<p class="lead">
+							<!-- Πάρτυ γενεθλίων, ονομαστικής γιορτής, Χριστουγέννων, κλείσιμου σχολείων -->
+							Προγραμματίστε το πάρτι του παιδιού σας στο Christmas Lighthouse. Είναι ο ιδανικός χώρος για να διασκεδάσουν παιδιά κάθε ηλικίας καθώς επίσης και για να περάσουν υπέροχα, φίλοι και καλεσμένοι. Το πάρκο προσφέρει ποικιλία παιχνιδιών και ένα πλήρες μενού με φαγητά, ποτά και ροφήματα. Επικοινωνήστε μαζί μας <span>εδώ</span> για να συζητήσουμε για την εκδήλωσή σας είτε πρόκειται για πάρτι γενεθλίων, ονομαστικής εορτής, Χριστουγέννων, ή οποιαδήποτε άλλη ανάλογη περίσταση έχετε κατά νου.
+						</p>
+						<!-- <a 
+							class="btn btn-xmas-gold-dark btn-block btn-lg" 
+							href="#"
+							data-toggle="modal" 
+							data-target="#gamesModal">
+							Περισσότερα
+						</a> -->
+					</div>
+				</div>
+			</div>
+		
+		</div>
+	</section>
+	
+	<!-- ---- SECTION UNIFIER ---- -->
+	<section class="section-blue-to-gold py-5"></section>
+	
+	<!-- ##### SECTION COVID ##### -->
+	<section id="covid" class="py-3">
+		<div class="container">
+			
+			<!-- SECTION HEADER -->
+			<div class="row">
+				<div class="col">
+					<div class="section-header">
+						<h2>
+							Προτεραιότητά μας, η υγεία και η ασφάλειά όλων
+						</h2>
+						<p>
+							Το Christmas Lighthouse θέτει πάντα την υγεία των πελατών και του προσωπικού ως ύψιστη προτεραιότητά. Η ομάδα μας εργάζεται ακούραστα για να εξασφαλίσει την ασφάλεια και την υγεία σας σε κάθε σας επίσκεψη. Ακολουθούμε μια άκρως προληπτική προσέγγιση για τη διαχείριση της εξάπλωσης του COVID σύμφωνα με τις πιο πρόσφατες οδηγίες της κυβέρνησης και του ΕΟΔΥ.
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-4 d-flex flex-column align-items-center mb-resp">
+					<img
+					class="mb-md-4"
+						width="120" 
+						src="../winter_edition/images/icons/covid/Male Patient.svg" 
+						alt="Masks">
+					<p class="lead text-center text-sm-justify">
+						<!-- Σύμφωνα με τις οδηγίες του ΕΟΔΥ και του CDC, οι μάσκες είναι προαιρετικές για τους επισκέπτες που είναι πλήρως εμβολιασμένοι. Οι μη εμβολιασμένοι επισκέπτες άνω των 2 ετών πρέπει να φορούν μάσκα σε εξωτερικούς χώρους όπου δεν μπορεί να τηρηθεί κοινωνική απόσταση. -->
+						Παρακαλούμε να έχετε μαζί σας τη μάσκα σας καθώς μπορεί να σας ζητηθεί να τη φοράτε ενώ οδηγείτε, ενώ περιμένετε σε ουρές αναμονής ή όταν απολαμβάνετε εσωτερικά αξιοθέατα, καταστήματα και εγκαταστάσεις. Μάσκες θα πρέπει επίσης να φοριούνται όταν δεν μπορεί να επιτευχθεί κοινωνική απόσταση σε όλους τους χώρους του Πάρκου.
+					</p>
+				</div>
+				
+				<div class="col-sm-4 d-flex flex-column justify-content-around align-items-center mb-resp">
+					<img
+					class="mb-md-4 order-sm-2 order-1"
+						width="120"
+						src="../winter_edition/images/icons/covid/Social Distance 2m.svg" 
+						alt="Masks">
+					<p class="lead text-center text-sm-justify order-sm-1 order-1">
+						Για την ασφάλειά όλων παρακαλούμε να ακολουθείτε τις οδηγίες στις πινακίδες και τις επισημάνσεις εδάφους για να διατηρήσετε αποστάσεις σε φυσική απόσταση.
+					</p>
+				</div>
+				
+				<div class="col-sm-4 d-flex flex-column align-items-center mb-resp">
+					<img
+					class="mb-md-4"
+						width="120"
+						src="../winter_edition/images/icons/covid/Hand Sanitizer.svg" 
+						alt="Masks">
+					<p class="lead text-center text-sm-justify">
+						Για την ευκολία και την ασφάλειά σας, στρατηγικά τοποθετημένες συσκευές απολύμανσης χεριών βρίσκονται σε όλους τους χώρους του Yuppii Luna Park για να μπορείτε να καθαρίζετε συχνά τα χέρια σας χρησιμοποιώντας απολυμαντικό χεριών. Όλες οι επιφάνειες συχνής αφής απολυμαίνονται καθημερινά από εξειδικευμένο προσωπικό.
+					</p>
+				</div>
+			</div>
+		
+		</div>
+	</section>
+	
+	<!-- ---- SECTION UNIFIER ---- -->
+	<section class="section-gold-to-blue py-5"></section>
+	
+	<!-- ##### SECTION VIDEO ##### -->
+	<section id="video" class="py-3">
+			
+		<div class="custom-row">
+			<div class="container">
+				<h2>
+					Τα Χριστούγεννα είναι εδώ!
+				</h2>
+				<p>
+					Tο Christmas Lighthouse θέλει να γιορτάσει μαζί σας. Πάρτε μια μικρή γέυση απο όλα όσα έχει να προσφέρει! 
+				</p>
+				<a 
+					class="video" 
+					href="javascript:void(0)" 
+					data-toggle="modal"
+					data-target="#videoModal">
+					<i class="far fa-play-circle fa-3x text-xmas-gold-light"></i>
+				</a>
+			</div>
+		</div>
+	
+	</section>
+	
+	<!-- ---- SECTION UNIFIER ---- -->
+	<section class="section-blue-to-blue py-5"></section>
+	
+	<!-- ##### GALLERY SECTION ##### -->
+	<section id="gallery" class="py-3">
+		<div class="container">
+			
+			<div class="row">
+				<div class="col">
+					<div class="section-header">
+						<h2>
+							Διασκέδαση και όμορφες στιγμές!
+						</h2>
+						<p>
+							Το παγοδρόμιο, τα συγκρουόμενα αυτοκίνητα ή το σινεμά 7D είναι μόνο, μερικά απο τα παιχνίδα μας. Παρακάτω, δείτε ενα μικρό δείγμα!
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				
+				<div class="col col-photos pswp-gallery pswp-gallery--single-column">
+					<!-- #### FIRST ROW #### -->
+					<!-- First Item -->
+					<a
+						class="gallery-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/ΕΙΣΟΔΟΣ/ΕΙΣΟΔΟΣ.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΕΙΣΟΔΟΣ/ΕΙΣΟΔΟΣ.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΕΙΣΟΔΟΣ/ΕΙΣΟΔΟΣ.jpg" 
+							alt="Entry 1" />
+					</a>
+					
+					<!-- Second Item -->
+					<a 
+						class="gallery-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/ΕΙΣΟΔΟΣ/ΠΑΝΟΡΑΜΙΚΗ_ΕΞΩ.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΕΙΣΟΔΟΣ/ΠΑΝΟΡΑΜΙΚΗ_ΕΞΩ.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΕΙΣΟΔΟΣ/ΠΑΝΟΡΑΜΙΚΗ_ΕΞΩ.jpg" 
+							alt="Entry 2" />
+					</a>
+					
+					<!-- Third Item -->
+					<a 
+						class="gallery-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/TICKET_BOX.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/TICKET_BOX.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/TICKET_BOX.jpg" 
+							alt="" />
+					</a>
+					
+					<!-- Fourth Item -->
+					<a 
+						class="gallery-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/ΑΛΟΓΑΚΙΑ.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΑΛΟΓΑΚΙΑ.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΑΛΟΓΑΚΙΑ.jpg" 
+							alt="" />
+					</a>
+					
+					<!-- Fifth Item -->
+					<a 
+						class="gallery-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/ΔΙΑΔΡΑΣΤΙΚΑ_COIN_MACHINE2.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΔΙΑΔΡΑΣΤΙΚΑ_COIN_MACHINE2.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΔΙΑΔΡΑΣΤΙΚΑ_COIN_MACHINE2.jpg" 
+							alt="" />
+					</a>
+							
+					<!-- #### SECOND ROW #### -->
+					<!-- First Item -->
+					<a 
+						class="gallery-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/ΔΙΑΔΡΑΣΤΙΚΑ_COIN_MACHINES.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΔΙΑΔΡΑΣΤΙΚΑ_COIN_MACHINES.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΔΙΑΔΡΑΣΤΙΚΑ_COIN_MACHINES.jpg" 
+							alt="" />
+					</a>
+							
+					<!-- Second Item -->
+					<a 
+						class="gallery-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/ΚΑΝΤΙΝΑ.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΚΑΝΤΙΝΑ.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΚΑΝΤΙΝΑ.jpg" 
+							alt="" />
+					</a>
+							
+					<!-- Third Item -->
+					<a 
+					class="gallery-item"
+					href="../winter_edition/images/ΠΑΡΚΟ/ΚΑΝΤΙΝΑ_ΣΑΛΑ2.jpg"
+					data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΚΑΝΤΙΝΑ_ΣΑΛΑ2.jpg"
+					data-pswp-width="2500"
+					data-pswp-height="1665.04">
+					<img
+						class="img-resp"
+						src="../winter_edition/images/ΠΑΡΚΟ/ΚΑΝΤΙΝΑ_ΣΑΛΑ2.jpg" 
+						alt="" />
+					</a>
+						
+					<!-- Fourth Item -->
+					<a 
+						class="gallery-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/ΚΑΝΤΙΝΑ_ΣΑΛΑ3.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΚΑΝΤΙΝΑ_ΣΑΛΑ3.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΚΑΝΤΙΝΑ_ΣΑΛΑ3.jpg" 
+							alt="" />
+					</a>
+							
+					<!-- Fifth Item -->
+					<a 
+						class="gallery-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/ΚΕΡΜΑΤΟΦΟΡΑ_ΚΑΤΑΣΚΕΥΗ2.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΚΕΡΜΑΤΟΦΟΡΑ_ΚΑΤΑΣΚΕΥΗ2.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΚΕΡΜΑΤΟΦΟΡΑ_ΚΑΤΑΣΚΕΥΗ2.jpg" 
+							alt="" />
+					</a>
+					<!-- #### THIRD ROW #### -->
+					<!-- First Item -->
+					<a 
+						class="gallery-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ_ΔΕΝΤΡΟ1.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ_ΔΕΝΤΡΟ1.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ_ΔΕΝΤΡΟ1.jpg" 
+							alt="" />
+					</a>
+					
+					<!-- Second Item -->
+					<a 
+						class="gallery-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ_ΔΕΝΤΡΟ2.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ_ΔΕΝΤΡΟ2.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ_ΔΕΝΤΡΟ2.jpg" 
+							alt="" />
+					</a>
+					
+					<!-- Third Item -->
+					<a 
+						class="gallery-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ_ΕΞΩ1.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ_ΕΞΩ1.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ_ΕΞΩ1.jpg" 
+							alt="" />
+					</a>
+					
+					<!-- Fourth Item -->
+					<a 
+						class="gallery-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ_ΕΞΩ2.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ_ΕΞΩ2.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ_ΕΞΩ2.jpg" 
+							alt="" />
+					</a>
+					
+					<!-- Fifth Item -->
+					<a 
+						class="gallery-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ_ΕΞΩ3.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ_ΕΞΩ3.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ_ΕΞΩ3.jpg" 
+							alt="" />
+					</a>
+					
+					<!-- #### FOURTH ROW #### -->
+					<!-- First Item -->
+					<a 
+						class="gallery-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ2.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ2.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ2.jpg" 
+							alt="" />
+					</a>
+					
+					<!-- Second Item -->
+					<a 
+						class="gallery-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ3.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ3.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ3.jpg" 
+							alt="" />
+					</a>
+					
+					<!-- Third Item -->
+					<a 
+						class="gallery-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/ΠΑΤΙΝΙΑ1.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΠΑΤΙΝΙΑ1.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΠΑΤΙΝΙΑ1.jpg" 
+							alt="" />
+					</a>
+					
+					<!-- Fourth Item -->
+					<a 
+						class="gallery-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/ΠΑΤΙΝΙΑ2.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΠΑΤΙΝΙΑ2.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΠΑΤΙΝΙΑ2.jpg" 
+							alt="" />
+					</a>
+					
+					<!-- Fifth Item -->
+					<a 
+						class="gallery-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/ΠΑΤΙΝΙΑ3.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΠΑΤΙΝΙΑ3.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΠΑΤΙΝΙΑ3.jpg" 
+							alt="" />
+					</a>
+					
+					<!-- #### FIFTH ROW #### -->
+					<!-- First Item -->
+					<a 
+						class="gallery-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/ΣΥΓΚΡΟΥΟΜΕΝΑ_ΠΙΣΤΑ.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΣΥΓΚΡΟΥΟΜΕΝΑ_ΠΙΣΤΑ.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΣΥΓΚΡΟΥΟΜΕΝΑ_ΠΙΣΤΑ.jpg" 
+							alt="" />
+					</a>
+					
+					<!-- Second Item -->
+					<a 
+						class="gallery-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/ΣΥΓΚΡΟΥΟΜΕΝΑ_ΠΙΣΤΑ5.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΣΥΓΚΡΟΥΟΜΕΝΑ_ΠΙΣΤΑ5.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΣΥΓΚΡΟΥΟΜΕΝΑ_ΠΙΣΤΑ5.jpg" 
+							alt="" />
+					</a>
+					
+					<!-- Third Item -->
+					<a 
+						class="gallery-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/ΤΡΕΝΑΚΙ2.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΤΡΕΝΑΚΙ2.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΤΡΕΝΑΚΙ2.jpg" 
+							alt="" />
+					</a>
+					
+					<!-- Fourth Item -->
+					<a 
+						class="gallery-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/ΦΑΓΑΝΕΣ3.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΦΑΓΑΝΕΣ3.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΦΑΓΑΝΕΣ3.jpg" 
+							alt="" />
+					</a>
+					
+					<!-- Fifth Item -->
+					<a 
+						class="gallery-item last-item"
+						href="../winter_edition/images/ΠΑΡΚΟ/ΦΑΓΑΝΕΣ5.jpg"
+						data-pswp-srcset="../winter_edition/images/ΠΑΡΚΟ/ΦΑΓΑΝΕΣ5.jpg"
+						data-pswp-width="2500"
+						data-pswp-height="1665.04">
+						<img
+							class="img-resp"
+							src="../winter_edition/images/ΠΑΡΚΟ/ΦΑΓΑΝΕΣ5.jpg" 
+							alt="" />
+					</a>
+				</div>
+			
+			</div>
+		
+		</div>
+	</section>
+	
+	<!-- ---- SECTION UNIFIER ---- -->
+	<section class="section-blue-to-gold py-5"></section>
+	
+	<!-- ##### CONTACT SECTION ##### -->
+	<section id="contact" class="py3">
+		<div class="container">
+			
+			<div class="row">
+				<div class="col">
+					<div class="section-header">
+						<h2>
+							Επικοινωνήστε μαζί μας!
+						</h2>
+						<p>
+							Συμπληρώστε την παρακάτω φόρμα για να επικοινωνήσετε μαζί μας για πληροφορίες ή ερωτήσεις σχετικά με το Yuppii Luna Park ή για να μας πείτε πώς περάσατε στην πρόσφατη επίσκεψή σας!
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				
+				<div class="col">
+					<form id="form" action="?" method="POST">
+						
+						<div class="input-group input-group-lg mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text" id="validatedInputGroupPrepend"><i class="fas fa-user"></i></span>
+							</div>
+							<input type="text" class="form-control" aria-describedby="validatedInputGroupPrepend" required>
+						</div>
+						<!-- <div class="invalid-feedback">
+							Example invalid input group feedback
+						</div> -->
+								
+						<div class="form-group">
+							<div class="input-group input-group-lg">
+								<div class="input-group-prepend">
+									<span class="input-group-text">
+										<i class="fas fa-user"></i>
+									</span>
+								</div>
+								<input
+									id="name"
+									class="form-control" 
+									type="text" 
+									placeholder="Όνομα" />
+								<div class="valid-feedback">
+									Φαίνεται εντάξει!
+								</div>
+								<div class="invalid-feedback">
+									Το όνομα πρέπει να είναι μεταξύ 5-15 χαρακτήρων, χωρίς κενά
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<div class="input-group input-group-lg">
+								<div class="input-group-prepend">
+									<span class="input-group-text">
+										<i class="fas fa-envelope"></i>
+									</span>
+								</div>
+								<input
+									id="email"
+									class="form-control" 
+									type="text" 
+									placeholder="Email" />
+								<div class="valid-feedback">
+									Φαίνεται εντάξει!
+								</div>
+								<div class="invalid-feedback">
+									Εισάγετε μία έγκυρη διεύθυνση email
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<div class="input-group input-group-lg">
+								<div class="input-group-prepend">
+									<span class="input-group-text">
+										<i class="fas fa-phone-alt"></i>
+									</span>
+								</div>
+								<input
+									id="phone"
+									class="form-control" 
+									type="text" 
+									placeholder="Αριθμός Κινητού" />
+								<div class="valid-feedback">
+									Φαίνεται εντάξει!
+								</div>
+								<div class="invalid-feedback">
+									Εισάγετε έγκυρο αριθμό κινητού τηλεφώνου
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<div class="input-group input-group-lg">
+								<div class="input-group-prepend">
+									<span class="input-group-text">
+										<i class="fas fa-pencil-alt"></i>
+									</span>
+								</div>
+								<textarea
+									id="textarea" 
+									class="form-control" 
+									type="text" 
+									placeholder="Το μήνυμά σας"></textarea>
+							</div>
+						</div>
+						
+						<input
+							id="submit"
+							class="btn btn-xmas-blue-dark btn-block btn-lg mx-auto g-recaptcha"
+							type="submit" 
+							value="Υποβολή Φόρμας"
+							data-sitekey="6LdAyBAdAAAAACRP6u9IUBb702To5C64zSXEecO6"
+							data-callback='onSubmit' />
+
+					</form>
+				</div>
+				
+				<!-- <div class="col-md-4">
+					
+				</div> -->
+				
+			</div>
+			
+		</div>
+	</section>
+	
+	
+	
+	<!-- #### MODALS #### -->
+	<!-- VIDEO MODAL -->
+	<div id="videoModal" class="modal fade">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button class="close" data-dismiss="modal">
+						<span><i class="far fa-times-circle"></i></span>
+					</button>
+					<video id="videoplayer" width="100%" controls>
+						<source src="../winter_edition/videos/final.mp4" type="video/mp4"></source>
+						Your browser does not support the video tag.
+					</video>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<!-- JQUERY -->
+	<script 
+		src="https://code.jquery.com/jquery-3.6.0.min.js" 
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+		crossorigin="anonymous"></script>
+
+	<!-- POPPER JS -->
+	<script 
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
+		crossorigin="anonymous"></script>
+
+	<!-- BOOTSTRAP JS -->
+	<script 
+		src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" 
+		integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" 
+		crossorigin="anonymous"></script>
+		
+	<!-- MY JS FILE -->
+	<script 
+		defer 
+		async 
+		type="text/javascript" 
+		src="js/script.js"></script>
+		
+	<!-- MY JS FILE -->
+	<script 
+		defer 
+		async 
+		type="text/javascript" 
+		src="js/countdown.js"></script>
+		
+	<!-- GOOGLE CAPTCHA -->
+	<script 
+		async 
+		defer 
+		src="https://www.google.com/recaptcha/api.js"></script>
+		
+	<!-- PHOTOSWIPE MODULE IMPORT & OPTIONS -->
+	<script type="module">
+		
+		import PhotoSwipeLightbox from '/summer_edition/js/photoswipe/photoswipe-lightbox.esm.js';
+		
+		const closeBtnSVGString = `
+		<svg class="pswp-close-svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+			<path class="pswp-close-path" d="M15.0352 0C11.0266 0 7.25807 1.56027 4.42365 4.39336C-1.42764 10.2418 -1.42764 19.758 4.42346 25.6065C7.25788 28.4397 11.0266 30 15.0352 30C19.0436 30 22.8123 28.4397 25.6467 25.6065C31.498 19.758 31.498 10.2418 25.6467 4.39336C22.8123 1.56027 19.0436 0 15.0352 0ZM21.788 21.7495C21.5215 22.0158 21.1724 22.149 20.8232 22.149C20.4742 22.149 20.1249 22.0158 19.8587 21.7495L15.0352 16.9285L10.2117 21.7496C9.94524 22.0159 9.59616 22.1491 9.247 22.1491C8.89793 22.1491 8.54867 22.0159 8.28246 21.7496C7.74957 21.2172 7.74957 20.3537 8.28246 19.8212L13.1058 15L8.28236 10.1788C7.74948 9.64636 7.74948 8.78291 8.28236 8.25036C8.81507 7.71791 9.67893 7.71791 10.2117 8.25036L15.0352 13.0715L19.8584 8.25036C20.3911 7.71791 21.255 7.71791 21.7878 8.25036C22.3207 8.78282 22.3207 9.64627 21.7878 10.1788L16.9645 15L21.788 19.8211C22.3208 20.3536 22.3208 21.2171 21.788 21.7495Z" fill="#B28951"/>
+		</svg>
+		`;
+		
+		const zoomBtnSVGString = `
+		<svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+			<path d="M13.9406 9.61963C11.6733 9.61963 9.83496 11.4586 9.83496 13.7259C9.83496 15.9937 11.6733 17.8322 13.9406 17.8322C16.2085 17.8322 18.0466 15.9938 18.0466 13.7259C18.0467 11.4586 16.2087 9.61963 13.9406 9.61963ZM15.9248 14.6975H14.7187V15.9035C14.7187 16.3333 14.3704 16.6817 13.9406 16.6817C13.5108 16.6817 13.1625 16.3333 13.1625 15.9035V14.6975H11.9565C11.5267 14.6975 11.1784 14.3492 11.1784 13.9194C11.1784 13.4896 11.5267 13.1413 11.9565 13.1413H13.1625V11.935C13.1625 11.5052 13.5108 11.1569 13.9406 11.1569C14.3704 11.1569 14.7187 11.5052 14.7187 11.935V13.1413H15.9248C16.3546 13.1413 16.7029 13.4896 16.7029 13.9194C16.7029 14.3492 16.3548 14.6975 15.9248 14.6975Z" fill="#B28951"/>
+			<path d="M14.9998 0C6.71571 0 0 6.71591 0 14.9998C0 23.2836 6.71571 30.0003 14.9998 30.0003C23.2838 30.0003 30 23.2839 30 14.9998C30 6.71561 23.2839 0 14.9998 0ZM22.5441 22.1258C22.307 22.3634 21.9961 22.4819 21.6851 22.4819C21.3741 22.4819 21.0634 22.3634 20.8257 22.1258L17.4112 18.711C16.4275 19.3973 15.2318 19.8006 13.9414 19.8006C10.5866 19.8006 7.86713 17.081 7.86713 13.7261C7.86713 10.3713 10.5866 7.65183 13.9414 7.65183C17.2963 7.65183 20.0159 10.3713 20.0159 13.7258C20.0159 14.9114 19.6751 16.0168 19.0879 16.9515L22.544 20.4077C23.0188 20.8821 23.0188 21.6516 22.5441 22.1258Z" fill="#B28951"/>
+		</svg>
+		`;
+		
+		const options = {
+			closeSVG: closeBtnSVGString,
+			zoomSVG: zoomBtnSVGString,
+			gallery: '.col-photos',
+			children: 'a',
+			pswpModule: '/winter_edition/js/photoswipe/photoswipe.esm.js',
+			arrowKeys: true,
+			loop: false,
+			tapAction: 'close',
+			closeOnVerticalDrag: false
+		};
+		
+		const lightbox = new PhotoSwipeLightbox(options);
+		lightbox.init();
+		
+	</script>
+	</body>
+</html>
