@@ -1,0 +1,2260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="alternate icon" href="/favicon.ico">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff8a01">
+	
+	<!-- FONT AWESOME CSS -->
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	<!-- BOOTSTRAP CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- LIGHTBOX2 CSS -->
+	<link rel="stylesheet" href="css/lightbox2/lightbox.css">
+	<!-- CUSTOM CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<title>Παιχνίδια | Yuppii Luna Park•Αλεξανδρούπολη</title>
+</head>
+<body>
+	<!-- ##### BACK TO TOP BUTTON ##### -->
+	<button id="backToTop" class="backToTop p-2" onclick="backToTop()">
+		<i class="fas fa-chevron-up"></i>
+	</button>
+	
+	<!-- ##### NAVIGATION ##### -->
+	<nav id="nav" class="navbar navbar-expand-md navbar-light py-3">
+		<div class="container">
+			<a class="navbar-brand m-0 p-0" href="index.html">
+				<img 
+					src="images/logos/Yuppii Logo Horizontal.svg"
+					width="160" 
+					alt="Logo" />
+			</a>
+			
+			<button 
+				class="navbar-toggler"
+				data-toggle="collapse"
+				data-target="#navbarCollapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div id="navbarCollapse" class="collapse navbar-collapse">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item mr-lg-1">
+						<a href="index.html" class="nav-link">Αρχική</a>
+					</li>
+					<li class="nav-item mx-lg-1">
+						<a href="park.html" class="nav-link">Το Πάρκο</a>
+					</li>
+					<li class="nav-item mx-lg-1 active">
+						<a href="games.html" class="nav-link">Παιχνίδια</a>
+					</li>
+					<li class="nav-item mx-lg-1">
+						<a href="services.html" class="nav-link">Παροχές</a>
+					</li>
+					<li class="nav-item mx-lg-1">
+						<a href="contact.html" class="nav-link">Επικοινωνία</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="dropdown">
+				<a 
+					id="languages" 
+					class="btn dropdown-toggle"
+					role="button" 
+					data-toggle="dropdown" 
+					aria-expanded="false">
+					<img 
+						class="selected-lang" 
+						src="./images/content/svg_icons/lang/gr.svg" 
+						alt="Language Flag" /> <i class="fas fa-angle-down"></i>
+				</a>
+				
+				<div class="dropdown-menu" aria-labelledby="languages">
+					<a class="dropdown-item" href="#">
+						<img 
+							class="lang" 
+							src="./images/content/svg_icons/lang/gr.svg" 
+							alt="Greek Language" />Ελληνικά
+					</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">
+						<img 
+							class="lang" 
+							src="./images/content/svg_icons/lang/gb.svg" 
+							alt="English Language" />English
+					</a>
+				</div>
+			</div>
+			
+		</div>
+	</nav>
+	
+	<section id="contact-page-header" class="py-md-5 py-4">
+		<div class="container">
+			<div class="row py-3 text-center">
+				<div class="col">
+					<div class="info-header mb-2">
+						<h1 class="text-yuppii2 pb-3">
+							Παιχνίδι στο Yuppii
+						</h1>
+						<p class="lead">
+							Η διασκέδαση στην Αλεξανδρούπολη έχει όνομα και λέγεται Yuppii Luna Park. Με πάνω από 40 μοναδικά και διαφορετικά παιχνίδια από όλο τον κόσμο, μπορεί να φιλοξενήσει όλες τις ηλικίες
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="section-connector-green-to-pink py-3"></section>
+	
+	<section id="games-presentation" class="py-5">
+		<div class="container">
+			<!-- GAME SELECTION MODAL BUTTON -->
+			<a 
+				class="game-selection-btn" 
+				href="javascript:void(0)"
+				data-toggle="modal" 
+				data-target="#gameSelection">
+				<span>Επέλεξε Παιχνίδι</span> <i class="fas fa-bars ml-md-2"></i>
+			</a>
+			<div class="row">
+				<div class="col">
+					<div id="v-pills-tabContent" class="tab-content">
+						<!-- ΦΟΥΣΚΩΤΑ -->
+						<div 
+							id="inflatables" 
+							class="tab-pane fade show active" 
+							role="tabpanel" 
+							aria-labelledby="inflatables">
+						
+							<div class="row pb-3">
+								<div class="col text-center">
+									<h2 class="text-yuppii1">
+										Φουσκωτά
+									</h2>
+									<p class="lead">
+										Ελάτε να παίξουμε, να κάνουμε ΤΣΟΥΛΗΘΡΑ και να σκαρφαλώσουμε στα ΦΟΥΣΚΩΤΑ μας παιχνίδια… Ένας ατελείωτος φουσκωτός παιδότοπος. Μια τέλεια εμπειρία…
+									</p>
+								</div>
+							</div>
+						
+							<div class="row mb-md-3 mb-1">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΦΟΥΣΚΩΤΑ/ALE_8457.JPG" 
+										data-lightbox="inflatables" 
+										data-title="Φουσκωτά">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΦΟΥΣΚΩΤΑ/ALE_8457.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΦΟΥΣΚΩΤΑ/ALE_8423.JPG" 
+										data-lightbox="inflatables" 
+										data-title="Φουσκωτά">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΦΟΥΣΚΩΤΑ/ALE_8423.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΦΟΥΣΚΩΤΑ/ALE_8456.JPG" 
+										data-lightbox="inflatables" 
+										data-title="Φουσκωτά">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΦΟΥΣΚΩΤΑ/ALE_8456.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΦΟΥΣΚΩΤΑ/ALE_8645.JPG" 
+										data-lightbox="inflatables" 
+										data-title="Φουσκωτά">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΦΟΥΣΚΩΤΑ/ALE_8645.JPG" />
+									</a>
+								</div>
+							</div>
+						
+							<div class="row">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΦΟΥΣΚΩΤΑ/ALE_8767.JPG" 
+										data-lightbox="inflatables" 
+										data-title="Φουσκωτά">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΦΟΥΣΚΩΤΑ/ALE_8767.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΦΟΥΣΚΩΤΑ/ALE_8768.JPG" 
+										data-lightbox="inflatables" 
+										data-title="Φουσκωτά">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΦΟΥΣΚΩΤΑ/ALE_8768.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΦΟΥΣΚΩΤΑ/ALE_8796.JPG" 
+										data-lightbox="inflatables" 
+										data-title="Φουσκωτά">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΦΟΥΣΚΩΤΑ/ALE_8796.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΦΟΥΣΚΩΤΑ/ALE_8797.JPG" 
+										data-lightbox="inflatables" 
+										data-title="Φουσκωτά">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΦΟΥΣΚΩΤΑ/ALE_8797.JPG" />
+									</a>
+								</div>
+							</div>
+					
+						</div>
+							
+						<!-- ΠΑΙΧΝΙΔΟΚΑΤΑΣΚΕΥΗ -->
+						<div 
+							id="playground" 
+							class="tab-pane fade" 
+							role="tabpanel" 
+							aria-labelledby="playground">
+							
+							<div class="row pb-3">
+								<div class="col text-center">
+									<h2 class="text-yuppii1">
+										Παιχνιδοκατασκευή
+									</h2>
+									<p class="lead">
+										Ένας τεράστιος παιδότοπος! Τσουλήθρες, τούνελ, λαβύρινθοι, γέφυρες, εμπόδια, λίμνες από ΜΠΑΛΑΚΙΑ, όλα σε ένα ασφαλές περιβάλλον για τα παιδιά σας, έτοιμα για εξερεύνηση…
+									</p>
+								</div>
+							</div>
+							
+							<div class="row mb-md-3 mb-1">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΑΤΑΣΚΕΥΗ/ALE_8425.JPG" 
+										data-lightbox="playground" 
+										data-title="Παιχνιδοκατασκευή">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΑΤΑΣΚΕΥΗ/ALE_8425.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΑΤΑΣΚΕΥΗ/ALE_8653.JPG" 
+										data-lightbox="playground" 
+										data-title="Παιχνιδοκατασκευή">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΑΤΑΣΚΕΥΗ/ALE_8653.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΑΤΑΣΚΕΥΗ/ALE_8654.JPG" 
+										data-lightbox="playground" 
+										data-title="Παιχνιδοκατασκευή">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΑΤΑΣΚΕΥΗ/ALE_8654.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΑΤΑΣΚΕΥΗ_ΦΟΥΣΚΩΤΑ/ALE_8504.JPG" 
+										data-lightbox="playground" 
+										data-title="Παιχνιδοκατασκευή">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΑΤΑΣΚΕΥΗ_ΦΟΥΣΚΩΤΑ/ALE_8504.JPG" />
+									</a>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΑΤΑΣΚΕΥΗ/old2.jpg" 
+										data-lightbox="playground" 
+										data-title="Παιχνιδοκατασκευή">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΑΤΑΣΚΕΥΗ/old2.jpg" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΑΤΑΣΚΕΥΗ/old5.jpg" 
+										data-lightbox="playground" 
+										data-title="Παιχνιδοκατασκευή">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΑΤΑΣΚΕΥΗ/old5.jpg" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΑΤΑΣΚΕΥΗ/old7.jpg" 
+										data-lightbox="playground" 
+										data-title="Παιχνιδοκατασκευή">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΑΤΑΣΚΕΥΗ/old7.jpg" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΑΤΑΣΚΕΥΗ/old1.jpg" 
+										data-lightbox="playground" 
+										data-title="Παιχνιδοκατασκευή">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΑΤΑΣΚΕΥΗ/old1.jpg" />
+									</a>
+								</div>
+							</div>
+							
+						</div>
+							
+						<!-- TΡΑΜΠΟΛΙΝΟ -->
+						<div 
+							id="trampoline" 
+							class="tab-pane fade" 
+							role="tabpanel" 
+							aria-labelledby="trampoline">
+							
+							<div class="row pb-3">
+								<div class="col text-center">
+									<h2 class="text-yuppii1">
+										Τραμπολίνο
+									</h2>
+									<p class="lead">
+										Χοροπηδάς ψηλά μέχρι τον ουρανό, κάνεις φιγούρες και όλοι – γονείς και φίλοι – θα μείνουν με ανοιχτό το στόμα με τα εναέρια κόλπα που κάνεις!
+									</p>
+								</div>
+							</div>
+							
+							<div class="row mb-md-3 mb-1">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΡΑΜΠΟΛΙΝΟ/ALE_8524.JPG" 
+										data-lightbox="trampoline" 
+										data-title="Τραμπολίνο">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΡΑΜΠΟΛΙΝΟ/ALE_8524.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΡΑΜΠΟΛΙΝΟ/ALE_8686.JPG" 
+										data-lightbox="trampoline" 
+										data-title="Τραμπολίνο">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΡΑΜΠΟΛΙΝΟ/ALE_8686.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΡΑΜΠΟΛΙΝΟ/ALE_8793.JPG" 
+										data-lightbox="trampoline" 
+										data-title="Τραμπολίνο">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΡΑΜΠΟΛΙΝΟ/ALE_8793.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΡΑΜΠΟΛΙΝΟ/ALE_8791.JPG" 
+										data-lightbox="trampoline" 
+										data-title="Τραμπολίνο">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΡΑΜΠΟΛΙΝΟ/ALE_8791.JPG" />
+									</a>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΡΑΜΠΟΛΙΝΟ/ALE_8513.JPG" 
+										data-lightbox="trampoline" 
+										data-title="Τραμπολίνο">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΡΑΜΠΟΛΙΝΟ/ALE_8513.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΡΑΜΠΟΛΙΝΟ/ALE_8515.JPG" 
+										data-lightbox="trampoline" 
+										data-title="Τραμπολίνο">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΡΑΜΠΟΛΙΝΟ/ALE_8515.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΡΑΜΠΟΛΙΝΟ/ALE_8427.JPG" 
+										data-lightbox="trampoline" 
+										data-title="Τραμπολίνο">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΡΑΜΠΟΛΙΝΟ/ALE_8427.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΡΑΜΠΟΛΙΝΟ/ALE_8519.JPG" 
+										data-lightbox="trampoline" 
+										data-title="Τραμπολίνο">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΡΑΜΠΟΛΙΝΟ/ALE_8519.JPG" />
+									</a>
+								</div>
+							</div>
+							
+						</div>
+							
+						<!-- ΣΙΝΕΜΑ 7D -->
+						<div 
+							id="cinema7d" 
+							class="tab-pane fade" 
+							role="tabpanel" 
+							aria-labelledby="cinema7d">
+							
+							<div class="row pb-3">
+								<div class="col text-center">
+									<h2 class="text-yuppii1">
+										Σινεμά 7D
+									</h2>
+									<p class="lead">
+										Μέσα στον χωρο του Yuppii Luna Park υπαρχει ενα Cinema που θα ξετρελάνει μικρούς και μεγάλους!!!
+										Σας καλωσορίζουμε στην επόμενη γενιά προβολής ταινιών! Παρε την παρέα σου και διασκεδάστε βλέποντας αυθεντικές ταινίες με υψηλή αναλυση και υπέροχα γραφικά….
+									</p>
+								</div>
+							</div>
+							
+							<div class="row mb-md-3 mb-1">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/CINEMA/ALE_8487.JPG" 
+										data-lightbox="cinema7d" 
+										data-title="Σινεμα 7D">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/CINEMA/ALE_8487.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/CINEMA/ALE_8509.JPG" 
+										data-lightbox="cinema7d" 
+										data-title="Σινεμα 7D">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/CINEMA/ALE_8509.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/CINEMA/ALE_8656.JPG" 
+										data-lightbox="cinema7d" 
+										data-title="Σινεμα 7D">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/CINEMA/ALE_8656.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/CINEMA/ALE_8657.JPG" 
+										data-lightbox="cinema7d" 
+										data-title="Σινεμα 7D">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/CINEMA/ALE_8657.JPG" />
+									</a>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/CINEMA/5d7.jpg" 
+										data-lightbox="cinema7d" 
+										data-title="Σινεμα 7D">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/CINEMA/5d7.jpg" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/CINEMA/5d9.jpg" 
+										data-lightbox="cinema7d" 
+										data-title="Σινεμα 7D">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/CINEMA/5d9.jpg" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/CINEMA/5d3.jpg" 
+										data-lightbox="cinema7d" 
+										data-title="Σινεμα 7D">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/CINEMA/5d3.jpg" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/CINEMA/5d5.jpg" 
+										data-lightbox="cinema7d" 
+										data-title="Σινεμα 7D">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/CINEMA/5d5.jpg" />
+									</a>
+								</div>
+							</div>
+							
+						</div>
+							
+						<!-- ΤΣΟΥΛΗΘΡΑ -->
+						<div 
+							id="dryslope" 
+							class="tab-pane fade" 
+							role="tabpanel" 
+							aria-labelledby="dryslope">
+							
+							<div class="row pb-3">
+								<div class="col text-center">
+									<h2 class="text-yuppii1">
+										Τσουλήθρα
+									</h2>
+									<p class="lead">
+										ΠΑΡΕ την ειδική ΣΑΜΠΡΕΛΑ, ανέβα ψηλά και νιώσε την αδρεναλίνη να χτυπάει κόκκινο καθώς κατεβαίνεεεεεεις την τσουλήθρα!
+									</p>
+								</div>
+							</div>
+							
+							<div class="row mb-md-3 mb-1">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΣΟΥΛΗΘΡΑ/ALE_8885.JPG" 
+										data-lightbox="dryslope" 
+										data-title="Τσουλήθρα">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΣΟΥΛΗΘΡΑ/ALE_8885.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΣΟΥΛΗΘΡΑ/ALE_8588.JPG" 
+										data-lightbox="dryslope" 
+										data-title="Τσουλήθρα">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΣΟΥΛΗΘΡΑ/ALE_8588.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΣΟΥΛΗΘΡΑ/ALE_8464.JPG" 
+										data-lightbox="dryslope" 
+										data-title="Τσουλήθρα">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΣΟΥΛΗΘΡΑ/ALE_8464.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΣΟΥΛΗΘΡΑ/ALE_8605.JPG" 
+										data-lightbox="dryslope" 
+										data-title="Τσουλήθρα">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΣΟΥΛΗΘΡΑ/ALE_8605.JPG" />
+									</a>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΣΟΥΛΗΘΡΑ/ALE_8599.JPG" 
+										data-lightbox="dryslope" 
+										data-title="Τσουλήθρα">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΣΟΥΛΗΘΡΑ/ALE_8599.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΣΟΥΛΗΘΡΑ/ALE_8883.JPG" 
+										data-lightbox="dryslope" 
+										data-title="Τσουλήθρα">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΣΟΥΛΗΘΡΑ/ALE_8883.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΣΟΥΛΗΘΡΑ/ALE_8595.JPG" 
+										data-lightbox="dryslope" 
+										data-title="Τσουλήθρα">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΣΟΥΛΗΘΡΑ/ALE_8595.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΣΟΥΛΗΘΡΑ/ALE_8614.JPG" 
+										data-lightbox="dryslope" 
+										data-title="Τσουλήθρα">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΣΟΥΛΗΘΡΑ/ALE_8614.JPG" />
+									</a>
+								</div>
+							</div>
+						
+						</div>
+							
+						<!-- ΣΥΓΚΡΟΥΟΜΕΝΑ -->
+						<div 
+							id="bumpercars" 
+							class="tab-pane fade" 
+							role="tabpanel" 
+							aria-labelledby="bumpercars">
+							
+							<div class="row pb-3">
+								<div class="col text-center">
+									<h2 class="text-yuppii1">
+										Συγκρουόμενα
+									</h2>
+									<p class="lead">
+										Τα τρακαρίσματα με ασφάλεια είναι το κέφι μικρών και μεγάλων… Διάλεξε το αυτοκίνητο που σου αρέσει και έλα να τρακάρεις τους φίλους σου!
+									</p>
+								</div>
+							</div>
+							
+							<div class="row mb-md-3 mb-1">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΣΥΓΚΡΟΥΟΜΕΝΑ/ALE_8787.JPG" 
+										data-lightbox="bumpercars" 
+										data-title="Συγκρουόμενα Αυτοκίνητα">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΣΥΓΚΡΟΥΟΜΕΝΑ/ALE_8787.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΣΥΓΚΡΟΥΟΜΕΝΑ/ALE_8525.JPG" 
+										data-lightbox="bumpercars" 
+										data-title="Συγκρουόμενα Αυτοκίνητα">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΣΥΓΚΡΟΥΟΜΕΝΑ/ALE_8525.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΣΥΓΚΡΟΥΟΜΕΝΑ/ΣΥΓΚΡΟΥΟΜΕΝΑ.jpg" 
+										data-lightbox="bumpercars" 
+										data-title="Συγκρουόμενα Αυτοκίνητα">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΣΥΓΚΡΟΥΟΜΕΝΑ/ΣΥΓΚΡΟΥΟΜΕΝΑ.jpg" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΣΥΓΚΡΟΥΟΜΕΝΑ/ALE_8660.JPG" 
+										data-lightbox="bumpercars" 
+										data-title="Συγκρουόμενα Αυτοκίνητα">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΣΥΓΚΡΟΥΟΜΕΝΑ/ALE_8660.JPG" />
+									</a>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΣΥΓΚΡΟΥΟΜΕΝΑ/ALE_8721.JPG" 
+										data-lightbox="bumpercars" 
+										data-title="Συγκρουόμενα Αυτοκίνητα">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΣΥΓΚΡΟΥΟΜΕΝΑ/ALE_8721.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΣΥΓΚΡΟΥΟΜΕΝΑ/ALE_8699.JPG" 
+										data-lightbox="bumpercars" 
+										data-title="Συγκρουόμενα Αυτοκίνητα">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΣΥΓΚΡΟΥΟΜΕΝΑ/ALE_8699.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΣΥΓΚΡΟΥΟΜΕΝΑ/ALE_8845.JPG" 
+										data-lightbox="bumpercars" 
+										data-title="Συγκρουόμενα Αυτοκίνητα">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΣΥΓΚΡΟΥΟΜΕΝΑ/ALE_8845.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΣΥΓΚΡΟΥΟΜΕΝΑ/ALE_8846.JPG" 
+										data-lightbox="bumpercars" 
+										data-title="Συγκρουόμενα Αυτοκίνητα">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΣΥΓΚΡΟΥΟΜΕΝΑ/ALE_8846.JPG" />
+									</a>
+								</div>
+							</div>
+							
+						</div>
+							
+						<!-- ΠΑΙΔΟΤΟΠΟΣ -->
+						<div 
+							id="junior" 
+							class="tab-pane fade" 
+							role="tabpanel" 
+							aria-labelledby="junior">
+						
+							<div class="row pb-3">
+								<div class="col text-center">
+									<h2 class="text-yuppii1">
+										Παιδότοπος Junior
+									</h2>
+									<p class="lead">
+										Κούνιες, μπάλες, τσουλήθρες, αυτοκινητάκια και μια μεγάλη λίμνη με μπαλάκια σε έναν ασφαλή παιδότοπο δίπλα στο Café για να διασκεδάζει το παιδί σας ενώ εσείς απολαμβάνετε τον καφέ ή το φαγητό σας…
+									</p>
+								</div>
+							</div>
+							
+							<div class="row mb-md-3 mb-1">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/JUNIOR/ALE_8824.JPG" 
+										data-lightbox="junior" 
+										data-title="Παιδότοπος Junior">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/JUNIOR/ALE_8824.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/JUNIOR/ALE_8829.JPG" 
+										data-lightbox="junior" 
+										data-title="Παιδότοπος Junior">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/JUNIOR/ALE_8829.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/JUNIOR/ALE_8834.JPG" 
+										data-lightbox="junior" 
+										data-title="Παιδότοπος Junior">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/JUNIOR/ALE_8834.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/JUNIOR/ALE_8839.JPG" 
+										data-lightbox="junior" 
+										data-title="Παιδότοπος Junior">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/JUNIOR/ALE_8839.JPG" />
+									</a>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-3 col-6 mb-resp order-sm-first order-3">
+									<a
+										href="images/content/yuppii_summer_2021/JUNIOR/luna_park_yuppii_paidotopos_5.jpg" 
+										data-lightbox="junior" 
+										data-title="Παιδότοπος Junior">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/JUNIOR/luna_park_yuppii_paidotopos_5.jpg" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/JUNIOR/ALE_8840.JPG" 
+										data-lightbox="junior" 
+										data-title="Παιδότοπος Junior">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/JUNIOR/ALE_8840.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/JUNIOR/ALE_8813.JPG" 
+										data-lightbox="junior" 
+										data-title="Παιδότοπος Junior">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/JUNIOR/ALE_8813.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/JUNIOR/luna_park_yuppii_paidotopos_3.jpg" 
+										data-lightbox="junior" 
+										data-title="Παιδότοπος Junior">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/JUNIOR/luna_park_yuppii_paidotopos_3.jpg" />
+									</a>
+								</div>
+							</div>
+							
+						</div>
+							
+						<!-- ΦΟΡΜΟΥΛΕΣ -->
+						<div 
+							id="formulacars" 
+							class="tab-pane fade" 
+							role="tabpanel" 
+							aria-labelledby="formulacars">
+						
+							<div class="row pb-3">
+								<div class="col text-center">
+									<h2 class="text-yuppii1">
+										Φόρμουλες
+									</h2>
+									<p class="lead">
+										Ήρθε η ώρα να δείς ποιός είναι ο πιο γρήγορος… Επέλεξε τη φόρμουλά σου και προσπέρασε τους όλους!
+									</p>
+								</div>
+							</div>
+							
+							<div class="row mb-md-3 mb-1">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΦΟΡΜΟΥΛΕΣ/ALE_8773.JPG" 
+										data-lightbox="formulacars" 
+										data-title="Φόρμουλες">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΦΟΡΜΟΥΛΕΣ/ALE_8773.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΦΟΡΜΟΥΛΕΣ/ALE_8777.JPG" 
+										data-lightbox="formulacars" 
+										data-title="Φόρμουλες">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΦΟΡΜΟΥΛΕΣ/ALE_8777.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΦΟΡΜΟΥΛΕΣ/ALE_8465.JPG" 
+										data-lightbox="formulacars" 
+										data-title="Φόρμουλες">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΦΟΡΜΟΥΛΕΣ/ALE_8465.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΦΟΡΜΟΥΛΕΣ/ALE_8467.JPG" 
+										data-lightbox="formulacars" 
+										data-title="Φόρμουλες">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΦΟΡΜΟΥΛΕΣ/ALE_8467.JPG" />
+									</a>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΦΟΡΜΟΥΛΕΣ/luna_park_yuppii_formoules_1.jpg" 
+										data-lightbox="formulacars" 
+										data-title="Φόρμουλες">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΦΟΡΜΟΥΛΕΣ/luna_park_yuppii_formoules_1.jpg" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΦΟΡΜΟΥΛΕΣ/luna_park_yuppii_formoules_2.jpg" 
+										data-lightbox="formulacars" 
+										data-title="Φόρμουλες">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΦΟΡΜΟΥΛΕΣ/luna_park_yuppii_formoules_2.jpg" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΦΟΡΜΟΥΛΕΣ/luna_park_yuppii_formoules_3.jpg" 
+										data-lightbox="formulacars" 
+										data-title="Φόρμουλες">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΦΟΡΜΟΥΛΕΣ/luna_park_yuppii_formoules_3.jpg" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΦΟΡΜΟΥΛΕΣ/luna_park_yuppii_formoules_6.jpg" 
+										data-lightbox="formulacars" 
+										data-title="Φόρμουλες">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΦΟΡΜΟΥΛΕΣ/luna_park_yuppii_formoules_6.jpg" />
+									</a>
+								</div>
+							</div>
+							
+						</div>
+							
+						<!-- ΑΛΟΓΑΚΙΑ -->
+						<div 
+							id="horses" 
+							class="tab-pane fade" 
+							role="tabpanel" 
+							aria-labelledby="horses">
+							
+							<div class="row pb-3">
+								<div class="col text-center">
+									<h2 class="text-yuppii1">
+										Αλογάκια
+									</h2>
+									<p class="lead">
+										Τα αλογάκια μας είναι κατάλληλα σχεδιασμένα για μικρά και μεγάλα παιδιά. Το παιδί ιππεύει το άλογο σαν να είναι κανονικό και κάνει τη βόλτα του μέσα στο λούνα παρκ μαζί με την παρέα του. Θα το θυμάται για πάντα…
+									</p>
+								</div>
+							</div>
+							
+							<div class="row mb-md-3 mb-1">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΑΛΟΓΑΚΙΑ/ALE_8441.JPG" 
+										data-lightbox="horses" 
+										data-title="Αλογάκια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΑΛΟΓΑΚΙΑ/ALE_8441.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΑΛΟΓΑΚΙΑ/ALE_8446.JPG" 
+										data-lightbox="horses" 
+										data-title="Αλογάκια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΑΛΟΓΑΚΙΑ/ALE_8446.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΑΛΟΓΑΚΙΑ/ALE_8566.JPG" 
+										data-lightbox="horses" 
+										data-title="Αλογάκια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΑΛΟΓΑΚΙΑ/ALE_8566.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΑΛΟΓΑΚΙΑ/ALE_8878.JPG" 
+										data-lightbox="horses" 
+										data-title="Αλογάκια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΑΛΟΓΑΚΙΑ/ALE_8878.JPG" />
+									</a>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΑΛΟΓΑΚΙΑ/luna_park_yuppii_ponies_3.jpg" 
+										data-lightbox="horses" 
+										data-title="Αλογάκια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΑΛΟΓΑΚΙΑ/luna_park_yuppii_ponies_3.jpg" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΑΛΟΓΑΚΙΑ/luna_park_yuppii_ponies_6.jpg" 
+										data-lightbox="horses" 
+										data-title="Αλογάκια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΑΛΟΓΑΚΙΑ/luna_park_yuppii_ponies_6.jpg" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΑΛΟΓΑΚΙΑ/luna_park_yuppii_ponies_7.jpg" 
+										data-lightbox="horses" 
+										data-title="Αλογάκια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΑΛΟΓΑΚΙΑ/luna_park_yuppii_ponies_7.jpg" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΑΛΟΓΑΚΙΑ/luna_park_yuppii_ponies_9.jpg" 
+										data-lightbox="horses" 
+										data-title="Αλογάκια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΑΛΟΓΑΚΙΑ/luna_park_yuppii_ponies_9.jpg" />
+									</a>
+								</div>
+							</div>
+						
+						</div>
+							
+						<!-- ΤΡΕΝΑΚΙ -->
+						<div 
+							id="train" 
+							class="tab-pane fade" 
+							role="tabpanel" 
+							aria-labelledby="train">
+							
+							<div class="row pb-3">
+								<div class="col text-center">
+									<h2 class="text-yuppii1">
+										Tρενάκι
+									</h2>
+									<p class="lead">
+										Το ΤΡΕΝΑΚΙ πάει βόλτα τους μικρούς μας φίλους… Διάφορα βαγόνια σε ελεγχόμενο σιδηρόδρομο που κάνουν τη βόλτα των παιδιών σας αξέχαστη…
+									</p>
+								</div>
+							</div>
+							
+							<div class="row mb-md-3 mb-1">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΡΕΝΑΚΙ/ALE_8531.JPG" 
+										data-lightbox="train" 
+										data-title="Τρενάκι">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΡΕΝΑΚΙ/ALE_8531.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΡΕΝΑΚΙ/ALE_8533.JPG" 
+										data-lightbox="train" 
+										data-title="Τρενάκι">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΡΕΝΑΚΙ/ALE_8533.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΡΕΝΑΚΙ/ALE_8709.JPG" 
+										data-lightbox="train" 
+										data-title="Τρενάκι">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΡΕΝΑΚΙ/ALE_8709.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΡΕΝΑΚΙ/ALE_8872.JPG" 
+										data-lightbox="train" 
+										data-title="Τρενάκι">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΡΕΝΑΚΙ/ALE_8872.JPG" />
+									</a>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΡΕΝΑΚΙ/ALE_8873.JPG" 
+										data-lightbox="train" 
+										data-title="Τρενάκι">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΡΕΝΑΚΙ/ALE_8873.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΡΕΝΑΚΙ/ALE_8534.JPG" 
+										data-lightbox="train" 
+										data-title="Τρενάκι">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΡΕΝΑΚΙ/ALE_8534.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΡΕΝΑΚΙ/ALE_8536.JPG" 
+										data-lightbox="train" 
+										data-title="Τρενάκι">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΡΕΝΑΚΙ/ALE_8536.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΤΡΕΝΑΚΙ/ALE_8710.JPG" 
+										data-lightbox="train" 
+										data-title="Τρενάκι">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΤΡΕΝΑΚΙ/ALE_8710.JPG" />
+									</a>
+								</div>
+							</div>
+							
+						</div>
+							
+						<!-- ΓΕΡΑΝΟΙ -->
+						<div 
+							id="cranes" 
+							class="tab-pane fade" 
+							role="tabpanel" 
+							aria-labelledby="cranes">
+						
+							<div class="row pb-3">
+								<div class="col text-center">
+									<h2 class="text-yuppii1">
+										Γερανοί
+									</h2>
+									<p class="lead">
+										Το πρώτο under construction θεματικό πάρκο στην Ελλάδα σε περιμένει στο Yuppii…
+									</p>
+								</div>
+							</div>
+							
+							<div class="row mb-md-3 mb-1">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΓΕΡΑΝΟΙ/ALE_8634.JPG" 
+										data-lightbox="cranes" 
+										data-title="Γερανοί">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΓΕΡΑΝΟΙ/ALE_8634.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΓΕΡΑΝΟΙ/ALE_8635.JPG" 
+										data-lightbox="cranes" 
+										data-title="Γερανοί">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΓΕΡΑΝΟΙ/ALE_8635.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΓΕΡΑΝΟΙ/ALE_8639.JPG" 
+										data-lightbox="cranes" 
+										data-title="Γερανοί">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΓΕΡΑΝΟΙ/ALE_8639.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΓΕΡΑΝΟΙ/ALE_8640.JPG" 
+										data-lightbox="cranes" 
+										data-title="Γερανοί">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΓΕΡΑΝΟΙ/ALE_8640.JPG" />
+									</a>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΓΕΡΑΝΟΙ/ALE_8641.JPG" 
+										data-lightbox="cranes" 
+										data-title="Γερανοί">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΓΕΡΑΝΟΙ/ALE_8641.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΓΕΡΑΝΟΙ/ALE_8643.JPG" 
+										data-lightbox="cranes" 
+										data-title="Γερανοί">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΓΕΡΑΝΟΙ/ALE_8643.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΓΕΡΑΝΟΙ/ALE_8642.JPG" 
+										data-lightbox="cranes" 
+										data-title="Γερανοί">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΓΕΡΑΝΟΙ/ALE_8642.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΓΕΡΑΝΟΙ/img_0123.jpg" 
+										data-lightbox="cranes" 
+										data-title="Γερανοί">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΓΕΡΑΝΟΙ/img_0123.jpg" />
+									</a>
+								</div>
+							</div>
+						
+						</div>
+							
+						<!-- CARNIVAL GAMES -->
+						<div 
+							id="carnivalgames" 
+							class="tab-pane fade" 
+							role="tabpanel" 
+							aria-labelledby="carnivalgames">
+					
+							<div class="row pb-3">
+								<div class="col text-center">
+									<h2 class="text-yuppii1">
+										Carnival Games
+									</h2>
+									<p class="lead">
+										Είσαι έτοιμος/η να “ψαρέψεις” και να "στοχεύσεις" το καλύτερο δωράκι; Η τύχη είναι με το μέρος σου!
+									</p>
+								</div>
+							</div>
+							
+							<div class="row mb-md-3 mb-1">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΨΑΡΕΜΑ/ALE_8455.JPG" 
+										data-lightbox="carnivalgames" 
+										data-title="Καρναβαλικά Παιχνίδια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΨΑΡΕΜΑ/ALE_8455.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΨΑΡΕΜΑ/ALE_8458.JPG" 
+										data-lightbox="carnivalgames" 
+										data-title="Καρναβαλικά Παιχνίδια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΨΑΡΕΜΑ/ALE_8458.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΨΑΡΕΜΑ/ALE_8575.JPG" 
+										data-lightbox="carnivalgames" 
+										data-title="Καρναβαλικά Παιχνίδια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΨΑΡΕΜΑ/ALE_8575.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΨΑΡΕΜΑ/ALE_8580.JPG" 
+										data-lightbox="carnivalgames" 
+										data-title="Καρναβαλικά Παιχνίδια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΨΑΡΕΜΑ/ALE_8580.JPG" />
+									</a>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΨΑΡΕΜΑ/ALE_8586.JPG" 
+										data-lightbox="carnivalgames" 
+										data-title="Καρναβαλικά Παιχνίδια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΨΑΡΕΜΑ/ALE_8586.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΨΑΡΕΜΑ/ALE_8877.JPG" 
+										data-lightbox="carnivalgames" 
+										data-title="Καρναβαλικά Παιχνίδια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΨΑΡΕΜΑ/ALE_8877.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΨΑΡΕΜΑ/ALE_8892.JPG" 
+										data-lightbox="carnivalgames" 
+										data-title="Καρναβαλικά Παιχνίδια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΨΑΡΕΜΑ/ALE_8892.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΨΑΡΕΜΑ/ALE_8778.JPG" 
+										data-lightbox="carnivalgames" 
+										data-title="Καρναβαλικά Παιχνίδια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΨΑΡΕΜΑ/ALE_8778.JPG" />
+									</a>
+								</div>
+							</div>
+							
+						</div>
+						
+						<!-- ΠΟΔΟΣΦΑΙΡΑΚΙΑ -->
+						<div 
+							id="tablesoccer" 
+							class="tab-pane fade" 
+							role="tabpanel" 
+							aria-labelledby="tablesoccer">
+							
+							<div class="row pb-3">
+								<div class="col text-center">
+									<h2 class="text-yuppii1">
+										Ποδοσφαιράκια
+									</h2>
+									<p class="lead">
+										Τα ξύλινα ποδοσφαιράκια που διασκέδασαν γενιές και γενιές δεν θα μπορούσαν να λείπουν από το πάρκο μας…
+									</p>
+								</div>
+							</div>
+							
+							<div class="row mb-md-3 mb-1">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΠΟΔΟΣΦΑΙΡΑΚΙΑ/ALE_8552.JPG" 
+										data-lightbox="tablesoccer" 
+										data-title="Επιτραπέζια Ποδοσφαιράκια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΠΟΔΟΣΦΑΙΡΑΚΙΑ/ALE_8552.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΠΟΔΟΣΦΑΙΡΑΚΙΑ/ALE_8561.JPG" 
+										data-lightbox="tablesoccer" 
+										data-title="Επιτραπέζια Ποδοσφαιράκια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΠΟΔΟΣΦΑΙΡΑΚΙΑ/ALE_8561.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΠΟΔΟΣΦΑΙΡΑΚΙΑ/ALE_8564.JPG" 
+										data-lightbox="tablesoccer" 
+										data-title="Επιτραπέζια Ποδοσφαιράκια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΠΟΔΟΣΦΑΙΡΑΚΙΑ/ALE_8564.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΠΟΔΟΣΦΑΙΡΑΚΙΑ/ALE_8761.JPG" 
+										data-lightbox="tablesoccer" 
+										data-title="Επιτραπέζια Ποδοσφαιράκια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΠΟΔΟΣΦΑΙΡΑΚΙΑ/ALE_8761.JPG" />
+									</a>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-3 col-6 mb-resp order-sm-first order-3">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΠΟΔΟΣΦΑΙΡΑΚΙΑ/luna_park_yuppii_table_soccer_4.jpg" 
+										data-lightbox="tablesoccer" 
+										data-title="Επιτραπέζια Ποδοσφαιράκια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΠΟΔΟΣΦΑΙΡΑΚΙΑ/luna_park_yuppii_table_soccer_4.jpg" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΠΟΔΟΣΦΑΙΡΑΚΙΑ/ALE_8762.JPG" 
+										data-lightbox="tablesoccer" 
+										data-title="Επιτραπέζια Ποδοσφαιράκια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΠΟΔΟΣΦΑΙΡΑΚΙΑ/ALE_8762.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΠΟΔΟΣΦΑΙΡΑΚΙΑ/ALE_8563.JPG" 
+										data-lightbox="tablesoccer" 
+										data-title="Επιτραπέζια Ποδοσφαιράκια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΠΟΔΟΣΦΑΙΡΑΚΙΑ/ALE_8563.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΠΟΔΟΣΦΑΙΡΑΚΙΑ/luna_park_yuppii_table_soccer_2.jpg" 
+										data-lightbox="tablesoccer" 
+										data-title="Επιτραπέζια Ποδοσφαιράκια">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΠΟΔΟΣΦΑΙΡΑΚΙΑ/luna_park_yuppii_table_soccer_2.jpg" />
+									</a>
+								</div>
+							</div>
+						
+						</div>
+						
+						<!-- ΜΠΑΣΚΕΤ -->
+						<div 
+							id="basket" 
+							class="tab-pane fade" 
+							role="tabpanel" 
+							aria-labelledby="basket">
+						
+							<div class="row pb-3">
+								<div class="col text-center">
+									<h2 class="text-yuppii1">
+										Μπάσκετ
+									</h2>
+									<p class="lead">
+										Διάλεξε ΜΠΑΛΑ και ξεκινά να σουτάρεις… Ποιος ξέρει, μπορεί κάποιος προπονητής να δει το ταλέντο σου και να σε πάρει στην ομάδα του…
+									</p>
+								</div>
+							</div>
+							
+							<div class="row mb-md-3 mb-1">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΜΠΑΣΚΕΤ/ALE_8550.JPG" 
+										data-lightbox="basket" 
+										data-title="Μπάσκετ">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΜΠΑΣΚΕΤ/ALE_8550.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΜΠΑΣΚΕΤ/ALE_8554.JPG" 
+										data-lightbox="basket" 
+										data-title="Μπάσκετ">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΜΠΑΣΚΕΤ/ALE_8554.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΜΠΑΣΚΕΤ/ALE_8558.JPG" 
+										data-lightbox="basket" 
+										data-title="Μπάσκετ">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΜΠΑΣΚΕΤ/ALE_8558.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΜΠΑΣΚΕΤ/ALE_8557.JPG" 
+										data-lightbox="basket" 
+										data-title="Μπάσκετ">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΜΠΑΣΚΕΤ/ALE_8557.JPG" />
+									</a>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΜΠΑΣΚΕΤ/luna_park_yuppii_basket_1.jpg" 
+										data-lightbox="basket" 
+										data-title="Μπάσκετ">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΜΠΑΣΚΕΤ/luna_park_yuppii_basket_1.jpg" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΜΠΑΣΚΕΤ/luna_park_yuppii_basket_2.jpg" 
+										data-lightbox="basket" 
+										data-title="Μπάσκετ">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΜΠΑΣΚΕΤ/luna_park_yuppii_basket_2.jpg" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΜΠΑΣΚΕΤ/luna_park_yuppii_basket_3.jpg" 
+										data-lightbox="basket" 
+										data-title="Μπάσκετ">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΜΠΑΣΚΕΤ/luna_park_yuppii_basket_3.jpg" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΜΠΑΣΚΕΤ/luna_park_yuppii_basket_4.jpg" 
+										data-lightbox="basket" 
+										data-title="Μπάσκετ">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΜΠΑΣΚΕΤ/luna_park_yuppii_basket_4.jpg" />
+									</a>
+								</div>
+							</div>
+						
+						</div>
+						
+						<!-- ΜΠΑΣΚΕΤ -->
+						<div 
+							id="kiddyrides" 
+							class="tab-pane fade" 
+							role="tabpanel" 
+							aria-labelledby="kiddyrides">
+						
+							<div class="row pb-3">
+								<div class="col text-center">
+									<h2 class="text-yuppii1">
+										Κουνιστά
+									</h2>
+									<p class="lead">
+										Κουνιστά αμαξάκια, carousel, άλογα, κούπες και γορίλες σε διάφορα ΧΡΩΜΑΤΑ και ΣΧΕΔΙΑ που θα ξετρελάνουν τους μικρούς μας φίλους…
+									</p>
+								</div>
+							</div>
+							
+							<div class="row mb-md-3 mb-1">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8422.JPG" 
+										data-lightbox="kiddyrides" 
+										data-title="Κουνιστά">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8422.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8442.JPG" 
+										data-lightbox="kiddyrides" 
+										data-title="Κουνιστά">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8442.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8443.JPG" 
+										data-lightbox="kiddyrides" 
+										data-title="Κουνιστά">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8443.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8649.JPG" 
+										data-lightbox="kiddyrides" 
+										data-title="Κουνιστά">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8649.JPG" />
+									</a>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8711.JPG" 
+										data-lightbox="kiddyrides" 
+										data-title="Κουνιστά">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8711.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8789.JPG" 
+										data-lightbox="kiddyrides" 
+										data-title="Κουνιστά">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8789.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8815.JPG" 
+										data-lightbox="kiddyrides" 
+										data-title="Κουνιστά">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8815.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8859.JPG" 
+										data-lightbox="kiddyrides" 
+										data-title="Κουνιστά">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8859.JPG" />
+									</a>
+								</div>
+							</div>
+						
+						</div>
+						
+						<!-- ΠΡΟΣΟΜΟΙΩΤΕΣ -->
+						<div 
+							id="simulators" 
+							class="tab-pane fade" 
+							role="tabpanel" 
+							aria-labelledby="simulators">
+							
+							<div class="row pb-3">
+								<div class="col text-center">
+									<h2 class="text-yuppii1">
+										Προσομοιωτές 
+									</h2>
+									<p class="lead">
+										Σημάδεψε καλά με το νερό το Nemo, πέτυχε τα ψαράκια ή προσπέρασε τον αντίπαλο. Πέτυχε τον στόχο σου για να παίξεις και στις επόμενες πίστες!
+									</p>
+								</div>
+							</div>
+							
+							<div class="row mb-md-3 mb-1">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8541.JPG" 
+										data-lightbox="simulators" 
+										data-title="Προσομοιωτές">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8541.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8542.JPG" 
+										data-lightbox="simulators" 
+										data-title="Προσομοιωτές">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8542.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8543.JPG" 
+										data-lightbox="simulators" 
+										data-title="Προσομοιωτές">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8543.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8544.JPG" 
+										data-lightbox="simulators" 
+										data-title="Προσομοιωτές">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8544.JPG" />
+									</a>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8546.JPG" 
+										data-lightbox="simulators" 
+										data-title="Προσομοιωτές">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8546.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8549.JPG" 
+										data-lightbox="simulators" 
+										data-title="Προσομοιωτές">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8549.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8818.JPG" 
+										data-lightbox="simulators" 
+										data-title="Προσομοιωτές">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8818.JPG" />
+									</a>
+								</div>
+								<div class="col-md-3 col-6 mb-resp">
+									<a
+										href="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8820.JPG" 
+										data-lightbox="simulators" 
+										data-title="Προσομοιωτές">
+										<img
+											class="img-fluid" 
+											src="images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8820.JPG" />
+									</a>
+								</div>
+							</div>
+						
+						</div>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="section-connector-pink-to-green py-3"></section>
+	
+	<section id="testimonials" class="py-5">
+		<div class="container">
+			<div class="col text-center">
+				<div class="info-header mb-2">
+					<h1 class="text-yuppii2 pb-3">
+						Τα σχόλιά σας
+					</h1>
+					<p class="lead">
+						To Yuppii Luna Park έχει φιλοξενήσει χιλιάδες μικρούς αλλά και μεγάλους φίλους. Δείτε μερικά απο τα σχόλια τους! 
+					</p>
+				</div>
+			</div>
+			<div class="col pb-2">
+				<div class="testimonial-container">
+					<div class="custom-progress-bar"></div>
+					<div class="fas fa-quote-right fa-quote"></div>
+					<div class="fas fa-quote-left fa-quote"></div>
+					<p class="testimonial lead">
+						Είναι υπέροχος χώρος, εκπληκτική εξυπηρέτηση ευγενεστατο προσωπικό,οι κοπέλες στον παιδότοπο απίστευτες με όλα τα παιδιά η μικρή μου τις αγαπά πολύ. Xάρηκα πολύ γιατί έχει ως γνώμονα να περνούν καλά τα παιδιά και οι γονείς. Ώρα για παιχνίδι!!!
+					</p>
+					<div class="user">
+						<img 
+							class="user-image"
+							src="images/content/testimonial_users/elena_m.png" 
+							alt="Elena M" />
+						<div class="user-details">
+							<h4 class="username">Elena M</h4>
+						</div>
+					</div>
+					<div class="google-reviews">
+						<a 
+							href="https://www.google.gr/travel/entity/key/ChkIgI-npY7cwc1BGg0vZy8xMWJ3NDB3OXJ0EAQ?hl=en&gl=gr&gsas=1&sa=X&utm_campaign=sharing&utm_medium=link&utm_source=htls&ts=CAESABoGCgIaABIAKgQKABoA&rp=SAI&ap=MAA&ei=J7ofYci_K--AlsYPstGCqAk&ved=0CAAQ5JsGahcKEwiA0tOA35L0AhUAAAAAHQAAAAAQAw" 
+							target="_blank">
+							<img src="./images/content/svg_icons/GoogleReviews.svg" alt="Reviews">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="section-connector-green-to-pink2 py-3"></section>
+	
+	
+	
+	<!-- ##### FOOTER ##### -->
+	<footer id="main-footer">
+		<div class="container">
+			
+			<!-- First Row -->
+			<div class="row py-3">
+				
+				<div class="col d-flex justify-content-between align-items-center flex-wrap">
+					<h3 class="text-uppercase mb-resp-social mb-0">
+						Ακολουθηστε Μας Στα Social Media
+					</h3>
+
+					<ul class="list-inline list-unstyled p-0 mb-0">
+						<li class="list-inline-item p-0 m-0 mr-3">
+							<a 
+								class="btn social-fb p-0 m-0" 
+								href="https://m.facebook.com/yuppii.gr/?locale2=el_GR" 
+								target="_blank">
+								<i class="fab fa-facebook-f fa-2x"></i>
+							</a>
+						</li>
+						
+						<li class="list-inline-item p-0 m-0">
+							<a 
+								class="btn social-ig p-0 m-0"
+								href="https://www.instagram.com/yuppiilunapark/?hl=el" 
+								target="_blank">
+								<i class="fab fa-instagram fa-2x"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			
+			</div>
+			
+			<!-- Second Row -->
+			<div class="row py-3">
+				
+				<div class="col-md-3 d-flex justify-content-center align-items-center mb-resp">
+					<div class="col-equalizer">
+						<img
+							class="footer-logo"
+							src="./images/logos/Yuppii Logo Full Black.svg"
+							alt="Logo" />
+					</div>
+				</div>
+
+				<div class="col-md-3 d-flex flex-column justify-content-between align-items-start mb-resp">
+					<h4 class="text-uppercase m-0">
+						Λειτουργουμε
+					</h4>
+					<ul class="list-unstyled mb-2 mb-resp">
+						<li>Θερινή Σεζόν</li>
+						<li>Χριστουγεννιάτικη Σεζόν</li>
+						<li>Εθνικές Εορτές</li>
+					</ul>
+					<h4 class="text-uppercase m-0">
+						Ωραριο
+					</h4>
+					<ul class="list-unstyled mb-0">
+						<li>Καθημερινά 6 μ.μ. - 12 μ.μ.</li>
+					</ul>
+				</div>
+				
+				<div class="col-md-2 d-flex flex-column justify-content-between align-items-start mb-resp weather-col">
+					<h4 class="text-uppercase m-0">
+						Ο Καιρος
+					</h4>
+					<ul class="list-unstyled mb-0">
+						<li id="w-location" class="m-0"></li>
+						<li id="w-desc" class="text-capitalize m-0"></li>
+						<div class="d-flex justify-content-start align-items-center">
+							<li id="w-string" class="m-0 mr-2"></li>
+							<li>
+								<img id="w-icon" class="img-fluid">
+							</li>
+						</div>
+						<li id="w-feels-like"></li>
+						<li id="w-humidity"></li>
+					</ul>
+				</div>
+				
+				<div class="col-md-4 d-flex flex-column justify-content-between align-items-start map-col">
+					<h4 class="text-uppercase m-0">
+						Θα Μας Βρειτε
+					</h4>
+					<ul class="list-unstyled mb-0">
+						<li>Κάτω απο τον Φάρο Αλεξανδρούπολης</li>
+					</ul>
+					<div id="footerMap"></div>
+				</div>
+			
+			</div>
+			
+			<!-- Third Row -->
+			<div class="row py-3">
+				
+				<div class="col d-flex justify-content-between align-items-center flex-wrap">
+					<h5 class="mb-0">
+						COPYRIGHT &copy; <span id="year"></span> Yuppii Luna Park
+					</h5>
+					<h5 class="mb-0">
+						Website Creation By 
+						<a
+							tabindex="0"
+							role="button"
+							data-html="true"
+							data-toggle="popover"
+							data-trigger="focus"
+							data-placement="top"
+							data-template="
+								<div class='custom popover' role='tooltip'>
+									<div class='arrow'></div>
+									<h3 class='popover-header'></h3>
+									<div class='popover-body'></div>
+								</div>
+							"
+							data-content="
+								<div class='card-body bg-dark text-white m-0 p-1'>
+									<h4 class='card-title m-0 p-0'>
+										<img src='images/mits2.jpg' alt='Chris Mits' />
+										Γειά σου👋👋
+									</h4>
+									<p class='card-text'>
+										Σου αρέσει αυτό που βλέπεις?<br>
+										Επικοινώνησε μαζί μου
+									</p>
+									<p class='phone m-0 p-0'>
+										<a class='m-0 p-0 text-white' href='mailto:chrismits88@gmail.com' target='_blank'>
+											📧 chrismits88@gmail.com
+										</a>
+									</p>
+									<p class='email m-0 p-0'>
+										<a class='m-0 p-0 text-white' href='tel:+306973993703'>
+											📱 6973993703
+										</a>
+									</p>
+								</div>
+							">
+							Chris Mits
+						</a>
+					</h5>
+				</div>
+			
+			</div>
+		
+		</div>
+	</footer>
+	
+	<!-- ##### MODALS ##### -->
+	<div id="gameSelection" class="modal fade">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title">
+						<i class="fas fa-exclamation-circle"></i> Επέλεξε παιχνίδι από την λίστα
+					</h3>
+					<button class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body lead">
+					<div id="v-pills-tab" class="nav flex-column nav-pills text-center" role="tablist" aria-orientation="vertical">
+						<a 
+							id="inflatables" 
+							class="nav-link active" 
+							data-toggle="pill" 
+							href="#inflatables" 
+							role="tab"
+							aria-selected="true"
+							onclick="closeModal()">
+							Φουσκωτά
+						</a>
+						<a 
+							id="playground" 
+							class="nav-link" 
+							data-toggle="pill" 
+							href="#playground" 
+							role="tab" 
+							aria-selected="false"
+							onclick="closeModal()">
+							Παιχνιδοκατασκευή
+						</a>
+						<a 
+							id="trampoline" 
+							class="nav-link" 
+							data-toggle="pill" 
+							href="#trampoline" 
+							role="tab" 
+							aria-selected="false"
+							onclick="closeModal()">
+							Τραμπολίνο
+						</a>
+						<a 
+							id="cinema7d" 
+							class="nav-link" 
+							data-toggle="pill" 
+							href="#cinema7d" 
+							role="tab" 
+							aria-selected="false"
+							onclick="closeModal()">
+							Σινεμά 7D
+						</a>
+						<a 
+							id="dryslope" 
+							class="nav-link" 
+							data-toggle="pill" 
+							href="#dryslope" 
+							role="tab" 
+							aria-selected="false"
+							onclick="closeModal()">
+							Τσουλήθρα
+						</a>
+						<a 
+							id="bumpercars" 
+							class="nav-link" 
+							data-toggle="pill" 
+							href="#bumpercars" 
+							role="tab" 
+							aria-selected="false"
+							onclick="closeModal()">
+							Συγκρουόμενα
+						</a>
+						<a 
+							id="junior" 
+							class="nav-link" 
+							data-toggle="pill" 
+							href="#junior" 
+							role="tab" 
+							aria-selected="false"
+							onclick="closeModal()">
+							Παιδότοπος Junior
+						</a>
+						<a 
+							id="formulacars" 
+							class="nav-link" 
+							data-toggle="pill" 
+							href="#formulacars" 
+							role="tab" 
+							aria-selected="false"
+							onclick="closeModal()">
+							Φόρμουλες
+						</a>
+						<a 
+							id="horses" 
+							class="nav-link" 
+							data-toggle="pill" 
+							href="#horses" 
+							role="tab" 
+							aria-selected="false"
+							onclick="closeModal()">
+							Αλογάκια
+						</a>
+						<a 
+							id="train" 
+							class="nav-link" 
+							data-toggle="pill" 
+							href="#train" 
+							role="tab" 
+							aria-selected="false"
+							onclick="closeModal()">
+							Τρενάκι
+						</a>
+						<a 
+							id="cranes" 
+							class="nav-link" 
+							data-toggle="pill" 
+							href="#cranes" 
+							role="tab" 
+							aria-selected="false"
+							onclick="closeModal()">
+							Γερανοί
+						</a>
+						<a 
+							id="carnivalgames" 
+							class="nav-link" 
+							data-toggle="pill" 
+							href="#carnivalgames" 
+							role="tab" 
+							aria-selected="false"
+							onclick="closeModal()">
+							Carnival Games
+						</a>
+						<a 
+							id="tablesoccer" 
+							class="nav-link" 
+							data-toggle="pill" 
+							href="#tablesoccer" 
+							role="tab" 
+							aria-selected="false"
+							onclick="closeModal()">
+							Ποδοσφαιράκια
+						</a>
+						<a 
+							id="basket" 
+							class="nav-link" 
+							data-toggle="pill" 
+							href="#basket" 
+							role="tab" 
+							aria-selected="false"
+							onclick="closeModal()">
+							Μπάσκετ
+						</a>
+						<a 
+							id="kiddyrides" 
+							class="nav-link" 
+							data-toggle="pill" 
+							href="#kiddyrides" 
+							role="tab" 
+							aria-selected="false"
+							onclick="closeModal()">
+							Κουνιστά
+						</a>
+						<a 
+							id="simulators" 
+							class="nav-link" 
+							data-toggle="pill" 
+							href="#simulators" 
+							role="tab" 
+							aria-selected="false"
+							onclick="closeModal()">
+							Προσομοιωτές
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- JQUERY -->
+	<script 
+		src="https://code.jquery.com/jquery-3.6.0.min.js" 
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+		crossorigin="anonymous"></script>
+	
+	<!-- POPPER JS -->
+	<script 
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
+		crossorigin="anonymous"></script>
+	
+	<!-- BOOTSTRAP JS -->
+	<script 
+		src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" 
+		integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" 
+		crossorigin="anonymous"></script>
+	
+	<!-- MY JS FILE -->
+	<script 
+		defer 
+		async 
+		type="text/javascript" 
+		src="js/app.js"></script>
+	
+	<!-- LIGHTBOX2 JS -->
+	<script src="js/lightbox2/lightbox.js"></script>
+	
+	<!-- CUSTOM WEATHER API (FOOTER ALL PAGES) -->
+	<script src="js/weather/storage.js"></script>
+	<script src="JS/weather/weather.js"></script>
+	<script src="js/weather/ui.js"></script>
+	<script src="js/weather/app.js"></script>
+	
+	<!-- CUSTOM MAP API -->
+	<script 
+		async 
+		defer 
+		type='text/javascript' 
+		src='http://www.bing.com/api/maps/mapcontrol?callback=FooterMap&branch=release&setMkt=el-GR&setLang=el'></script>
+	<script src="js/maps/map_footer.js"></script>
+	
+	<!-- TESTIMONIALS JS -->
+	<script 
+		async 
+		defer 
+		type="text/javascript" 
+		src="js/testimonials.js"></script>
+	
+	<!-- CUSTOM EMBEDDED SCRIPTS -->
+	<script></script>
+</body>
+</html>
