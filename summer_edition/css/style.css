@@ -647,6 +647,20 @@ body {
           border-radius: 10px;
           background-color: transparent; }
 
+#contact-success {
+  background: linear-gradient(180deg, #fce2ea 0%, #c7eae7 100%);
+  height: calc(100vh - 465.83px); }
+  #contact-success .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #contact-success .container .col .card {
+      border: 1px solid #72cbc2;
+      width: 50%;
+      margin: 0px auto;
+      background-color: rgba(114, 203, 194, 0.2); }
+
 #games-presentation {
   min-height: 650px;
   background-color: #fce2ea; }
@@ -1046,7 +1060,14 @@ body {
     right: 10px !important;
     bottom: 5px !important; }
     #testimonials .google-reviews img {
-      width: 50px !important; } }
+      width: 50px !important; }
+
+  #contact-success {
+    min-height: 400px; }
+    #contact-success .container .col .card {
+      width: 100%; }
+      #contact-success .container .col .card .card-body a.btn {
+        font-size: 18px; } }
 @media (max-width: 420px) {
   #showcase .carousel-image-0 {
     background: url(../images/content/yuppii_summer_2021/ΣΥΓΚΡΟΥΟΜΕΝΑ/ALE_8527.JPG);

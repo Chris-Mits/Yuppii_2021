@@ -62,7 +62,8 @@ dropDownItems.forEach(function(clickedEl) {
 // #### LIGHTBOX SETTINGS ####
 const mapLightbox = document.getElementById("singles");
 const contactForm = document.getElementById("contact");
-if (!mapLightbox && !contactForm) {
+const contactSuccess = document.getElementById("contact-success");
+if (!mapLightbox && !contactForm && !contactSuccess) {
 	lightbox.option({
 		'alwaysShowNavOnTouchDevices': true,
 		'resizeDuration': 500,

@@ -27,21 +27,21 @@
 	<!-- ##### NAVIGATION ##### -->
 	<nav id="nav" class="navbar navbar-expand-md navbar-light py-3">
 		<div class="container">
-			<a class="navbar-brand m-0 p-0" href="index.html">
+			<a class="navbar-brand my-0 mx-auto p-0" href="index.html">
 				<img 
 					src="images/logos/Yuppii Logo Horizontal.svg"
 					width="160" 
 					alt="Logo" />
 			</a>
 			
-			<button 
+			<!-- <button 
 				class="navbar-toggler"
 				data-toggle="collapse"
 				data-target="#navbarCollapse">
 				<span class="navbar-toggler-icon"></span>
-			</button>
+			</button> -->
 			
-			<div id="navbarCollapse" class="collapse navbar-collapse">
+			<!-- <div id="navbarCollapse" class="collapse navbar-collapse">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item mr-lg-1">
 						<a href="index.html" class="nav-link">Αρχική</a>
@@ -59,9 +59,9 @@
 						<a href="contact.html" class="nav-link">Επικοινωνία</a>
 					</li>
 				</ul>
-			</div>
+			</div> -->
 			
-			<div class="dropdown">
+			<!-- <div class="dropdown">
 				<a 
 					id="languages" 
 					class="btn dropdown-toggle"
@@ -89,229 +89,24 @@
 							alt="English Language" />English
 					</a>
 				</div>
-			</div>
+			</div> -->
 			
 		</div>
 	</nav>
 	
-	<section id="contact-page-header" class="py-md-5 py-4">
+	<section id="contact-success" class="py-5">
 		<div class="container">
-			<div class="row py-3 text-center">
-				<div class="col">
-					<div class="info-header mb-2">
-						<h1 class="text-yuppii2 pb-3">
-							Επικοινωνήστε μαζί μας
-						</h1>
-						<p class="lead">
-							Συμπληρώστε την παρακάτω φόρμα για να επικοινωνήσετε μαζί μας για πληροφορίες ή ερωτήσεις σχετικά με το Yuppii Luna Park ή για να μας πείτε πώς περάσατε στην πρόσφατη επίσκεψή σας!
-						</p>
+			<div class="col">
+				<div class="card">
+					<div class="card-body text-center">
+						<h5 class="card-title">Σας ευχαριστούμε για τα σχόλιά σας!</h5>
+						<p class="card-text">Θα επικοινωνήσουμε μαζί σας το συντομότερο δυνατό</p>
+						<a href="./index.html" class="btn btn-yuppii1 btn-lg mx-auto">Επιστροφή στην Αρχική</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	
-	<section class="section-connector-green-to-pink py-3"></section>
-	
-	<!-- CONTACT SECTION -->
-	<section id="contact" class="py-5">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-md-10 col mx-auto">
-					<div class="card p-md-4 p-0">
-						<div class="card-body p-md-4 px-3">
-							<h3 class="text-center text-yuppii2">
-								Συμπληρώστε αυτή τη φόρμα για να επικοινωνήσετε μαζί μας
-							</h3>
-							
-							<hr>
-							<!-- https://formspree.io/f/mvolpkwe -->
-							<form id="form" action="https://formsubmit.co/65ae20f64d3fd0a6756da13eafd1ca43" method="POST">
-								
-								<!-- HoneyPot -->
-								<input type="text" name="_honey" style="display: none;">
-								<!-- Disable Captcha -->
-								<input type="hidden" name="_captcha" value="false">
-								<!-- Display Custom Success Page -->
-								<input type="hidden" name="_next" value="https://yuppiipark.netlify.app/summer_edition/contact-success.html">
-								
-								<div class="form-group">
-									<div class="input-group input-group-lg">
-										<div class="input-group-prepend">
-											<span class="input-group-text">
-												<i class="fas fa-user"></i>
-											</span>
-										</div>
-										<input
-											id="name"
-											class="form-control" 
-											type="text" 
-											name="Όνομα"
-											placeholder="Όνομα" />
-										<div class="valid-feedback">
-											Φαίνεται εντάξει!
-										</div>
-										<div class="invalid-feedback">
-											Το όνομα πρέπει να είναι μεταξύ 5-15 χαρακτήρων, χωρίς κενά
-										</div>
-									</div>
-								</div>
-								
-								<div class="form-group">
-									<div class="input-group input-group-lg">
-										<div class="input-group-prepend">
-											<span class="input-group-text">
-												<i class="fas fa-envelope"></i>
-											</span>
-										</div>
-										<input
-											id="email"
-											class="form-control" 
-											type="text"
-											name="Email"
-											placeholder="Email" />
-										<div class="valid-feedback">
-											Φαίνεται εντάξει!
-										</div>
-										<div class="invalid-feedback">
-											Εισάγετε μία έγκυρη διεύθυνση email
-										</div>
-									</div>
-								</div>
-								
-								<div class="form-group">
-									<div class="input-group input-group-lg">
-										<div class="input-group-prepend">
-											<span class="input-group-text">
-												<i class="fas fa-phone-alt"></i>
-											</span>
-										</div>
-										<input
-											id="phone"
-											class="form-control" 
-											type="text" 
-											name="Αριθμός&nbsp;Κινητού"
-											placeholder="Αριθμός Κινητού" />
-										<div class="valid-feedback">
-											Φαίνεται εντάξει!
-										</div>
-										<div class="invalid-feedback">
-											Εισάγετε έγκυρο αριθμό κινητού τηλεφώνου
-										</div>
-									</div>
-								</div>
-								
-								<div class="form-group">
-									<div class="input-group input-group-lg">
-										<div class="input-group-prepend">
-											<span class="input-group-text">
-												<i class="fas fa-pencil-alt"></i>
-											</span>
-										</div>
-										<textarea
-											id="textarea" 
-											class="form-control" 
-											type="text" 
-											name="Μήνυμα"
-											placeholder="Το μήνυμά σας"></textarea>
-									</div>
-								</div>
-								
-								<button
-									id="submit"
-									class="btn btn-yuppii2 btn-block btn-lg mx-auto"
-									type="submit"
-									value="Υποβολή Φόρμας">
-								Υποβολή Φόρμας
-								</button>
-							
-							</form>
-						
-						</div>
-					</div>
-				</div>
-			
-			</div>
-		</div>
-		
-	</section>
-	
-	<section class="section-connector-pink-to-green py-3"></section>
-	
-	<!-- DIRECTIONS - INFO SECTION -->
-	<section id="directions-info" class="py-5">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-md-4 mb-resp-map">
-					<div class="card details-info">
-						<div class="card-header bg-yuppii1 p-3 d-flex justify-content-center">
-							<img class="img-fluid" src="./images/logos/Yuppii Logo Horizontal.svg" alt="Logo" />
-						</div>
-						<div class="card-body bg-yuppii1 px-3 py-4">
-							
-							<div class="d-flex align-items-center">
-								<div class="icon">
-									<i class="fas fa-map-marker-alt"></i>
-								</div>
-								<div class="d-flex flex-column details">
-									<h4 class="m-0 p-0">
-										Διεύθυνση
-									</h4>
-									<p class="lead m-0">
-										Κάτω από Φάρο Αλεξανδρούπολης
-									</p>
-								</div>
-							</div>
-							
-							<hr>
-							
-							<div class="d-flex align-items-center">
-								<div class="icon">
-									<i class="fas fa-at"></i>
-								</div>
-								<div class="d-flex flex-column details">
-									<h4 class="m-0 p-0">
-										Email
-									</h4>
-									<p class="lead m-0">
-										yuppii@contact.gr
-									</p>
-								</div>
-							</div>
-							
-							<hr>
-							
-							<div class="d-flex align-items-center">
-								<div class="icon">
-									<i class="fas fa-phone"></i>
-								</div>
-								<div class="d-flex flex-column details">
-									<h4 class="m-0 p-0">
-										Τηλέφωνο
-									</h4>
-									<p class="lead m-0">
-										+306973433980
-									</p>
-								</div>
-							</div>
-						
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-8">
-					<div class="card map-container">
-						<div id="mainMap" style="width: 100%; height: 100%;"></div>
-					</div>
-				</div>
-			
-			</div>
-		</div>
-	</section>
-	
-	<section class="section-connector-green-to-pink2 py-3"></section>
 	
 	<!-- ##### FOOTER ##### -->
 	<footer id="main-footer">
@@ -488,11 +283,11 @@
 		src="js/app.js"></script>
 		
 	<!-- FORM VALIDATION -->
-	<script 
+	<!-- <script 
 		defer 
 		async 
 		type="text/javascript" 
-		src="js/form_validation.js"></script>
+		src="js/form_validation.js"></script> -->
 	
 	<!-- CUSTOM WEATHER API (FOOTER ALL PAGES) -->
 	<script src="js/weather/storage.js"></script>
@@ -505,8 +300,8 @@
 		async 
 		defer 
 		type='text/javascript' 
-		src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&branch=release&setMkt=el-GR&setLang=el'></script>
-	<script src="js/maps/map.js"></script>
+		src='https://www.bing.com/api/maps/mapcontrol?callback=FooterMap&branch=release&setMkt=el-GR&setLang=el'></script>
+	<script src="js/maps/map_footer.js"></script>
 	
 	<!-- CUSTOM EMBEDDED SCRIPTS -->
 	<script></script>
