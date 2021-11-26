@@ -124,9 +124,10 @@
 							<h3 class="text-center text-yuppii2">
 								Συμπληρώστε αυτή τη φόρμα για να επικοινωνήσετε μαζί μας
 							</h3>
+							
 							<hr>
-							<form id="form" action="?" method="POST">
-								
+							
+							<form id="form" action="https://formspree.io/f/mvolpkwe" method="POST">
 								<div class="form-group">
 									<div class="input-group input-group-lg">
 										<div class="input-group-prepend">
@@ -138,6 +139,7 @@
 											id="name"
 											class="form-control" 
 											type="text" 
+											name="Όνομα"
 											placeholder="Όνομα" />
 										<div class="valid-feedback">
 											Φαίνεται εντάξει!
@@ -158,7 +160,8 @@
 										<input
 											id="email"
 											class="form-control" 
-											type="text" 
+											type="text"
+											name="Email"
 											placeholder="Email" />
 										<div class="valid-feedback">
 											Φαίνεται εντάξει!
@@ -180,6 +183,7 @@
 											id="phone"
 											class="form-control" 
 											type="text" 
+											name="Αριθμός Κινητού"
 											placeholder="Αριθμός Κινητού" />
 										<div class="valid-feedback">
 											Φαίνεται εντάξει!
@@ -201,19 +205,18 @@
 											id="textarea" 
 											class="form-control" 
 											type="text" 
+											name="Μήνυμα"
 											placeholder="Το μήνυμά σας"></textarea>
 									</div>
 								</div>
 								
 								<button
 									id="submit"
-									class="btn btn-yuppii2 btn-block btn-lg mx-auto g-recaptcha"
-									type="submit" 
-									value="Υποβολή Φόρμας"
-									data-sitekey="6LdAyBAdAAAAACRP6u9IUBb702To5C64zSXEecO6"
-									data-callback="onSubmit">Υποβολή Φόρμας</button>
-
+									class="btn btn-yuppii2 btn-block btn-lg mx-auto"
+									type="submit"
+									value="Υποβολή Φόρμας">Υποβολή Φόρμας</button>
 							</form>
+						
 						</div>
 					</div>
 				</div>
@@ -493,12 +496,6 @@
 		type='text/javascript' 
 		src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&branch=release&setMkt=el-GR&setLang=el'></script>
 	<script src="js/maps/map.js"></script>
-	
-	<!-- GOOGLE CAPTCHA -->
-	<script 
-		async 
-		defer 
-		src="https://www.google.com/recaptcha/api.js"></script>
 	
 	<!-- CUSTOM EMBEDDED SCRIPTS -->
 	<script></script>

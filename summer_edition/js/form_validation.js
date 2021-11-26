@@ -7,7 +7,7 @@ document.getElementById('phone').addEventListener('keyup', validatePhone);
 // Name input validaton
 function validateName() {
 	const name = document.getElementById('name');
-	const re = /^[a-zA-Z]{5,15}$/;
+	const re = /^[a-zA-Zά-ωΑ-ώ]{5,15}$/;
 	// Evaluation
 	if(!re.test(name.value)) {
 		name.classList.remove('is-valid');
@@ -41,9 +41,6 @@ function validateEmail() {
 // Phone input validaton
 function validatePhone() {
 	const phone = document.getElementById('phone');
-	// /^[1-8]{1}([0-9]{2})(-[0-9]{2})?$/
-	// /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im
-	// /^(\()?\[2-9]{1}\d{2}(\))?(-|\s)?\d{3}(-|\s)\d{4}$/
 	const re = /^([+][3][0])?([6]{1})([9]{1})([0-9]{8})$/;
 	// Evaluation
 	if(!re.test(phone.value)) {
@@ -59,7 +56,7 @@ function validatePhone() {
 }
 
 // Prevent User from Submiting if not validated
-const form = document.querySelector('form');
+const form = document.getElementById("form");
 form.addEventListener('submit', (e) => {
 	const isNameValid = validateName();
 	const isEmailValid = validateEmail();

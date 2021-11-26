@@ -241,8 +241,3 @@ function closeModal() {
 	
 	$window.resize(toggleLgClasses).trigger('resize');
 })(jQuery);
-
-// INVISIBLE reCAPTCHA
-function onSubmit(token) {
-	document.getElementById("form").submit();
-}
