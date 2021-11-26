@@ -60,11 +60,12 @@ dropDownItems.forEach(function(clickedEl) {
 })
 
 // #### LIGHTBOX2 SETTINGS ####
+const homePage = document.getElementById("homepage")
 const mapLightbox = document.getElementById("singles");
 const contactForm = document.getElementById("contact");
 const contactSuccess = document.getElementById("contact-success");
 
-if (!mapLightbox && !contactForm && !contactSuccess) {
+if (!homePage && !mapLightbox && !contactForm && !contactSuccess) {
 	lightbox.option({
 		'alwaysShowNavOnTouchDevices': true,
 		'resizeDuration': 500,
@@ -191,36 +192,6 @@ function closeModal() {
 		$("#gameSelection").modal("hide");
 	}, 50);
 }
-
-// @@@@@@@@@@@@@@@@@@@@@@@
-// @@@@ SERVICES.HTML @@@@
-// @@@@@@@@@@@@@@@@@@@@@@@
-// (function($) {
-// 	const $window = $(window);
-// 	const images = document.querySelectorAll(".img-resp");
-// 	
-// 	function changeImgWidth() {
-// 		
-// 		if ($window.width() < 351) {
-// 			for(var i = 0; i < images.length; i++) {
-// 				images[i].setAttribute("width", "45");
-// 			}
-// 		}
-// 		else if ($window.width() > 350  && $window.width() < 401) {
-// 			for(var i = 0; i < images.length; i++) {
-// 				images[i].setAttribute("width", "50");
-// 			}
-// 		}
-// 		else {
-// 			for(var i = 0; i < images.length; i++) {
-// 				images[i].setAttribute("width", "65");
-// 			}
-// 		}
-// 	}
-// 	
-// 	$window.resize(changeImgWidth).trigger('resize');
-// })(jQuery);
-
 
 // @@@@@@@@@@@@@@@@@@@@@@
 // @@@@ CONTACT.HTML @@@@
