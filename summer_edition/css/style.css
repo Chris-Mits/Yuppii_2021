@@ -1075,8 +1075,15 @@ body {
   #gameSelection .modal-dialog .modal-content .modal-header .modal-title {
     font-size: 18.5px; }
 
+  #reasons #accordion .card .card-header div {
+    letter-spacing: 0;
+    font-size: 21px; }
+
   #games-presentation div[role="tabpanel"] .row .col h2 {
-    font-size: 27px; }
+    font-size: 25px; }
+
+  #testimonials .testimonial-container .user .user-details .username {
+    font-size: 18px; }
 
   #cafe .row:nth-child(2) #singles {
     min-height: 180px; }
