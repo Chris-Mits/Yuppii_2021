@@ -799,99 +799,62 @@
 						
 						<div class="input-group input-group-lg mb-3">
 							<div class="input-group-prepend">
-								<span class="input-group-text" id="validatedInputGroupPrepend"><i class="fas fa-user"></i></span>
+								<span class="input-group-text">
+									<i class="fas fa-user"></i>
+								</span>
 							</div>
-							<input type="text" class="form-control" aria-describedby="validatedInputGroupPrepend" required>
-						</div>
-						<!-- <div class="invalid-feedback">
-							Example invalid input group feedback
-						</div> -->
-								
-						<div class="form-group">
-							<div class="input-group input-group-lg">
-								<div class="input-group-prepend">
-									<span class="input-group-text">
-										<i class="fas fa-user"></i>
-									</span>
-								</div>
-								<input
-									id="name"
-									class="form-control" 
-									type="text" 
-									placeholder="Όνομα" />
-								<div class="valid-feedback">
-									Φαίνεται εντάξει!
-								</div>
-								<div class="invalid-feedback">
-									Το όνομα πρέπει να είναι μεταξύ 5-15 χαρακτήρων, χωρίς κενά
-								</div>
-							</div>
+							<input
+								id="name"
+								class="form-control" 
+								type="text" 
+								placeholder="Όνομα" />
 						</div>
 						
-						<div class="form-group">
-							<div class="input-group input-group-lg">
-								<div class="input-group-prepend">
-									<span class="input-group-text">
-										<i class="fas fa-envelope"></i>
-									</span>
-								</div>
-								<input
-									id="email"
-									class="form-control" 
-									type="text" 
-									placeholder="Email" />
-								<div class="valid-feedback">
-									Φαίνεται εντάξει!
-								</div>
-								<div class="invalid-feedback">
-									Εισάγετε μία έγκυρη διεύθυνση email
-								</div>
+						<div class="input-group input-group-lg mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text">
+									<i class="fas fa-envelope"></i>
+								</span>
 							</div>
+							<input
+								id="email"
+								class="form-control" 
+								type="text" 
+								placeholder="Email" />
 						</div>
 						
-						<div class="form-group">
-							<div class="input-group input-group-lg">
-								<div class="input-group-prepend">
-									<span class="input-group-text">
-										<i class="fas fa-phone-alt"></i>
-									</span>
-								</div>
-								<input
-									id="phone"
-									class="form-control" 
-									type="text" 
-									placeholder="Αριθμός Κινητού" />
-								<div class="valid-feedback">
-									Φαίνεται εντάξει!
-								</div>
-								<div class="invalid-feedback">
-									Εισάγετε έγκυρο αριθμό κινητού τηλεφώνου
-								</div>
+						<div class="input-group input-group-lg mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text">
+									<i class="fas fa-phone-alt"></i>
+								</span>
 							</div>
+							<input
+								id="phone"
+								class="form-control" 
+								type="text" 
+								placeholder="Αριθμός Κινητού" />
 						</div>
 						
-						<div class="form-group">
-							<div class="input-group input-group-lg">
-								<div class="input-group-prepend">
-									<span class="input-group-text">
-										<i class="fas fa-pencil-alt"></i>
-									</span>
-								</div>
-								<textarea
-									id="textarea" 
-									class="form-control" 
-									type="text" 
-									placeholder="Το μήνυμά σας"></textarea>
+						<div class="input-group input-group-lg mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text">
+									<i class="fas fa-pencil-alt"></i>
+								</span>
 							</div>
+							<textarea
+								id="textarea" 
+								class="form-control" 
+								type="text" 
+								placeholder="Το μήνυμά σας"></textarea>
 						</div>
 						
-						<input
+						<button
 							id="submit"
-							class="btn btn-xmas-blue-dark btn-block btn-lg mx-auto g-recaptcha"
+							class="btn btn-xmas-blue-dark btn-block btn-lg mx-auto"
 							type="submit" 
-							value="Υποβολή Φόρμας"
-							data-sitekey="6LdAyBAdAAAAACRP6u9IUBb702To5C64zSXEecO6"
-							data-callback='onSubmit' />
+							value="Υποβολή Φόρμας">Υποβολή Φόρμας
+						</button>
 
 					</form>
 				</div>
@@ -957,11 +920,6 @@
 		type="text/javascript" 
 		src="js/countdown.js"></script>
 		
-	<!-- GOOGLE CAPTCHA -->
-	<script 
-		async 
-		defer 
-		src="https://www.google.com/recaptcha/api.js"></script>
 		
 	<!-- PHOTOSWIPE MODULE IMPORT & OPTIONS -->
 	<script type="module">
