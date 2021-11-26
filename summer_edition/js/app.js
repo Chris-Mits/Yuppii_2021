@@ -244,5 +244,5 @@ function closeModal() {
 
 // INVISIBLE reCAPTCHA
 function onSubmit(token) {
-	document.getElementById("demo").submit();
+	document.getElementById("form").submit();
 }

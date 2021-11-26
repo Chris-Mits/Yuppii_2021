@@ -1,5 +1,5 @@
 // FORM VALIDATION
-// Form Blur Event Listeners - Form Keyup Event Listeners
+// Form Keyup Event Listeners
 document.getElementById('name').addEventListener('keyup', validateName);
 document.getElementById('email').addEventListener('keyup', validateEmail);
 document.getElementById('phone').addEventListener('keyup', validatePhone);
