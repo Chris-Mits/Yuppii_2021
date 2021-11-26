@@ -519,11 +519,6 @@ body {
 
 #contact {
   background-color: #fce2ea; }
-  #contact .grecaptcha-badge {
-    bottom: 80px !important;
-    z-index: 100000000;
-    border-top-left-radius: 10px !important;
-    border-bottom-left-radius: 10px !important; }
   #contact .card {
     background-color: #c7eae7;
     border: none;
@@ -1087,7 +1082,12 @@ body {
         font-size: 18px; } }
 @media (max-width: 420px) {
   #gameSelection .modal-dialog .modal-content .modal-header .modal-title {
-    font-size: 21.5px; } }
+    font-size: 21.5px; }
+
+  #contact .card form .form-group .valid-feedback,
+  #contact .card form .form-group .invalid-feedback {
+    font-size: 10px;
+    margin: 0; } }
 @media (max-width: 400px) {
   #contact-page-header .info-header h1 {
     font-size: 33px; }

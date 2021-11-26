@@ -22,7 +22,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<title>Αρχική | Yuppii Luna Park•Αλεξανδρούπολη</title>
 </head>
-<body id="homepage">
+<body>
 	<!-- ##### BACK TO TOP BUTTON ##### -->
 	<button id="backToTop" class="backToTop p-2" onclick="backToTop()">
 		<i class="fas fa-chevron-up"></i>
@@ -151,7 +151,7 @@
 					class="carousel-item carousel-image-0 active"
 					data-interval="">
 					<video autoplay muted loop>
-						<source src="images/yuppii_final.mp4" type="video/mp4">
+						<source src="videos/yuppii_final.mp4" type="video/mp4">
 					</video>
 				</div>
 				
@@ -417,7 +417,7 @@
 			</div>
 			
 			
-			<div id="home-gallery" class="pswp-gallery pswp-gallery--single-column">
+			<div class="pswp-gallery pswp-gallery--single-column">
 				
 				<!-- ### First Gallery Row ### -->
 				<div class="row mb-md-3 mb-1">
@@ -905,7 +905,7 @@
 		const options = {
 			closeSVG: closeBtnSVGString,
 			zoomSVG: zoomBtnSVGString,
-			gallery: '#home-gallery',
+			gallery: '.pswp-gallery',
 			children: 'a',
 			pswpModule: '/summer_edition/js/photoswipe/photoswipe.esm.js',
 			arrowKeys: true,
