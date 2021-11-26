@@ -54,11 +54,12 @@ body {
     letter-spacing: 1px; }
 
 .custom.popover.mokalis {
-  background-color: #343A40 !important;
+  background-color: #fce2ea !important;
+  border: 1px solid #f59fba;
   max-width: 270px !important;
   font-family: "Commissioner", sans-serif; }
   .custom.popover.mokalis .arrow::after {
-    border-top-color: #343A40; }
+    border-top-color: #f59fba; }
   .custom.popover.mokalis .popover-body .card-body {
     display: flex;
     justify-content: space-between;
@@ -68,13 +69,16 @@ body {
       height: 60px;
       border-radius: 50%; }
     .custom.popover.mokalis .popover-body .card-body .card-content {
-      height: 100%; }
+      height: 100%;
+      color: #030404; }
       .custom.popover.mokalis .popover-body .card-body .card-content h4 {
         font-size: 20px;
-        margin-bottom: 5px; }
+        margin-bottom: 5px;
+        color: #030404; }
       .custom.popover.mokalis .popover-body .card-body .card-content p,
       .custom.popover.mokalis .popover-body .card-body .card-content a {
-        font-size: 18px; }
+        font-size: 18px;
+        color: #030404; }
 
 .backToTop {
   background-color: #f59fba;
@@ -836,6 +840,9 @@ body {
   #rentals .row:nth-child(2) .col-lg-5 a img {
     border-radius: 5px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); }
+  #rentals .row:nth-child(2) .col-lg-7 .lead a[role="button"] {
+    color: #F2788F;
+    font-weight: 700; }
 
 #gamesModal .modal-content,
 #partiesModal .modal-content,
@@ -1091,7 +1098,22 @@ body {
       position: static;
       box-shadow: none;
       border-radius: 5px;
-      background-color: transparent; } }
+      background-color: transparent; }
+
+  .custom.popover.mokalis {
+    max-width: 190px !important; }
+    .custom.popover.mokalis .popover-body {
+      padding: 5px; }
+      .custom.popover.mokalis .popover-body .card-body .card-logo img {
+        width: 40px;
+        height: 40px; }
+      .custom.popover.mokalis .popover-body .card-body .card-content h4 {
+        font-size: 16px;
+        letter-spacing: 0; }
+      .custom.popover.mokalis .popover-body .card-body .card-content p,
+      .custom.popover.mokalis .popover-body .card-body .card-content a {
+        font-size: 15px;
+        letter-spacing: 0; } }
 @media (max-width: 350px) {
   #showcase .carousel-image-1 {
     background-position: -340px !important; }
