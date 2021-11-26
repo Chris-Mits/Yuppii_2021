@@ -59,10 +59,11 @@ dropDownItems.forEach(function(clickedEl) {
 	})
 })
 
-// #### LIGHTBOX SETTINGS ####
+// #### LIGHTBOX2 SETTINGS ####
 const mapLightbox = document.getElementById("singles");
 const contactForm = document.getElementById("contact");
 const contactSuccess = document.getElementById("contact-success");
+
 if (!mapLightbox && !contactForm && !contactSuccess) {
 	lightbox.option({
 		'alwaysShowNavOnTouchDevices': true,
@@ -149,9 +150,11 @@ if(gameModal && partiesModal && coffeeModal && tripsModal) {
 	function dataIntervalChange() {
 		if($window.width() < 768) {
 			$('.carousel-image-0').attr('data-interval', 5000);
+			$('#yuppiiShowcaseCarousel').removeClass('carousel-fade');
 		}
 		else {
 			$('.carousel-image-0').attr('data-interval', 25000);
+			$('#yuppiiShowcaseCarousel').addClass('carousel-fade');
 		}
 	}
 	$window.resize(dataIntervalChange).trigger('resize');
