@@ -5,7 +5,7 @@
 // #### GET YEAR SCRIPT ####
 $('#year').text(new Date().getFullYear());
 
-// POPOVER INITIALIZATION
+// POPOVERS INITIALIZATION
 $('[data-toggle="popover"]').popover();
 
 // #### BACK TO TOP FUNCTIONALITY ####
@@ -58,44 +58,6 @@ dropDownItems.forEach(function(clickedEl) {
 		selectedLangFlag.src = clickedImgSrc;
 	})
 })
-
-// #### LIGHTBOX2 SETTINGS ####
-const homePage = document.getElementById("homepage")
-const mapLightbox = document.getElementById("singles");
-const contactForm = document.getElementById("contact");
-const contactSuccess = document.getElementById("contact-success");
-
-if (!homePage && !mapLightbox && !contactForm && !contactSuccess) {
-	lightbox.option({
-		'alwaysShowNavOnTouchDevices': true,
-		'resizeDuration': 500,
-		'wrapAround': false,
-		'fitImagesInViewport': true,
-		'disableScrolling': true,
-		'albumLabel': "Εικόνα %1 από %2",
-		'fadeDuration': 500,
-		'imageFadeDuration': 300
-	});
-	
-	(function($) {
-		const $window = $(window);
-		
-		function lightboxOptions() {
-			if($window.width() <= 350) {
-				lightbox.option({
-					'positionFromTop': 150
-				})
-			}
-			else if($window.width() < 450) {
-				lightbox.option({
-					'positionFromTop': 200
-				});
-			}
-		}
-		
-		$window.resize(lightboxOptions).trigger('resize');
-	})(jQuery);
-}
 
 // @@@@@@@@@@@@@@@@@@@@@
 // @@@@ INDEX.HTML @@@@@
