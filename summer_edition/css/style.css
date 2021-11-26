@@ -998,16 +998,33 @@ body {
   #showcase div.carousel-image-0 video {
     display: none; }
   #showcase .carousel-image-0 {
-    background: url(../images/content/yuppii_summer_2021/ΣΥΓΚΡΟΥΟΜΕΝΑ/ALE_8527.JPG);
-    background-size: cover !important; }
+    background: url(../images/content/yuppii_summer_2021/ΕΙΣΟΔΟΣ/mobile5.jpg);
+    background-size: cover !important;
+    background-position: 50% 50% !important; }
   #showcase .carousel-image-1 {
-    background-size: cover;
-    background-position: -300px !important; }
+    background: url(../images/content/yuppii_summer_2021/ΣΥΓΚΡΟΥΟΜΕΝΑ/ALE_8853.jpg);
+    background-size: cover !important;
+    background-position: 50% 50% !important; }
   #showcase .carousel-image-2 {
-    background: url(../images/content/yuppii_summer_2021/panoramic_mobile.JPG);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center bottom; }
+    background: url(../images/content/yuppii_summer_2021/ΠΡΑΣΙΝΑΔΑ/ALE_8858.jpg);
+    background-size: cover !important;
+    background-position: 50% 50% !important; }
+  #showcase .carousel-image-3 {
+    background: url(../images/content/yuppii_summer_2021/ΦΟΥΣΚΩΤΑ/ALE_8805.jpg);
+    background-size: cover !important;
+    background-position: 50% 50% !important; }
+  #showcase .carousel-image-4 {
+    background: url(../images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΠΟΔΟΣΦΑΙΡΑΚΙΑ/ALE_8764.jpg);
+    background-size: cover !important;
+    background-position: 50% 50% !important; }
+  #showcase .carousel-image-5 {
+    background: url(../images/content/yuppii_summer_2021/ΨΑΡΕΜΑ/ALE_8893.jpg);
+    background-size: cover !important;
+    background-position: 50% 50% !important; }
+  #showcase .carousel-image-6 {
+    background: url(../images/content/yuppii_summer_2021/ΦΑΡΟΣ/ALE_8870.jpg);
+    background-size: cover !important;
+    background-position: 50% 50% !important; }
 
   #activities .card-deck {
     grid-template-columns: repeat(1, 1fr); }
@@ -1069,24 +1086,9 @@ body {
       #contact-success .container .col .card .card-body a.btn {
         font-size: 18px; } }
 @media (max-width: 420px) {
-  #showcase .carousel-image-0 {
-    background: url(../images/content/yuppii_summer_2021/ΣΥΓΚΡΟΥΟΜΕΝΑ/ALE_8527.JPG);
-    background-size: cover !important; }
-  #showcase .carousel-image-1 {
-    background-position: -460px !important; }
-  #showcase .carousel-image-6 {
-    background-position: -560px !important; }
-
   #gameSelection .modal-dialog .modal-content .modal-header .modal-title {
     font-size: 21.5px; } }
 @media (max-width: 400px) {
-  #showcase .carousel-image-0 {
-    background: url(../images/content/yuppii_summer_2021/ΣΥΓΚΡΟΥΟΜΕΝΑ/ALE_8849.JPG); }
-  #showcase .carousel-image-1 {
-    background-position: -425px !important; }
-  #showcase .carousel-image-6 {
-    background-position: -480px !important; }
-
   #contact-page-header .info-header h1 {
     font-size: 33px; }
 
@@ -1136,17 +1138,6 @@ body {
         font-size: 15px;
         letter-spacing: 0; } }
 @media (max-width: 350px) {
-  #showcase .carousel-image-1 {
-    background-position: -340px !important; }
-  #showcase .carousel-image-6 {
-    background-position: -400px !important; }
-  #showcase .carousel-item {
-    height: 85.5vh; }
-  #showcase .carousel-control-next {
-    right: 20px; }
-  #showcase .carousel-control-prev {
-    left: 20px; }
-
   #gameSelection .modal-dialog .modal-content .modal-header .modal-title {
     font-size: 16px;
     white-space: nowrap; }
