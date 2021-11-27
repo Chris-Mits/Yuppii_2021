@@ -206,7 +206,7 @@ body {
       font-family: 'Commissioner Variable';
       font-weight: 700; }
     #main-footer .row:nth-child(2) .footer-logo {
-      height: 185px; }
+      height: 150px; }
     #main-footer .row:nth-child(2) ul li {
       font-size: 17px; }
     #main-footer .row:nth-child(2) .weather-col ul li {
@@ -625,13 +625,12 @@ body {
         display: flex;
         align-items: center; }
       #directions-info .card.map-container #mainMap .customInfobox .infobox-header .infobox-logo {
-        margin-right: 15px; }
+        margin-right: 10px; }
       #directions-info .card.map-container #mainMap .customInfobox .infobox-header .infobox-title {
         margin: 0px;
         font-size: 20px; }
       #directions-info .card.map-container #mainMap .customInfobox .infobox-body p {
-        margin-top: 0px;
-        margin-bottom: 5px;
+        margin: 0;
         font-size: 14px; }
       #directions-info .card.map-container #mainMap .customInfobox .infobox-body a {
         color: #030404;
@@ -914,6 +913,9 @@ body {
   .mb-resp {
     margin-bottom: 1rem !important; }
 
+  .mb-resp-social {
+    margin-bottom: 1rem !important; }
+
   #cafe .row:nth-child(2) #singles {
     position: static;
     display: grid;
@@ -980,11 +982,11 @@ body {
         left: unset; }
       #cafe .row:nth-child(2) #singles:hover a img {
         border-radius: 5px;
-        box-shadow: none; } }
-@media (max-width: 768px) {
-  .mb-resp-social {
-    margin-bottom: 1rem !important; }
+        box-shadow: none; }
 
+  #main-footer .row:nth-child(2) .map-col #footerMap {
+    height: 150px; } }
+@media (max-width: 768px) {
   #nav .dropdown {
     position: absolute;
     right: 60px;
@@ -1148,7 +1150,10 @@ body {
     font-size: 22px; }
 
   #cafe .row:nth-child(2) #singles {
-    gap: 5px; } }
+    gap: 5px; }
+
+  #main-footer .row:nth-child(3) h5 {
+    font-size: 15px; } }
 @media (max-width: 321px) {
   #games-presentation div[role="tabpanel"] .row .col h2 {
     font-size: 22px; } }
