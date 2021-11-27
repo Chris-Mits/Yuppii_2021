@@ -1139,6 +1139,9 @@ body {
       .custom.popover.mokalis .popover-body .card-body .card-content a {
         font-size: 15px;
         letter-spacing: 0; } }
+@media (max-width: 361px) {
+  #main-footer .row:nth-child(3) h5 {
+    font-size: 15px; } }
 @media (max-width: 350px) {
   #gameSelection .modal-dialog .modal-content .modal-header .modal-title {
     font-size: 16px;
@@ -1150,10 +1153,7 @@ body {
     font-size: 22px; }
 
   #cafe .row:nth-child(2) #singles {
-    gap: 5px; }
-
-  #main-footer .row:nth-child(3) h5 {
-    font-size: 15px; } }
+    gap: 5px; } }
 @media (max-width: 321px) {
   #games-presentation div[role="tabpanel"] .row .col h2 {
     font-size: 22px; } }
