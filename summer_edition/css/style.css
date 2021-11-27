@@ -412,7 +412,7 @@ body {
       font-weight: 700; }
   #covid .row:nth-child(2) span {
     display: block; }
-    #covid .row:nth-child(2) span:nth-child(2) {
+    #covid .row:nth-child(2) span:nth-child(2), #covid .row:nth-child(2) span:nth-child(3) {
       margin: 5px 0; }
     #covid .row:nth-child(2) span i.fas {
       margin-right: 5px; }
