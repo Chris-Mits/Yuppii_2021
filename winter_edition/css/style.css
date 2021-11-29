@@ -166,6 +166,15 @@ body {
   transition: all 0.3s ease-in-out; }
   #showcase #xmas-carousel .carousel-inner .carousel-item {
     height: 100%; }
+  #showcase #xmas-carousel .carousel-inner .image-1,
+  #showcase #xmas-carousel .carousel-inner .image-2,
+  #showcase #xmas-carousel .carousel-inner .image-3,
+  #showcase #xmas-carousel .carousel-inner .image-4,
+  #showcase #xmas-carousel .carousel-inner .image-5,
+  #showcase #xmas-carousel .carousel-inner .image-6 {
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important; }
   #showcase #xmas-carousel .carousel-inner .image-0 {
     background: url("../images/ΠΑΡΚΟ/BANNERS/ΣΥΝΟΠΤΙΚΟ.jpg");
     background-color: rgba(12, 31, 72, 0.4);
@@ -294,7 +303,11 @@ body {
   background-color: rgba(178, 137, 81, 0.4); }
   #covid .container .row:nth-child(1) .section-header {
     border-color: rgba(178, 137, 81, 0.4); }
-  #covid .container .row:nth-child(2) .col-sm-4 p {
+  #covid .container .row:nth-child(2) span {
+    color: #4564C1; }
+  #covid .container .row:nth-child(2) div:nth-child(2) p,
+  #covid .container .row:nth-child(3) div:nth-child(2) p,
+  #covid .container .row:nth-child(4) div:nth-child(2) p {
     font-size: 22px; }
 
 #video {
@@ -502,6 +515,8 @@ body {
 
   #video {
     min-height: 500px; }
+    #video .custom-row {
+      background: rgba(12, 31, 72, 0.1); }
 
   #gallery .container .row:nth-child(2) .col-photos {
     grid-template-columns: repeat(2, 1fr);
