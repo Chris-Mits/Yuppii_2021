@@ -22,7 +22,7 @@
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Manrope', sans-serif;
 	height: 100vh;
 	overflow: hidden;
 	margin: 0;
@@ -84,7 +84,7 @@ body {
 
 .split img {
 	display: block;
-	width: 65%;
+	width: 70%;
 	height: 100%;
 	margin: auto;
 }
@@ -99,11 +99,11 @@ body {
 }
 
 .change-right-btn {
-	right: 2%;
+	right: 0%;
 }
 
 .change-left-btn {
-	left: 2%;
+	left: 0%;
 }
 
 .change-right-btn img,

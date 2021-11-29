@@ -1,7 +1,9 @@
 const root = document.querySelector(":root");
 const container = document.querySelector('.container');
 const changeLeftBtn = document.querySelector('.change-left-btn');
+const changeLeftBtnImg = document.querySelector('.change-left-btn img');
 const changeRightBtn = document.querySelector('.change-right-btn');
+const changeRightBtnImg = document.querySelector('.change-right-btn img');
 const headers = document.querySelectorAll('.header');
 const subHeaders = document.querySelectorAll('.sub-header');
 const btns = document.querySelectorAll('.btn');
@@ -90,9 +92,9 @@ function checkContainerAndChangeScreen() {
 function transformations(selectedItem) {
 	// Headers Styling
 	for (var i = 0; i < headers.length; i++) {
-		headers[selectedItem].style.top = "10%";
+		headers[selectedItem].style.top = "15%";
 		
-		if (window.matchMedia("(max-width: 350px)").matches) {
+		if (window.matchMedia("(max-width: 430px)").matches) {
 			headers[selectedItem].style.fontSize = "2rem";
 		}
 		else {
@@ -102,9 +104,9 @@ function transformations(selectedItem) {
 	
 	// Sub-Headers Styling
 	for (var i = 0; i < subHeaders.length; i++) {
-		subHeaders[selectedItem].style.top = "20%";
+		subHeaders[selectedItem].style.top = "25%";
 		
-		if(window.matchMedia("(max-width: 350px").matches) {
+		if(window.matchMedia("(max-width: 430px").matches) {
 			subHeaders[selectedItem].style.fontSize = "1.4rem";
 		}
 		else {
@@ -114,7 +116,7 @@ function transformations(selectedItem) {
 	
 	// Buttons Styling
 	for (var i = 0; i < btns.length; i++) {
-		btns[selectedItem].style.top = "80%";
+		btns[selectedItem].style.top = "85%";
 		btns[selectedItem].style.visibility = "visible";
 		btns[selectedItem].style.opacity = "1.0";
 		btns[0].style.backgroundColor = "var(--yuppii-winter-btn2)";
@@ -122,14 +124,27 @@ function transformations(selectedItem) {
 		btns[1].style.backgroundColor = "var(--yuppii-summer2)";
 		btns[1].style.borderColor = "var(--yuppii-summer2)";
 		
-		if (window.matchMedia("(max-width: 350px)").matches) {
+		if (window.matchMedia("(max-width: 430px)").matches) {
 			btns[selectedItem].style.padding = "0.8rem 1.8rem";
-			btns[selectedItem].style.fontSize = "17px";
+			btns[selectedItem].style.fontSize = "16px";
 		}
 		else {
 			btns[selectedItem].style.padding = "1rem 2.5rem";
 			btns[selectedItem].style.fontSize = "20px";
 		}
+	}
+	
+	if(window.matchMedia("(max-width: 430px").matches) {
+		changeLeftBtnImg.style.width = "25px";
+		changeLeftBtnImg.style.height = "25px";
+		changeRightBtnImg.style.width = "25px";
+		changeRightBtnImg.style.height = "25px";
+	}
+	else {
+		changeLeftBtnImg.style.width = "40px";
+		changeLeftBtnImg.style.height = "40px";
+		changeRightBtnImg.style.width = "40px";
+		changeRightBtnImg.style.height = "40px";
 	}
 }
 
