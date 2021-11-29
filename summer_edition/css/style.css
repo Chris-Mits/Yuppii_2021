@@ -341,17 +341,17 @@ body {
 #showcase .carousel-control-next:active i.fas {
   transform: scale(0.8); }
 #showcase .carousel-image-1 {
-  background: url(../images/content/yuppii_summer_2021/ΕΙΣΟΔΟΣ/desktop1.JPG); }
+  background: url(../images/content/yuppii_summer_2021/ΕΙΣΟΔΟΣ/desktop1.webp); }
 #showcase .carousel-image-2 {
-  background: url(../images/content/yuppii_summer_2021/panoramic.JPG); }
+  background: url(../images/content/yuppii_summer_2021/panoramic.webp); }
 #showcase .carousel-image-3 {
-  background: url(../images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8860.JPG); }
+  background: url(../images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8860.webp); }
 #showcase .carousel-image-4 {
-  background: url(../images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8763.JPG); }
+  background: url(../images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ALE_8763.webp); }
 #showcase .carousel-image-5 {
-  background: url(../images/content/yuppii_summer_2021/ΚΑΝΤΙΝΑ/ALE_8810.JPG); }
+  background: url(../images/content/yuppii_summer_2021/ΚΑΝΤΙΝΑ/ALE_8810.webp); }
 #showcase .carousel-image-6 {
-  background: url(../images/content/yuppii_summer_2021/ΠΙΑΤΟ/ALE_8726.JPG);
+  background: url(../images/content/yuppii_summer_2021/ΠΙΑΤΟ/ALE_8726.webp);
   background-position: center bottom !important; }
 #showcase .carousel-image-0,
 #showcase .carousel-image-1,
@@ -995,31 +995,31 @@ body {
   #showcase div.carousel-image-0 video {
     display: none; }
   #showcase .carousel-image-0 {
-    background: url(../images/content/yuppii_summer_2021/ΕΙΣΟΔΟΣ/mobile5.jpg);
+    background: url(../images/content/yuppii_summer_2021/ΕΙΣΟΔΟΣ/mobile5.webp);
     background-size: cover !important;
     background-position: 50% 50% !important; }
   #showcase .carousel-image-1 {
-    background: url(../images/content/yuppii_summer_2021/ΣΥΓΚΡΟΥΟΜΕΝΑ/ALE_8853.jpg);
+    background: url(../images/content/yuppii_summer_2021/ΣΥΓΚΡΟΥΟΜΕΝΑ/ALE_8853.webp);
     background-size: cover !important;
     background-position: 50% 50% !important; }
   #showcase .carousel-image-2 {
-    background: url(../images/content/yuppii_summer_2021/ΠΡΑΣΙΝΑΔΑ/ALE_8858.jpg);
+    background: url(../images/content/yuppii_summer_2021/ΠΡΑΣΙΝΑΔΑ/ALE_8858.webp);
     background-size: cover !important;
     background-position: 50% 50% !important; }
   #showcase .carousel-image-3 {
-    background: url(../images/content/yuppii_summer_2021/ΦΟΥΣΚΩΤΑ/ALE_8805.jpg);
+    background: url(../images/content/yuppii_summer_2021/ΦΟΥΣΚΩΤΑ/ALE_8805.webp);
     background-size: cover !important;
     background-position: 50% 50% !important; }
   #showcase .carousel-image-4 {
-    background: url(../images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΠΟΔΟΣΦΑΙΡΑΚΙΑ/ALE_8764.jpg);
+    background: url(../images/content/yuppii_summer_2021/ΚΕΡΜΑΤΟΦΟΡΑ/ΠΟΔΟΣΦΑΙΡΑΚΙΑ/ALE_8764.webp);
     background-size: cover !important;
     background-position: 50% 50% !important; }
   #showcase .carousel-image-5 {
-    background: url(../images/content/yuppii_summer_2021/ΨΑΡΕΜΑ/ALE_8893.jpg);
+    background: url(../images/content/yuppii_summer_2021/ΨΑΡΕΜΑ/ALE_8893.webp);
     background-size: cover !important;
     background-position: 50% 50% !important; }
   #showcase .carousel-image-6 {
-    background: url(../images/content/yuppii_summer_2021/ΦΑΡΟΣ/ALE_8870.jpg);
+    background: url(../images/content/yuppii_summer_2021/ΦΑΡΟΣ/ALE_8870.webp);
     background-size: cover !important;
     background-position: 50% 50% !important; }
 
