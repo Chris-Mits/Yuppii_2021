@@ -176,31 +176,31 @@ body {
     background-repeat: no-repeat !important;
     background-size: cover !important; }
   #showcase #xmas-carousel .carousel-inner .image-0 {
-    background: url("../images/ΠΑΡΚΟ/BANNERS/ΣΥΝΟΠΤΙΚΟ.jpg");
+    background: url("../images/ΠΑΡΚΟ/BANNERS/ΣΥΝΟΠΤΙΚΟ.webp");
     background-color: rgba(12, 31, 72, 0.4);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; }
   #showcase #xmas-carousel .carousel-inner .image-1 {
-    background: url("../images/ΠΑΡΚΟ/ΕΙΣΟΔΟΣ/ΕΙΣΟΔΟΣ.jpg");
+    background: url("../images/ΠΑΡΚΟ/ΕΙΣΟΔΟΣ/ΕΙΣΟΔΟΣ1.webp");
     background-position: center; }
   #showcase #xmas-carousel .carousel-inner .image-2 {
-    background: url("../images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ3.jpg");
+    background: url("../images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ3.webp");
     background-position: center; }
   #showcase #xmas-carousel .carousel-inner .image-3 {
-    background: url("../images/ΠΑΡΚΟ/ΣΥΓΚΡΟΥΟΜΕΝΑ_ΠΙΣΤΑ3.jpg");
+    background: url("../images/ΠΑΡΚΟ/ΣΥΓΚΡΟΥΟΜΕΝΑ_ΠΙΣΤΑ3.webp");
     background-position: center; }
   #showcase #xmas-carousel .carousel-inner .image-4 {
-    background: url("../images/ΠΑΡΚΟ/XMAS_VILLAGE.jpg");
+    background: url("../images/ΠΑΡΚΟ/XMAS_VILLAGE.webp");
     background-position: center; }
   #showcase #xmas-carousel .carousel-inner .image-5 {
-    background: url("../images/ΠΑΡΚΟ/ΒΙΒΛΙΟ.jpg");
+    background: url("../images/ΠΑΡΚΟ/ΒΙΒΛΙΟ.webp");
     background-position: center; }
   #showcase #xmas-carousel .carousel-inner .image-6 {
-    background: url("../images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ_ΕΞΩ3.jpg");
+    background: url("../images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ_ΕΞΩ3.webp");
     background-position: center; }
   #showcase #xmas-carousel .carousel-inner .image-7 {
-    background: url("../images/ΠΑΡΚΟ/BANNERS/ΑΝΑΛΥΤΙΚΟ.jpg");
+    background: url("../images/ΠΑΡΚΟ/BANNERS/ΑΝΑΛΥΤΙΚΟ.webp");
     background-color: rgba(12, 31, 72, 0.4);
     background-size: contain;
     background-repeat: no-repeat;
@@ -313,7 +313,7 @@ body {
 #video {
   position: relative;
   min-height: 350px;
-  background: url("../images/ΠΑΡΚΟ/BANNERS/ΣΥΝΟΠΤΙΚΟ2.jpg");
+  background: url("../images/ΠΑΡΚΟ/BANNERS/ΣΥΝΟΠΤΙΚΟ2.webp");
   background-attachment: fixed;
   background-position: -63%;
   background-repeat: repeat; }
@@ -509,29 +509,29 @@ body {
   #showcase #xmas-carousel .carousel-control-next {
     right: 15px; }
   #showcase #xmas-carousel .carousel-inner .image-0 {
-    background: url("../images/ΠΑΡΚΟ/BANNERS/ΣΥΝΟΠΤΙΚΟ_mobile.jpg");
+    background: url("../images/ΠΑΡΚΟ/BANNERS/ΣΥΝΟΠΤΙΚΟ_mobile.webp");
     background-size: cover !important;
     background-position: center; }
   #showcase #xmas-carousel .carousel-inner .image-1 {
-    background: url("../images/ΠΑΡΚΟ/MOBILE/ΕΙΣΟΔΟΣ_ΔΩΡΑ_mobile.jpg");
+    background: url("../images/ΠΑΡΚΟ/MOBILE/ΕΙΣΟΔΟΣ_ΔΩΡΑ_mobile.webp");
     background-size: cover !important; }
   #showcase #xmas-carousel .carousel-inner .image-2 {
-    background: url("../images/ΠΑΡΚΟ/MOBILE/ΤΡΕΝΑΚΙ1_mobile.jpg");
+    background: url("../images/ΠΑΡΚΟ/MOBILE/ΤΡΕΝΑΚΙ1_mobile.webp");
     background-size: cover !important; }
   #showcase #xmas-carousel .carousel-inner .image-3 {
-    background: url("../images/ΠΑΡΚΟ/MOBILE/ΒΙΒΛΙΟ_ΨΑΓΜΕΝΗ_mobile.jpg");
+    background: url("../images/ΠΑΡΚΟ/MOBILE/ΒΙΒΛΙΟ_ΨΑΓΜΕΝΗ_mobile.webp");
     background-size: cover !important; }
   #showcase #xmas-carousel .carousel-inner .image-4 {
-    background: url("../images/ΠΑΡΚΟ/MOBILE/ΑΗ_ΒΑΣΙΛΗΣ1_mobile.jpg") !important;
+    background: url("../images/ΠΑΡΚΟ/MOBILE/ΑΗ_ΒΑΣΙΛΗΣ1_mobile.webp") !important;
     background-size: cover !important; }
   #showcase #xmas-carousel .carousel-inner .image-5 {
-    background: url("../images/ΠΑΡΚΟ/MOBILE/ΦΑΓΑΝΕΣ4_mobile.jpg");
+    background: url("../images/ΠΑΡΚΟ/MOBILE/ΦΑΓΑΝΕΣ4_mobile.webp");
     background-size: cover !important; }
   #showcase #xmas-carousel .carousel-inner .image-6 {
-    background: url("../images/ΠΑΡΚΟ/MOBILE/ΠΑΓΟΔΡΟΜΙΟ4_mobile.jpg");
+    background: url("../images/ΠΑΡΚΟ/MOBILE/ΠΑΓΟΔΡΟΜΙΟ4_mobile.webp");
     background-size: cover !important; }
   #showcase #xmas-carousel .carousel-inner .image-7 {
-    background: url("../images/ΠΑΡΚΟ/BANNERS/ΣΥΝΟΠΤΙΚΟ2_mobile.jpg");
+    background: url("../images/ΠΑΡΚΟ/BANNERS/ΣΥΝΟΠΤΙΚΟ2_mobile.webp");
     background-color: #B28951;
     background-size: contain !important;
     background-repeat: no-repeat !important;
