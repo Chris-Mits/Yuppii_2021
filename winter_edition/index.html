@@ -20,6 +20,10 @@
 	<!-- PHOTOSWIPE CSS -->
 	<link rel="stylesheet" type="text/css" href="css/photoswipe/photoswipe.css">
 	
+	<!-- MAPBOX CSS & JS -->
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+	<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+	
 	<!-- CUSTOM CSS -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
@@ -767,7 +771,7 @@
 							Επικοινωνήστε μαζί μας!
 						</h2>
 						<p>
-							Συμπληρώστε την παρακάτω φόρμα για να επικοινωνήσετε μαζί μας για πληροφορίες ή ερωτήσεις σχετικά με το Yuppii Luna Park ή για να μας πείτε πώς περάσατε στην πρόσφατη επίσκεψή σας!
+							Συμπληρώστε την παρακάτω φόρμα για να επικοινωνήσετε μαζί μας για πληροφορίες ή ερωτήσεις σχετικά με το Christmas Lighthouse ή για να μας πείτε πώς περάσατε στην πρόσφατη επίσκεψή σας!
 						</p>
 					</div>
 				</div>
@@ -775,80 +779,133 @@
 			
 			<div class="row">
 				
-				<div class="col">
-					<form id="form" action="?" method="POST">
-						
-						<div class="input-group input-group-lg mb-3">
-							<div class="input-group-prepend">
-								<span class="input-group-text">
-									<i class="fas fa-user"></i>
-								</span>
-							</div>
-							<input
-								id="name"
-								class="form-control" 
-								type="text" 
-								placeholder="Όνομα" />
-						</div>
-						
-						<div class="input-group input-group-lg mb-3">
-							<div class="input-group-prepend">
-								<span class="input-group-text">
-									<i class="fas fa-envelope"></i>
-								</span>
-							</div>
-							<input
-								id="email"
-								class="form-control" 
-								type="text" 
-								placeholder="Email" />
-						</div>
-						
-						<div class="input-group input-group-lg mb-3">
-							<div class="input-group-prepend">
-								<span class="input-group-text">
-									<i class="fas fa-phone-alt"></i>
-								</span>
-							</div>
-							<input
-								id="phone"
-								class="form-control" 
-								type="text" 
-								placeholder="Αριθμός Κινητού" />
-						</div>
-						
-						<div class="input-group input-group-lg mb-3">
-							<div class="input-group-prepend">
-								<span class="input-group-text">
-									<i class="fas fa-pencil-alt"></i>
-								</span>
-							</div>
-							<textarea
-								id="textarea" 
-								class="form-control" 
-								type="text" 
-								placeholder="Το μήνυμά σας"></textarea>
-						</div>
-						
-						<button
-							id="submit"
-							class="btn btn-xmas-blue-dark btn-block btn-lg mx-auto"
-							type="submit" 
-							value="Υποβολή Φόρμας">Υποβολή Φόρμας
-						</button>
+				<div class="col-md-7 mb-resp">
+					<div class="card p-md-4 p-0">
+						<div class="card-body">
+							<h3 class="text-center text-xmas-blue-dark">
+								Συμπληρώστε αυτή τη φόρμα για να επικοινωνήσετε μαζί μας
+							</h3>
+							<hr>
+							<form id="form" action="https://formsubmit.co/65ae20f64d3fd0a6756da13eafd1ca43" method="POST" novalidate>
+								
+								<!-- HoneyPot -->
+								<input type="text" name="_honey" style="display: none;">
+								<!-- Disable Captcha -->
+								<input type="hidden" name="_captcha" value="false">
+								<!-- Display Custom Success Page -->
+								<input type="hidden" name="_next" value="https://yuppiipark.netlify.app/winter_edition/contact-success.html">
+								
+								<div class="mb-3 custom-form-inputs">
+									<div id="nameDiv" class="input-group input-group-lg">
+										<div class="input-group-prepend">
+											<span class="input-group-text">
+												<i class="fas fa-user"></i>
+											</span>
+										</div>
+										<input
+											id="name"
+											class="form-control" 
+											type="text"
+											name="Όνομα"
+											placeholder="Όνομα" />
+									</div>
+									<div class="valid-feedback">
+										Φαίνεται εντάξει!
+									</div>
+									<div class="invalid-feedback">
+										Το όνομα πρέπει να είναι μεταξύ 5-15 χαρακτήρων, χωρίς κενά
+									</div>
+								</div>
+								
+								<div class="mb-3 custom-form-inputs">
+									<div id="emailDiv" class="input-group input-group-lg">
+										<div class="input-group-prepend">
+											<span class="input-group-text">
+												<i class="fas fa-at"></i>
+											</span>
+										</div>
+										<input 
+											id="email"
+											class="form-control" 
+											type="text"
+											name="Email"
+											placeholder="Email" />
+									</div>
+									<div class="valid-feedback">
+										Φαίνεται εντάξει!
+									</div>
+									<div class="invalid-feedback">
+										Εισάγετε μία έγκυρη διεύθυνση email
+									</div>
+								</div>
+								
+								<div class="mb-3 custom-form-inputs">
+									<div id="phoneDiv" class="input-group input-group-lg">
+										<div class="input-group-prepend">
+											<span class="input-group-text">
+												<i class="fas fa-mobile-alt"></i>
+											</span>
+										</div>
+										<input
+											id="phone"
+											class="form-control" 
+											type="text"
+											name="Αριθμός&nbsp;Κινητού" 
+											placeholder="Αριθμός Κινητού" />
+									</div>
+									<div class="valid-feedback">
+										Φαίνεται εντάξει!
+									</div>
+									<div class="invalid-feedback">
+										Εισάγετε έγκυρο αριθμό κινητού τηλεφώνου
+									</div>
+								</div>
+								
+								<div class="mb-3 custom-form-inputs">
+									<div class="input-group input-group-lg">
+										<div class="input-group-prepend">
+											<span class="input-group-text">
+												<i class="fas fa-pencil-alt"></i>
+											</span>
+										</div>
+										<textarea
+											id="textarea" 
+											class="form-control" 
+											type="text" 
+											name="Μήνυμα"
+											placeholder="Το μήνυμά σας"></textarea>
+									</div>
+								</div>
+								
+								<button
+									id="submit"
+									class="btn btn-xmas-blue-dark btn-block btn-lg mx-auto text-xmas-gold-light"
+									type="submit" 
+									value="Υποβολή Φόρμας">
+									Υποβολή Φόρμας
+								</button>
 
-					</form>
+							</form>
+						</div>
+					</div>
 				</div>
 				
-				<!-- <div class="col-md-4">
-					
-				</div> -->
+				<div class="col-md-5">
+					<div class="card">
+						<div id="map" style='height: 486px;'></div>
+					</div>
+				</div>
 				
 			</div>
 			
 		</div>
 	</section>
 	
+	<!-- ---- SECTION UNIFIER ---- -->
+	<section class="section-gold-to-blue py-5"></section>
+	
+	<!-- ##### FOOTER ##### -->
+	<footer></footer>
 	
 	
 	<!-- #### MODALS #### -->
@@ -860,7 +917,7 @@
 					<button class="close" data-dismiss="modal">
 						<span><i class="far fa-times-circle"></i></span>
 					</button>
-					<video id="videoplayer" width="100%" controls>
+					<video id="videoplayer" width="100%" preload="none" controls>
 						<source src="../winter_edition/videos/final.mp4" type="video/mp4"></source>
 						Your browser does not support the video tag.
 					</video>
@@ -894,12 +951,26 @@
 		type="text/javascript" 
 		src="js/script.js"></script>
 		
-	<!-- MY JS FILE -->
+	<!-- COUNTDOWN YEAR JS FILE -->
 	<script 
 		defer 
 		async 
 		type="text/javascript" 
 		src="js/countdown.js"></script>
+		
+	<!-- FORM VALIDATION -->
+	<script 
+		defer 
+		async 
+		type="text/javascript" 
+		src="js/form_validation.js"></script>
+		
+		
+	<!-- MAPBOX CUSTOM OPTIONS JS -->
+	<script
+		defer
+		async
+		src="js/map.js"></script>
 		
 		
 	<!-- PHOTOSWIPE MODULE IMPORT & OPTIONS -->
@@ -936,5 +1007,7 @@
 		lightbox.init();
 		
 	</script>
+	
+	<script></script>
 	</body>
 </html>

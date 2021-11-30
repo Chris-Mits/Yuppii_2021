@@ -370,6 +370,70 @@ body {
   background-color: rgba(178, 137, 81, 0.4); }
   #contact .container .row:nth-child(1) .section-header {
     border-color: rgba(178, 137, 81, 0.4); }
+  #contact .container .row:nth-child(2) .col-md-7 .card {
+    border-radius: 10px;
+    border: none;
+    background: rgba(69, 100, 193, 0.3);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4); }
+    #contact .container .row:nth-child(2) .col-md-7 .card .card-body h3 {
+      font-size: 26px; }
+    #contact .container .row:nth-child(2) .col-md-7 .card .card-body hr {
+      background: rgba(12, 31, 72, 0.4); }
+    #contact .container .row:nth-child(2) .col-md-7 .card .card-body form .custom-form-inputs .input-group .form-control {
+      border: 1px solid #0C1F48;
+      color: #0C1F48;
+      letter-spacing: 1px; }
+      #contact .container .row:nth-child(2) .col-md-7 .card .card-body form .custom-form-inputs .input-group .form-control::placeholder {
+        color: #0C1F48;
+        letter-spacing: 1px; }
+    #contact .container .row:nth-child(2) .col-md-7 .card .card-body form .custom-form-inputs .input-group .form-control:focus {
+      box-shadow: 0 0 0.5rem 0.1rem #0C1F48; }
+    #contact .container .row:nth-child(2) .col-md-7 .card .card-body form .custom-form-inputs .valid-feedback,
+    #contact .container .row:nth-child(2) .col-md-7 .card .card-body form .custom-form-inputs .invalid-feedback {
+      font-family: monospace;
+      font-weight: bold;
+      text-align: right;
+      font-size: 12px;
+      opacity: 1; }
+    #contact .container .row:nth-child(2) .col-md-7 .card .card-body form .custom-form-inputs .input-group-prepend .input-group-text {
+      background: #0C1F48;
+      border: 1px solid #0C1F48;
+      color: #F1E7C5; }
+      #contact .container .row:nth-child(2) .col-md-7 .card .card-body form .custom-form-inputs .input-group-prepend .input-group-text i.fas {
+        width: 20px;
+        height: 20px; }
+  #contact .container .row:nth-child(2) .col-md-5 .card {
+    border-radius: 10px;
+    border: none;
+    background: rgba(69, 100, 193, 0.3);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4); }
+    #contact .container .row:nth-child(2) .col-md-5 .card #map {
+      border-radius: 10px; }
+      #contact .container .row:nth-child(2) .col-md-5 .card #map .mapboxgl-popup {
+        max-width: 100% !important; }
+        #contact .container .row:nth-child(2) .col-md-5 .card #map .mapboxgl-popup .mapboxgl-popup-tip {
+          border-top-color: #B28951; }
+        #contact .container .row:nth-child(2) .col-md-5 .card #map .mapboxgl-popup .mapboxgl-popup-content {
+          padding: 10px !important;
+          border-radius: 10px;
+          border: 1px solid #B28951;
+          background-color: #F1E7C5;
+          color: #0C1F48; }
+          #contact .container .row:nth-child(2) .col-md-5 .card #map .mapboxgl-popup .mapboxgl-popup-content .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #0C1F48; }
+            #contact .container .row:nth-child(2) .col-md-5 .card #map .mapboxgl-popup .mapboxgl-popup-content .header img {
+              width: 35px; }
+            #contact .container .row:nth-child(2) .col-md-5 .card #map .mapboxgl-popup .mapboxgl-popup-content .header h5 {
+              font-size: 15px;
+              font-weight: 700;
+              letter-spacing: 0px;
+              margin: 0; }
+          #contact .container .row:nth-child(2) .col-md-5 .card #map .mapboxgl-popup .mapboxgl-popup-content .body p {
+            margin: 0; }
 
 #videoModal .modal-dialog .modal-content {
   background-color: #B28951;
@@ -473,6 +537,9 @@ body {
     background-repeat: no-repeat !important;
     background-position: center !important; } }
 @media (max-width: 502px) {
+  .mb-resp {
+    margin-bottom: 1rem; }
+
   #timer .container .jumbotron .row:nth-child(1) h1 {
     font-size: 35px; }
   #timer .container .jumbotron div.row:nth-child(2) .time h2 {
@@ -488,9 +555,6 @@ body {
     #gallery .container .row:nth-child(2) .col-photos .gallery-item img {
       width: 180px; } }
 @media (max-width: 430px) {
-  .mb-resp {
-    margin-bottom: 1rem; }
-
   #timer .container .jumbotron .row:nth-child(1) {
     padding-bottom: 32px !important; }
     #timer .container .jumbotron .row:nth-child(1) h1 {
