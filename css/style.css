@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 :root {
-	/* --bg-color: rgba(43, 43, 43, 0.0); */
-	/* --dark-color: rgba(3, 4, 4, 1); */
 	--yuppii-winter: rgba(58, 89, 172, 0.4);
 	--yuppii-winter-gradient: linear-gradient(rgba(245, 159, 186, 0.25), rgba(242, 120, 143, 0.7));
 	--left-opacity: 1;
@@ -82,11 +78,14 @@ body {
 	overflow: hidden;
 }
 
-.split img {
+.split .summer,
+.split .winter {
 	display: block;
-	width: 70%;
-	height: 100%;
-	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 60%;
 }
 
 .change-right-btn,
@@ -108,7 +107,7 @@ body {
 
 .change-right-btn img,
 .change-left-btn img {
-	width: 35px;
+	/* width: 35px; */
 }
 
 .split.left {
@@ -164,7 +163,7 @@ body {
 
 @media(min-width: 800px) {
 	.split img {
-		width: 35%;
+		width: 30%;
 	}
 }
 
