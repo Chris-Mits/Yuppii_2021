@@ -92,7 +92,7 @@ function checkContainerAndChangeScreen() {
 function transformations(selectedItem) {
 	// Headers Styling
 	for (var i = 0; i < headers.length; i++) {
-		headers[selectedItem].style.top = "15%";
+		headers[selectedItem].style.top = "10%";
 		
 		if (window.matchMedia("(max-width: 430px)").matches) {
 			headers[selectedItem].style.fontSize = "2rem";
@@ -104,7 +104,7 @@ function transformations(selectedItem) {
 	
 	// Sub-Headers Styling
 	for (var i = 0; i < subHeaders.length; i++) {
-		subHeaders[selectedItem].style.top = "25%";
+		subHeaders[selectedItem].style.top = "20%";
 		
 		if(window.matchMedia("(max-width: 430px").matches) {
 			subHeaders[selectedItem].style.fontSize = "1.4rem";
