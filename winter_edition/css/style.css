@@ -165,46 +165,31 @@ body {
   height: calc(100vh - 102px);
   transition: all 0.3s ease-in-out; }
   #showcase #xmas-carousel .carousel-inner .carousel-item {
-    height: 100%; }
-  #showcase #xmas-carousel .carousel-inner .image-1,
-  #showcase #xmas-carousel .carousel-inner .image-2,
-  #showcase #xmas-carousel .carousel-inner .image-3,
-  #showcase #xmas-carousel .carousel-inner .image-4,
-  #showcase #xmas-carousel .carousel-inner .image-5,
-  #showcase #xmas-carousel .carousel-inner .image-6 {
+    height: 100%;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important; }
   #showcase #xmas-carousel .carousel-inner .image-0 {
-    background: url("../images/ΠΑΡΚΟ/BANNERS/ΣΥΝΟΠΤΙΚΟ.webp");
+    background-image: url("../images/SHOWCASE/Desktop/image_0.webp");
     background-color: rgba(12, 31, 72, 0.4);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; }
+    background-size: contain !important; }
   #showcase #xmas-carousel .carousel-inner .image-1 {
-    background: url("../images/ΠΑΡΚΟ/ΕΙΣΟΔΟΣ/ΕΙΣΟΔΟΣ1.webp");
-    background-position: center; }
+    background-image: url("../images/SHOWCASE/Desktop/image_1.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-2 {
-    background: url("../images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ3.webp");
-    background-position: center; }
+    background-image: url("../images/SHOWCASE/Desktop/image_2.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-3 {
-    background: url("../images/ΠΑΡΚΟ/ΣΥΓΚΡΟΥΟΜΕΝΑ_ΠΙΣΤΑ3.webp");
-    background-position: center; }
+    background-image: url("../images/SHOWCASE/Desktop/image_3.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-4 {
-    background: url("../images/ΠΑΡΚΟ/XMAS_VILLAGE.webp");
-    background-position: center; }
+    background-image: url("../images/SHOWCASE/Desktop/image_4.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-5 {
-    background: url("../images/ΠΑΡΚΟ/ΒΙΒΛΙΟ.webp");
-    background-position: center; }
+    background-image: url("../images/SHOWCASE/Desktop/image_5.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-6 {
-    background: url("../images/ΠΑΡΚΟ/ΠΑΓΟΔΡΟΜΙΟ_ΕΞΩ3.webp");
-    background-position: center; }
+    background-image: url("../images/SHOWCASE/Desktop/image_6.webp");
+    background-position: center bottom !important; }
   #showcase #xmas-carousel .carousel-inner .image-7 {
-    background: url("../images/ΠΑΡΚΟ/BANNERS/ΑΝΑΛΥΤΙΚΟ.webp");
-    background-color: rgba(12, 31, 72, 0.4);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; }
+    background-image: url("../images/SHOWCASE/Desktop/image_7.webp"); }
+  #showcase #xmas-carousel .carousel-inner .image-8 {
+    background-image: url("../images/SHOWCASE/Desktop/image_8.webp"); }
 
 #timer {
   background-color: rgba(178, 137, 81, 0.4); }
@@ -501,41 +486,40 @@ body {
         border: 1px solid #F1E7C5; }
   #showcase #xmas-carousel .carousel-control-prev,
   #showcase #xmas-carousel .carousel-control-next {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     font-size: 1.5rem; }
+    #showcase #xmas-carousel .carousel-control-prev:hover i.fas,
+    #showcase #xmas-carousel .carousel-control-next:hover i.fas {
+      transform: none; }
+    #showcase #xmas-carousel .carousel-control-prev:active i.fas,
+    #showcase #xmas-carousel .carousel-control-next:active i.fas {
+      color: #B28951;
+      transform: scale(0.8);
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #F1E7C5; }
   #showcase #xmas-carousel .carousel-control-prev {
-    left: 15px; }
+    left: 10px; }
   #showcase #xmas-carousel .carousel-control-next {
-    right: 15px; }
+    right: 10px; }
   #showcase #xmas-carousel .carousel-inner .image-0 {
-    background: url("../images/ΠΑΡΚΟ/BANNERS/ΣΥΝΟΠΤΙΚΟ_mobile.webp");
-    background-size: cover !important;
-    background-position: center; }
+    background-image: url("../images/SHOWCASE/Mobile/image_0_mobile.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-1 {
-    background: url("../images/ΠΑΡΚΟ/MOBILE/ΕΙΣΟΔΟΣ_ΔΩΡΑ_mobile.webp");
-    background-size: cover !important; }
+    background-image: url("../images/SHOWCASE/Mobile/image_1-1_mobile.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-2 {
-    background: url("../images/ΠΑΡΚΟ/MOBILE/ΤΡΕΝΑΚΙ1_mobile.webp");
-    background-size: cover !important; }
+    background-image: url("../images/SHOWCASE/Mobile/image_2_mobile.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-3 {
-    background: url("../images/ΠΑΡΚΟ/MOBILE/ΒΙΒΛΙΟ_ΨΑΓΜΕΝΗ_mobile.webp");
-    background-size: cover !important; }
+    background-image: url("../images/SHOWCASE/Mobile/image_3_mobile.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-4 {
-    background: url("../images/ΠΑΡΚΟ/MOBILE/ΑΗ_ΒΑΣΙΛΗΣ1_mobile.webp") !important;
-    background-size: cover !important; }
+    background-image: url("../images/SHOWCASE/Mobile/image_4_mobile.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-5 {
-    background: url("../images/ΠΑΡΚΟ/MOBILE/ΦΑΓΑΝΕΣ4_mobile.webp");
-    background-size: cover !important; }
+    background-image: url("../images/SHOWCASE/Mobile/image_5_mobile.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-6 {
-    background: url("../images/ΠΑΡΚΟ/MOBILE/ΠΑΓΟΔΡΟΜΙΟ4_mobile.webp");
-    background-size: cover !important; }
+    background-image: url("../images/SHOWCASE/Mobile/image_6_mobile.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-7 {
-    background: url("../images/ΠΑΡΚΟ/BANNERS/ΣΥΝΟΠΤΙΚΟ2_mobile.webp");
-    background-color: #B28951;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important; } }
+    background-image: url("../images/SHOWCASE/Mobile/image_7_mobile.webp"); }
+  #showcase #xmas-carousel .carousel-inner .image-8 {
+    background-image: url("../images/SHOWCASE/Mobile/image_8_mobile.webp"); } }
 @media (max-width: 502px) {
   .mb-resp {
     margin-bottom: 1rem; }
