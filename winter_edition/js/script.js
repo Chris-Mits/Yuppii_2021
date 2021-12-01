@@ -7,16 +7,18 @@ window.addEventListener('scroll', fixNav);
 
 function fixNav() {
 	if(window.scrollY > nav.offsetHeight + 20) {
-		navLogo.style.height = '40px';
+		nav.classList.remove("py-2");
+		navLogo.style.height = '45px';
 		nav.style.boxShadow = '0px 3px 10px rgba(3, 4, 4, 0.4)';
-		carouselInner.style.setProperty('height', 'calc(100vh - 72px)');
-		carouselInner.style.marginTop = '72px';
+		carouselInner.style.setProperty('height', 'calc(100vh - 61px)');
+		carouselInner.style.marginTop = '61px';
 	}
 	else {
-		navLogo.style.height = '70px';
+		nav.classList.add("py-2");
+		navLogo.style.height = '65px';
 		nav.style.boxShadow = 'none';
-		carouselInner.style.setProperty('height', 'calc(100vh - 102px)');
-		carouselInner.style.marginTop = '102px';
+		carouselInner.style.setProperty('height', 'calc(100vh - 81px)');
+		carouselInner.style.marginTop = '81px';
 	}
 }
 

@@ -161,8 +161,8 @@ body {
 #showcase #xmas-carousel .carousel-control-prev {
   left: 40px; }
 #showcase #xmas-carousel .carousel-inner {
-  margin-top: 102px;
-  height: calc(100vh - 102px);
+  margin-top: 81px;
+  height: calc(100vh - 81px);
   transition: all 0.3s ease-in-out; }
   #showcase #xmas-carousel .carousel-inner .carousel-item {
     height: 100%;
@@ -503,7 +503,8 @@ body {
   #showcase #xmas-carousel .carousel-control-next {
     right: 10px; }
   #showcase #xmas-carousel .carousel-inner .image-0 {
-    background-image: url("../images/SHOWCASE/Mobile/image_0_mobile.webp"); }
+    background-image: url("../images/SHOWCASE/Mobile/image_0-1_mobile.webp");
+    background-size: cover !important; }
   #showcase #xmas-carousel .carousel-inner .image-1 {
     background-image: url("../images/SHOWCASE/Mobile/image_1-1_mobile.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-2 {
