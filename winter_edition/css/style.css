@@ -394,6 +394,27 @@ body {
           #contact .container .row:nth-child(2) .col-md-5 .card #map .mapboxgl-popup .mapboxgl-popup-content .body p {
             margin: 0; }
 
+#contact-success-nav {
+  background-color: rgba(12, 31, 72, 0.4); }
+
+#contact-success {
+  background-color: rgba(178, 137, 81, 0.4); }
+  #contact-success .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #contact-success .container .col .card {
+      background-color: rgba(69, 100, 193, 0.4);
+      border: 1px solid #0C1F48;
+      width: 50%;
+      margin: 0px auto; }
+      #contact-success .container .col .card .card-body .card-title {
+        border-bottom: 1px solid #0C1F48;
+        font-size: 35px; }
+      #contact-success .container .col .card .card-body .card-text {
+        font-size: 25px; }
+
 #footer {
   background-color: rgba(12, 31, 72, 0.4); }
   #footer .row:nth-child(1) h3 {
@@ -504,7 +525,18 @@ body {
   #gallery .container .row:nth-child(2) .col-photos {
     grid-template-columns: repeat(3, 1fr); }
     #gallery .container .row:nth-child(2) .col-photos .gallery-item img {
-      width: 150px; } }
+      width: 150px; }
+
+  #contact-success {
+    background-color: rgba(178, 137, 81, 0.4); }
+    #contact-success .container .col .card {
+      width: 100%; }
+      #contact-success .container .col .card .card-body .card-title {
+        font-size: 30px; }
+      #contact-success .container .col .card .card-body .card-text {
+        font-size: 22px; }
+      #contact-success .container .col .card .card-body .btn {
+        font-size: 22px; } }
 @media (max-width: 576px) {
   #showcase #xmas-carousel .carousel-indicators {
     max-width: 200px; }
@@ -569,6 +601,11 @@ body {
     #gallery .container .row:nth-child(2) .col-photos .gallery-item img {
       width: 180px; } }
 @media (max-width: 430px) {
+  .section-header h2 {
+    font-size: 35px; }
+  .section-header p {
+    font-size: 22px; }
+
   #timer .container .jumbotron .row:nth-child(1) {
     padding-bottom: 32px !important; }
     #timer .container .jumbotron .row:nth-child(1) h1 {
