@@ -22,6 +22,36 @@ function fixNav() {
 	}
 }
 
+// #### INIT SCROLL SPY ####
+$('body').scrollspy({ target: '#nav' });
+
+// #### SMOOTH SCROLLING ANIMATION ####
+$('#nav a').on('click', function(e) {
+	
+	if(this.hash !== '') {
+		e.preventDefault();
+		const hash = this.hash;
+		
+		$('html, body').animate({
+			scrollTop: $(hash).offset().top
+		}, 500, function() {
+			window.location.hash = hash;
+		})
+	}
+})
+
+$('#activities span a').on('click', function(e) {
+	if(this.hash !== '') {
+		e.preventDefault();
+		const hash = this.hash;
+		$('html, body').animate({
+			scrollTop: $(hash).offset().top
+		}, 500, function() {
+			window.location.hash = hash;
+		})
+	}
+})
+
 // #### GET YEAR SCRIPT ####
 $('#year').text(new Date().getFullYear());
 

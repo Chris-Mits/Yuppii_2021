@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="html" lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,7 +29,7 @@
 	
 	<title>The Christmas Lighthouse</title>
 </head>
-	<body id="body">
+	<body id="body" data-spy="scroll" data-target="#nav">
 		
 	<!-- ##### NAVIGATION ##### -->
 	<nav id="nav" class="py-2 navbar navbar-expand-md navbar-light">
@@ -51,17 +51,20 @@
 			
 			<div id="navbarCollapse" class="collapse navbar-collapse">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a href="#" class="nav-link">Το Πάρκο</a>
+					<li class="nav-item">
+						<a href="#html" class="nav-link">Αρχική</a>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link">Παιχνίδια</a>
+						<a href="#activities-anchor" class="nav-link">Παροχές</a>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link">Παροχές</a>
+						<a href="#covid-anchor" class="nav-link">Πληροφορίες COVID</a>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link">Επικοινωνία</a>
+						<a href="#gallery-anchor" class="nav-link">Γκαλερί</a>
+					</li>
+					<li class="nav-item">
+						<a href="#contact-anchor" class="nav-link">Επικοινωνία</a>
 					</li>
 				</ul>
 			</div>
@@ -208,8 +211,8 @@
 		</div>
 	</section>
 	
-	<!-- ---- SECTION UNIFIER ---- -->
-	<section class="section-gold-to-blue py-5"></section>
+	<!-- ---- SECTION UNIFIER / ANCHOR ---- -->
+	<section id="activities-anchor" class="section-gold-to-blue py-5"></section>
 	
 	<!-- ##### SECTION ACTIVITIES ##### -->
 	<section id="activities" class="py-3">
@@ -281,7 +284,8 @@
 							Το Christmas Lighthouse λειτουργεί με το εξής ωράριο:
 							<span class="schedule">Δευτέρα εώς Παρασκευή από τις 18:00 το απόγευμα</span>
 							<span class="schedule">Σάββατο, Κυριακή & Αργίες από τις 11:00 το πρωί</span>
-							Ειδικά για γκρουπ και σχολικές εκδρομές το πάρκο μπορεί να ανοίξει από το πρωί μετά απο τηλεφωνική επικοινωνία. Καλέστε μας ή επικοινωνήστε μαζί μας <span>εδώ</span>. Προσφέρουμε μια ποικιλία εκπτώσεων ανάλογα με το μέγεθος της ομάδας.
+							Ειδικά για γκρουπ και σχολικές εκδρομές το πάρκο μπορεί να ανοίξει από το πρωί μετά απο τηλεφωνική επικοινωνία. Καλέστε μας ή επικοινωνήστε μαζί μας 
+							<span><a href="#contact">εδώ</a></span>. Προσφέρουμε μια ποικιλία εκπτώσεων ανάλογα με το μέγεθος της ομάδας.
 						</p>
 					</div>
 				</div>
@@ -298,7 +302,8 @@
 							Παιδικά Πάρτυ
 						</h2>
 						<p class="lead">
-							Προγραμματίστε το πάρτι του παιδιού σας στο Christmas Lighthouse. Είναι ο ιδανικός χώρος για να διασκεδάσουν παιδιά κάθε ηλικίας καθώς επίσης και για να περάσουν υπέροχα, φίλοι και καλεσμένοι. Το πάρκο προσφέρει ποικιλία παιχνιδιών και ένα πλήρες μενού με φαγητά, ποτά και ροφήματα. Επικοινωνήστε μαζί μας <span>εδώ</span> για να συζητήσουμε για την εκδήλωσή σας ή οποιαδήποτε άλλη ανάλογη περίσταση έχετε κατά νου.
+							Προγραμματίστε το πάρτι του παιδιού σας στο Christmas Lighthouse. Είναι ο ιδανικός χώρος για να διασκεδάσουν παιδιά κάθε ηλικίας καθώς επίσης και για να περάσουν υπέροχα, φίλοι και καλεσμένοι. Το πάρκο προσφέρει ποικιλία παιχνιδιών και ένα πλήρες μενού με φαγητά, ποτά και ροφήματα. Επικοινωνήστε μαζί μας 
+							<span href="#contact"><a href="#contact">εδώ</a></span> για να συζητήσουμε για την εκδήλωσή σας ή οποιαδήποτε άλλη ανάλογη περίσταση έχετε κατά νου.
 						</p>
 					</div>
 				</div>
@@ -307,8 +312,8 @@
 		</div>
 	</section>
 	
-	<!-- ---- SECTION UNIFIER ---- -->
-	<section class="section-blue-to-gold py-5"></section>
+	<!-- ---- SECTION UNIFIER / ANCHOR ---- -->
+	<section id="covid-anchor" class="section-blue-to-gold py-5"></section>
 	
 	<!-- ##### SECTION COVID ##### -->
 	<section id="covid" class="py-3">
@@ -337,7 +342,7 @@
 						alt="Masks">
 				</div>
 				<div class="col-md-10">
-					<p class="lead m-0">
+					<p class="lead m-0 text-justify text-md-left">
 						Οι ενήλικοι επισκέπτες που εισέρχονται πρέπει υποχρεωτικά να επιδεικνύουν ένα από τα ακόλουθα:
 						<span class="d-block text-left"><i class="fas fa-chevron-right"></i> Πιστοποιητικό εμβολιασμού </span> 
 						<span class="d-block text-left"><i class="fas fa-chevron-right"></i> Πιστοποιητικό νόσησης </span> 
@@ -356,7 +361,7 @@
 						alt="Masks">
 				</div>
 				<div class="col-md-10">
-					<p class="lead m-0">
+					<p class="lead m-0 text-justify text-md-left">
 						Για την ευκολία και την ασφάλειά σας, στρατηγικά τοποθετημένες συσκευές απολύμανσης χεριών βρίσκονται σε όλους τους χώρους του Christmas Lighthouse για να μπορείτε να καθαρίζετε συχνά τα χέρια σας χρησιμοποιώντας απολυμαντικό χεριών. Όλες οι επιφάνειες συχνής αφής απολυμαίνονται καθημερινά από εξειδικευμένο προσωπικό.
 					</p>
 				</div>
@@ -371,7 +376,7 @@
 						alt="Masks">
 				</div>
 				<div class="col-md-10">
-					<p class="lead m-0">
+					<p class="lead m-0 text-justify text-md-left">
 						Για την ασφάλειά όλων, παρακαλούμε να ακολουθείτε τις οδηγίες στις πινακίδες και τις επισημάνσεις εδάφους για να διατηρήσετε φυσικές αποστάσεις. Τις πινακίδες και τις επισημάνσεις αυτές θα τις βρείτε σε συγκεκριμένα σημεία του Christmas Lighthouse όπου έχει παρατηρηθεί συνωστισμός.
 					</p>
 				</div>
@@ -380,34 +385,8 @@
 		</div>
 	</section>
 	
-	<!-- ---- SECTION UNIFIER ---- -->
-	<section class="section-gold-to-blue py-5"></section>
-	
-	<!-- ##### SECTION VIDEO ##### -->
-	<section id="video" class="py-3">
-			
-		<div class="custom-row">
-			<div class="container">
-				<h2>
-					Τα Χριστούγεννα είναι εδώ!
-				</h2>
-				<p>
-					Tο Christmas Lighthouse θέλει να γιορτάσει μαζί σας. Πάρτε μια μικρή γέυση απο όλα όσα έχει να προσφέρει! 
-				</p>
-				<a 
-					class="video" 
-					href="javascript:void(0)" 
-					data-toggle="modal"
-					data-target="#videoModal">
-					<i class="far fa-play-circle fa-3x text-xmas-gold-light"></i>
-				</a>
-			</div>
-		</div>
-	
-	</section>
-	
-	<!-- ---- SECTION UNIFIER ---- -->
-	<section class="section-blue-to-blue py-5"></section>
+	<!-- ---- SECTION UNIFIER / ANCHOR ---- -->
+	<section id="gallery-anchor" class="section-gold-to-blue py-5"></section>
 	
 	<!-- ##### GALLERY SECTION ##### -->
 	<section id="gallery" class="py-3">
@@ -764,11 +743,36 @@
 		</div>
 	</section>
 	
-	<!-- ---- SECTION UNIFIER ---- -->
-	<section class="section-blue-to-gold py-5"></section>
+	<!-- ##### SECTION VIDEO ##### -->
+	<section id="video" class="py-3">
+		<div class="container">
+			
+			<div class="row">
+				<div class="col text-center">
+					<h2>
+						Τα Χριστούγεννα είναι εδώ!
+					</h2>
+					<p class="lead">
+						Tο Christmas Lighthouse θέλει να γιορτάσει μαζί σας. Πάρτε μια μικρή γέυση απο όλα όσα έχει να προσφέρει! 
+					</p>
+					<a 
+						class="video" 
+						href="javascript:void(0)" 
+						data-toggle="modal"
+						data-target="#videoModal">
+						<i class="far fa-play-circle fa-5x text-xmas-gold-light"></i>
+					</a>
+				</div>
+			</div>
+		
+		</div>
+	</section>
+	
+	<!-- ---- SECTION UNIFIER / ANCHOR ---- -->
+	<section id="contact-anchor" class="section-blue-to-gold py-5"></section>
 	
 	<!-- ##### CONTACT SECTION ##### -->
-	<section id="contact" class="py3">
+	<section id="contact" class="py-3">
 		<div class="container">
 			
 			<div class="row">
@@ -912,7 +916,145 @@
 	<section class="section-gold-to-blue py-5"></section>
 	
 	<!-- ##### FOOTER ##### -->
-	<footer></footer>
+	<footer id="footer" class="py-3">
+		<div class="container">
+			
+			<!-- First Row -->
+			<div class="row py-3">
+				
+				<div class="col d-flex justify-content-lg-between justify-content-center align-items-center flex-wrap">
+					<h3 class="text-uppercase text-lg-left text-center text-xmas-blue-dark m-lg-0 mb-resp">
+						Ακολουθηστε Μας Στα Social Media
+					</h3>
+
+					<ul class="list-inline list-unstyled p-0 mb-0">
+						<li class="list-inline-item p-0 m-0 mr-3">
+							<a 
+								class="btn social-fb p-0 m-0" 
+								href="https://m.facebook.com/yuppii.gr/?locale2=el_GR" 
+								target="_blank">
+								<i class="fab fa-facebook-f fa-2x"></i>
+							</a>
+						</li>
+						
+						<li class="list-inline-item p-0 m-0">
+							<a 
+								class="btn social-ig p-0 m-0"
+								href="https://www.instagram.com/yuppiilunapark/?hl=el" 
+								target="_blank">
+								<i class="fab fa-instagram fa-2x"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			
+			</div>
+			
+			<!-- Second Row -->
+			<div class="row py-4">
+				
+				<div class="col-lg-3 d-flex justify-content-lg-start justify-content-center align-items-lg-start align-items-center mb-resp">
+					<img
+						class="footer-logo"
+						src="./images/logos/Christmas Lighthouse Logo.svg"
+						alt="Logo" />
+				</div>
+				
+				<div class="col-lg-3 text-lg-left text-center text-xmas-blue-dark mb-resp">
+					<h4 class="text-uppercase mb-1">
+						Λειτουργουμε
+					</h4>
+					<ul class="list-unstyled m-0 mb-resp">
+						<li>Χριστουγεννιάτικη Σεζόν</li>
+						<li>Θερινή Σεζόν</li>
+						<li>Εθνικές Εορτές</li>
+						<li>Αργίες</li>
+					</ul>
+				</div>
+				
+				<div class="col-lg-3 text-lg-left text-center text-xmas-blue-dark mb-resp">
+					<h4 class="text-uppercase mb-1">
+						Ωραριο
+					</h4>
+					<ul class="list-unstyled m-0 mb-resp">
+						<li>Δευτέρα εώς Παρασκευή:</li>
+						<li>18:00 - 11:00</li>
+						<li>Σαββατοκύριακο, Αργίες:</li>
+						<li>11:00 - 11:00</li>
+					</ul>
+				</div>
+				
+				<div class="col-lg-3 text-lg-left text-center text-xmas-blue-dark">
+					<h4 class="text-uppercase mb-1">
+						Ο Καιρος
+					</h4>
+					<ul class="list-unstyled mb-0">
+						<li id="w-desc" class="text-capitalize m-0"></li>
+						<div class="d-flex justify-content-lg-start justify-content-center align-items-center">
+							<li id="w-string" class="m-0 mr-1"></li>
+							<img id="w-icon" class="m-0 ml-1 img-fluid" />
+						</div>
+						<li id="w-feels-like"></li>
+						<li id="w-humidity"></li>
+					</ul>
+				</div>
+			
+			</div>
+			
+			<!-- Third Row -->
+			<div class="row py-3">
+				
+				<div class="col text-xmas-blue-dark d-flex justify-content-center align-items-center flex-wrap">
+					<h5 class="mb-0">
+						&copy; <span id="year"></span> The Christmas Lighthouse
+					</h5>
+					<!-- <h5 class="mb-0">
+						Website Creation By 
+						<a
+							tabindex="0"
+							role="button"
+							data-html="true"
+							data-toggle="popover"
+							data-trigger="focus"
+							data-placement="top"
+							data-template="
+								<div class='custom popover' role='tooltip'>
+									<div class='arrow'></div>
+									<h3 class='popover-header'></h3>
+									<div class='popover-body'></div>
+								</div>
+							"
+							data-content="
+								<div class='card-body bg-dark text-white m-0 p-1'>
+									<h4 class='card-title m-0 p-0'>
+										<img src='images/mits.webp' alt='Chris Mits' />
+										Γειά σου👋👋
+									</h4>
+									<p class='card-text'>
+										Σου αρέσει αυτό που βλέπεις?<br>
+										Επικοινώνησε μαζί μου
+									</p>
+									<p class='phone m-0 p-0'>
+										<a class='m-0 p-0 text-white' href='mailto:chrismits88@gmail.com' target='_blank'>
+											📧 chrismits88@gmail.com
+										</a>
+									</p>
+									<p class='email m-0 p-0'>
+										<a class='m-0 p-0 text-white' href='tel:+306973993703'>
+											📱 6973993703
+										</a>
+									</p>
+								</div>
+							">
+							Chris Mits
+						</a>
+					</h5> -->
+				</div>
+			
+			</div>
+		
+		</div>
+	</footer>
 	
 	
 	<!-- #### MODALS #### -->
@@ -978,6 +1120,12 @@
 		defer
 		async
 		src="js/map.js"></script>
+		
+	<!-- CUSTOM WEATHER API (FOOTER ALL PAGES) -->
+	<script src="js/weather/storage.js"></script>
+	<script src="JS/weather/weather.js"></script>
+	<script src="js/weather/ui.js"></script>
+	<script src="js/weather/app.js"></script>
 		
 		
 	<!-- PHOTOSWIPE MODULE IMPORT & OPTIONS -->

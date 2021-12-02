@@ -41,6 +41,7 @@
   font-style: italic;
   font-weight: normal; }
 body {
+  position: relative;
   font-family: 'PF Din Pro', sans-serif;
   color: #030404;
   user-select: none;
@@ -82,13 +83,10 @@ body {
   transition: all 0.3s ease-in-out; }
   #nav .container .navbar-brand img {
     transition: all 0.3s ease-in-out; }
-  #nav .navbar-nav .nav-item.active {
-    font-family: 'PF Din Pro Bold'; }
   #nav .navbar-nav .nav-link:hover {
     color: #0C1F48; }
-  #nav .navbar-nav .nav-item.active a {
+  #nav .navbar-nav .nav-item a.active {
     color: #F1E7C5;
-    letter-spacing: 2px;
     text-shadow: 2px 2px #030404; }
   #nav .nav-item {
     font-size: 1.5rem; }
@@ -295,44 +293,13 @@ body {
   #covid .container .row:nth-child(4) div:nth-child(2) p {
     font-size: 22px; }
 
-#video {
-  position: relative;
-  min-height: 350px;
-  background: url("../images/ΠΑΡΚΟ/BANNERS/ΣΥΝΟΠΤΙΚΟ2.webp");
-  background-attachment: fixed;
-  background-position: -63%;
-  background-repeat: repeat; }
-  #video .custom-row {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background: rgba(12, 31, 72, 0.5); }
-    #video .custom-row .container {
-      display: flex;
-      height: 100%;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      #video .custom-row .container h2 {
-        color: #F1E7C5;
-        text-align: center;
-        padding-bottom: 15px;
-        font-size: 45px; }
-      #video .custom-row .container p {
-        font-family: "PF Din Pro Light", sans-serif;
-        color: #F1E7C5;
-        text-align: center;
-        font-size: 28px; }
-      #video .custom-row .container a.video {
-        font-size: 30px; }
-
 #gallery {
   background-color: rgba(12, 31, 72, 0.4); }
   #gallery .container .row:nth-child(1) .section-header {
     border-color: rgba(12, 31, 72, 0.4); }
   #gallery .container .row:nth-child(2) .col-photos {
+    padding-bottom: 50px;
+    border-bottom: 2px solid rgba(12, 31, 72, 0.4);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     row-gap: 20px;
@@ -350,6 +317,13 @@ body {
           z-index: 1000;
           transform: scale(1.2);
           transition: all 0.3s ease-in-out; }
+
+#video {
+  background-color: rgba(12, 31, 72, 0.4); }
+  #video .container .row h2 {
+    font-size: 45px; }
+  #video .container .row p {
+    font-size: 30px; }
 
 #contact {
   background-color: rgba(178, 137, 81, 0.4); }
@@ -420,6 +394,58 @@ body {
           #contact .container .row:nth-child(2) .col-md-5 .card #map .mapboxgl-popup .mapboxgl-popup-content .body p {
             margin: 0; }
 
+#footer {
+  background-color: rgba(12, 31, 72, 0.4); }
+  #footer .row:nth-child(1) h3 {
+    font-family: 'PF Din Pro Bold';
+    font-size: 30px;
+    letter-spacing: 2px; }
+  #footer .row:nth-child(1) .list-inline .list-inline-item .btn {
+    color: #fff;
+    border-radius: 100%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: 0;
+    padding: 0; }
+    #footer .row:nth-child(1) .list-inline .list-inline-item .btn.social-fb {
+      background-color: #4867AA; }
+      #footer .row:nth-child(1) .list-inline .list-inline-item .btn.social-fb i.fa-facebook-f {
+        position: absolute;
+        top: 18%;
+        left: 30%; }
+    #footer .row:nth-child(1) .list-inline .list-inline-item .btn.social-ig {
+      background: #d6249f;
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+      #footer .row:nth-child(1) .list-inline .list-inline-item .btn.social-ig i.fa-instagram {
+        position: absolute;
+        top: 18%;
+        left: 23%; }
+    #footer .row:nth-child(1) .list-inline .list-inline-item .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+      transition: all 0.2s ease-in-out; }
+  #footer .row:nth-child(2) {
+    border-top: 2px solid rgba(12, 31, 72, 0.4);
+    border-bottom: 2px solid rgba(12, 31, 72, 0.4); }
+    #footer .row:nth-child(2) .col-lg-3:nth-child(1) .footer-logo {
+      height: 150px; }
+    #footer .row:nth-child(2) .col-lg-3:nth-child(4) ul div img {
+      height: 35px; }
+    #footer .row:nth-child(2) .col-lg-3:nth-child(2) h4,
+    #footer .row:nth-child(2) .col-lg-3:nth-child(3) h4,
+    #footer .row:nth-child(2) .col-lg-3:nth-child(4) h4 {
+      font-family: 'PF Din Pro Bold';
+      font-size: 25px;
+      letter-spacing: 2px; }
+    #footer .row:nth-child(2) .col-lg-3:nth-child(2) ul li,
+    #footer .row:nth-child(2) .col-lg-3:nth-child(3) ul li,
+    #footer .row:nth-child(2) .col-lg-3:nth-child(4) ul li {
+      font-size: 22px; }
+  #footer .row:nth-child(3) .col h5 {
+    font-size: 25px; }
+
 #videoModal .modal-dialog .modal-content {
   background-color: #B28951;
   border: none; }
@@ -461,6 +487,9 @@ body {
     #gallery .container .row:nth-child(2) .col-photos .gallery-item.last-item {
       grid-column-start: span 3; } }
 @media (max-width: 768px) {
+  .mb-resp {
+    margin-bottom: 1rem; }
+
   #timer .container .jumbotron .row:nth-child(1) h1 {
     font-size: 44px; }
 
@@ -562,15 +591,19 @@ body {
   #activities .container .row:nth-child(3) .custom-card .custom-card-body a.btn {
     font-size: 20px; }
 
-  #video {
-    min-height: 500px; }
-    #video .custom-row {
-      background: rgba(12, 31, 72, 0.1); }
-
   #gallery .container .row:nth-child(2) .col-photos {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(13, 1fr); }
     #gallery .container .row:nth-child(2) .col-photos .gallery-item img {
       width: 150px; }
     #gallery .container .row:nth-child(2) .col-photos .gallery-item.last-item {
-      grid-column-start: span 2; } }
+      grid-column-start: span 2; }
+
+  #video {
+    background-color: rgba(12, 31, 72, 0.4); }
+    #video .container .row h2 {
+      font-size: 35px; }
+    #video .container .row p {
+      font-size: 22px; }
+    #video .container .row a.video {
+      font-size: 15px; } }
