@@ -11,6 +11,14 @@ $('#year').text(new Date().getFullYear());
 // IF INDEX.HTML IS PRESENT
 if(body) {
 	
+	$('.nav-link').on('click', collapseNavbarMenu);
+	
+	function collapseNavbarMenu() {
+		setTimeout(function() {
+			$('.navbar-collapse').collapse('hide');	
+		}, 250);
+	}
+	
 	// #### INIT SCROLL SPY ON INDEX.HTML ####
 	$('#body').scrollspy({ target: '#nav' });
 	
