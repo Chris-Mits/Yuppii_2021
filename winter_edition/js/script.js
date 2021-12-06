@@ -116,35 +116,48 @@ if(body) {
 	
 	// FUNCTIONALITY: CLOSE VIDEO MODAL ON ESC PRESS
 	function closeModalOnEsc(event) {
-		if(videoplayer != null && event.key === "Escape") {
-			nav.style.top = "0";
-			videoplayer.pause();
-			videoplayer.currentTime = 0;
-			$('#videoModal').modal('hide');
+		var videoPlayPromise = videoplayer.play();
+		if (videoPlayPromise !== undefined && event.key === "Escape") {
+			videoPlayPromise.then(_ => {
+				videoplayer.pause();
+				nav.style.top = "0";
+				videoplayer.currentTime = 0;
+				$('#videoModal').modal('hide');
+			})
 		}
+		// if(videoplayer != null && event.key === "Escape") {
+		// 	nav.style.top = "0";
+		// 	videoplayer.pause();
+		// 	videoplayer.currentTime = 0;
+		// 	$('#videoModal').modal('hide');
+		// }
 	}
 	
 	// FUNCTIONALITY: VIDEO PLAYER OPTIONS - ON SHOW
 	$('#videoModal').on('show.bs.modal', function() {
 		var videoPlayPromise = videoplayer.play();
-		var errorMessage = document.querySelector("#videoModal .modal-content");
 		if (videoPlayPromise !== undefined) {
 			videoPlayPromise.then(_ => {
 				nav.style.top = "-100%";
 			})
-			.catch(error => {
-				errorMessage.innerHTML = "Input is " + error;
-			});
 		}
 	});
 
 	// FUNCTIONALITY: VIDEO PLAYER OPTIONS - ON HIDE
 	$('#videoModal').on('hide.bs.modal', function() {
-		if (videoplayer != null) {
-			nav.style.top = "0";
-			videoplayer.pause();
-			videoplayer.currentTime = 0;
+		var videoPlayPromise = videoplayer.play();
+		if (videoPlayPromise !== undefined) {
+			videoPlayPromise.then(_ => {
+				videoplayer.pause();
+				nav.style.top = "0";
+				videoplayer.currentTime = 0;
+			})
 		}
+		// if (videoplayer != null) {
+		// 	nav.style.top = "0";
+		// 	videoplayer.pause();
+		// 	videoplayer.currentTime = 0;
+		// }
 	});
 }
 
