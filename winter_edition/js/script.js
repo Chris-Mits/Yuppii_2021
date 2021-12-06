@@ -4,6 +4,7 @@ const navLogo = document.querySelector('.nav-logo');
 const carouselInner = document.querySelector('.carousel-inner');
 const galleryThumbs = document.querySelectorAll(".gallery-item");
 const videoplayer = document.getElementById("videoplayer");
+const isPlaying = video.currentTime > 0 && !video.paused && !video.ended && video.readyState > video.HAVE_CURRENT_DATA;
 
 // #### GET YEAR SCRIPT ####
 $('#year').text(new Date().getFullYear());
@@ -130,7 +131,10 @@ if(body) {
 		var nav = document.getElementById("nav")
 		if (videoplayer != null) {
 			nav.style.top = "-100%";
-			videoplayer.play();
+			if (!isPlaying) {
+				videoplayer.play();
+			}
+			// videoplayer.play();
 		}
 	});
 	
@@ -145,3 +149,6 @@ if(body) {
 		}
 	});
 }
+
+
+
