@@ -117,7 +117,7 @@ if(body) {
 	
 	// FUNCTIONALITY: LOWER NAV 
 	function closeModalOnEsc(event) {
-		if(videoplayer != null && event.key === "Escape") {
+		if(isPlaying && event.key === "Escape") {
 			nav.style.top = "0";
 			videoplayer.pause();
 			videoplayer.currentTime = 0;
@@ -127,22 +127,16 @@ if(body) {
 	
 	// FUNCTIONALITY: VIDEO PLAYER OPTIONS - ON SHOW
 	$('#videoModal').on('show.bs.modal', function(event) {
-		var videoplayer = document.getElementById("videoplayer");
-		var nav = document.getElementById("nav")
-		if (videoplayer != null) {
+		if (!isPlaying) {
 			nav.style.top = "-100%";
-			if (!isPlaying) {
-				videoplayer.play();
-			}
+			videoplayer.play();
 			// videoplayer.play();
 		}
 	});
 	
 	// FUNCTIONALITY: VIDEO PLAYER OPTIONS - ON HIDE
-	$('#videoModal').on('hide.bs.modal', function() {
-		var videoplayer = document.getElementById("videoplayer");
-		var nav = document.getElementById('nav');
-		if (videoplayer != null) {
+	$('#videoModal').on('hidden.bs.modal', function() {
+		if (!isPlaying) {
 			nav.style.top = "0";
 			videoplayer.pause();
 			videoplayer.currentTime = 0;
