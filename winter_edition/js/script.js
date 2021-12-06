@@ -114,29 +114,26 @@ if(body) {
 		}
 	}
 	
-	document.addEventListener('DOMContentLoaded', () => {
-		
-		// FUNCTIONALITY: CLOSE VIDEO MODAL ON ESC PRESS
-		function closeModalOnEsc(event) {
-			if(event.key === "Escape") {
-				nav.style.top = "0";
-				videoplayer.currentTime = 0;
-				videoplayer.pause();
-				$('#videoModal').modal('hide');
-			}
-		}
-		
-		// FUNCTIONALITY: VIDEO PLAYER OPTIONS - ON SHOW
-		$('#videoModal').on('shown.bs.modal', function() {
-			nav.style.top = "-100%";
-			videoplayer.play();
-		});
-	
-		// FUNCTIONALITY: VIDEO PLAYER OPTIONS - ON HIDE
-		$('#videoModal').on('hidden.bs.modal', function() {
+	// FUNCTIONALITY: CLOSE VIDEO MODAL ON ESC PRESS
+	function closeModalOnEsc(event) {
+		if(event.key === "Escape") {
 			nav.style.top = "0";
 			videoplayer.currentTime = 0;
 			videoplayer.pause();
-		});
-	})
+			$('#videoModal').modal('hide');
+		}
+	}
+	
+	// FUNCTIONALITY: VIDEO PLAYER OPTIONS - ON SHOW
+	$('#videoModal').on('shown.bs.modal', function() {
+		nav.style.top = "-100%";
+		videoplayer.play();
+	});
+
+	// FUNCTIONALITY: VIDEO PLAYER OPTIONS - ON HIDE
+	$('#videoModal').on('hidden.bs.modal', function() {
+		nav.style.top = "0";
+		videoplayer.currentTime = 0;
+		videoplayer.pause();
+	});
 }
