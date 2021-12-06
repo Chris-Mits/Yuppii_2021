@@ -3,7 +3,7 @@ const nav = document.getElementById('nav');
 const navLogo = document.querySelector('.nav-logo');
 const carouselInner = document.querySelector('.carousel-inner');
 const galleryThumbs = document.querySelectorAll(".gallery-item");
-const videoplayer = document.getElementById("videoplayer");
+const videoplayer = document.getElementById("christmas-video");
 
 // #### GET YEAR SCRIPT ####
 $('#year').text(new Date().getFullYear());
@@ -126,12 +126,15 @@ if(body) {
 	
 	// FUNCTIONALITY: VIDEO PLAYER OPTIONS - ON SHOW
 	$('#videoModal').on('show.bs.modal', function() {
-		if (videoplayer != null) {
-			nav.style.top = "-100%";
-			setTimeout(function () {
-				videoplayer.pause();  
-				videoplayer.play();
-		 }, 150);
+		var videoPlayPromise = videoplayer.play();
+		var errorMessage = document.querySelector("#videoModal .modal-content");
+		if (videoPlayPromise !== undefined) {
+			videoPlayPromise.then(_ => {
+				nav.style.top = "-100%";
+			})
+			.catch(error => {
+				errorMessage.innerHTML = "Input is " + error;
+			});
 		}
 	});
 
