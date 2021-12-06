@@ -1,14 +1,5 @@
-<<<<<<< HEAD
 summer_edition/scss
 winter_edition/scss
 .gitignore
 .gitattributes
 *.mp4
-=======
-summer_edition/scss
-winter_edition/scss
-.gitignore
-.gitattributes
-*.mp4
->>>>>>> 87f26ddbff7f2f674a532f311ff0753e393a4ab7
-!spec/*.mp4
