@@ -128,7 +128,8 @@ if(body) {
 	$('#videoModal').on('show.bs.modal', function() {
 		if (videoplayer != null) {
 			nav.style.top = "-100%";
-			setTimeout(function () {      
+			setTimeout(function () {
+				videoplayer.pause();  
 				videoplayer.play();
 		 }, 150);
 		}
