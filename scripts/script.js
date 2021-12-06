@@ -13,17 +13,17 @@ window.addEventListener("mouseup", initialSelectionScreen);
 window.addEventListener("DOMContentLoaded", function() {
 	setTimeout(addTransitions, 200);
 	console.log("Added transitions");
-})
+});
 
 changeLeftBtn.addEventListener('mousedown', function() {
 	checkContainerAndChangeScreen();
 	transformations(0);
-})
+});
 
 changeRightBtn.addEventListener('mousedown', function() {
 	checkContainerAndChangeScreen();
 	transformations(1);
-})
+});
 
 // GETS THE INITIAL CLICKED OR TAPPED POSITION ON THE SCREEN
 function initialSelectionScreen(click) {
@@ -41,6 +41,7 @@ function initialSelectionScreen(click) {
 		root.style.setProperty("--left-opacity", "0");
 		transformations(0);
 	}
+	
 	// IF right side of the screen is clicked
 	else if (click.clientX > window.screen.width / 2
 	&& !container.classList.contains("hover-right")
@@ -103,7 +104,7 @@ function transformations(selectedItem) {
 	}
 	
 	// Sub-Headers Styling
-	for (var i = 0; i < subHeaders.length; i++) {
+	for (i = 0; i < subHeaders.length; i++) {
 		subHeaders[selectedItem].style.top = "20%";
 		
 		if(window.matchMedia("(max-width: 430px").matches) {
@@ -115,7 +116,7 @@ function transformations(selectedItem) {
 	}
 	
 	// Buttons Styling
-	for (var i = 0; i < btns.length; i++) {
+	for (i = 0; i < btns.length; i++) {
 		btns[selectedItem].style.top = "85%";
 		btns[selectedItem].style.visibility = "visible";
 		btns[selectedItem].style.opacity = "1.0";
@@ -154,15 +155,15 @@ function addTransitions() {
 	changeRightBtn.style.transition = transitionEffect;
 	changeLeftBtn.style.transition = transitionEffect;
 	
-	for (var i = 0; i < headers.length; i++) {
+	for (i = 0; i < headers.length; i++) {
 		headers[i].style.transition = transitionEffect;
 	}
 	
-	for (var i = 0; i < subHeaders.length; i++) {
+	for (i = 0; i < subHeaders.length; i++) {
 		subHeaders[i].style.transition = transitionEffect;
 	}
 	
-	for (var i = 0; i < btns.length; i++) {
+	for (i = 0; i < btns.length; i++) {
 		btns[i].style.transition = transitionEffect;
 	}
 }
