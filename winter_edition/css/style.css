@@ -326,7 +326,8 @@ body {
     font-size: 30px; }
   #video .container .row button.video {
     background: none;
-    border: none; }
+    border: none;
+    outline: none; }
 
 #contact {
   background-color: rgba(178, 137, 81, 0.4); }
