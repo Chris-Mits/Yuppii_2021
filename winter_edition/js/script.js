@@ -114,56 +114,29 @@ if(body) {
 		}
 	}
 	
-	// FUNCTIONALITY: CLOSE VIDEO MODAL ON ESC PRESS
-	function closeModalOnEsc(event) {
-		// var videoPlayPromise = videoplayer.play();
-		// if (videoPlayPromise !== undefined && event.key === "Escape") {
-		// 	videoPlayPromise.then(_ => {
-		// 		videoplayer.pause();
-		// 		nav.style.top = "0";
-		// 		videoplayer.currentTime = 0;
-		// 		$('#videoModal').modal('hide');
-		// 	})
-		// }
-		if(videoplayer != null && event.key === "Escape") {
-			videoplayer.pause();
-			nav.style.top = "0";
-			videoplayer.currentTime = 0;
-			$('#videoModal').modal('hide');
+	document.addEventListener('DOMContentLoaded', () => {
+		
+		// FUNCTIONALITY: CLOSE VIDEO MODAL ON ESC PRESS
+		function closeModalOnEsc(event) {
+			if(event.key === "Escape") {
+				nav.style.top = "0";
+				videoplayer.currentTime = 0;
+				videoplayer.pause();
+				$('#videoModal').modal('hide');
+			}
 		}
-	}
+		
+		// FUNCTIONALITY: VIDEO PLAYER OPTIONS - ON SHOW
+		$('#videoModal').on('shown.bs.modal', function() {
+			nav.style.top = "-100%";
+			videoplayer.play();
+		});
 	
-	// FUNCTIONALITY: VIDEO PLAYER OPTIONS - ON SHOW
-	$('#videoModal').on('show.bs.modal', function() {
-		var videoPlayPromise = videoplayer.play();
-		if (videoPlayPromise !== undefined) {
-			videoPlayPromise.then(message => {
-				console.log("Promise Fulfilled: Video started " + message);
-				nav.style.top = "-100%";
-			})
-			.catch(message => {
-				console.log(message)
-			});
-		}
-	});
-
-	// FUNCTIONALITY: VIDEO PLAYER OPTIONS - ON HIDE
-	$('#videoModal').on('hide.bs.modal', function() {
-		// var videoPlayPromise = videoplayer.play();
-		// if (videoPlayPromise !== undefined) {
-		// 	videoPlayPromise.then(_ => {
-		// 		videoplayer.pause();
-		// 		nav.style.top = "0";
-		// 		videoplayer.currentTime = 0;
-		// 	})
-		// }
-		if (videoplayer != null) {
-			videoplayer.pause();
+		// FUNCTIONALITY: VIDEO PLAYER OPTIONS - ON HIDE
+		$('#videoModal').on('hidden.bs.modal', function() {
 			nav.style.top = "0";
 			videoplayer.currentTime = 0;
-		}
-	});
+			videoplayer.pause();
+		});
+	})
 }
-
-
-
