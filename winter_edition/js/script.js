@@ -116,48 +116,52 @@ if(body) {
 	
 	// FUNCTIONALITY: CLOSE VIDEO MODAL ON ESC PRESS
 	function closeModalOnEsc(event) {
-		var videoPlayPromise = videoplayer.play();
-		if (videoPlayPromise !== undefined && event.key === "Escape") {
-			videoPlayPromise.then(_ => {
-				videoplayer.pause();
-				nav.style.top = "0";
-				videoplayer.currentTime = 0;
-				$('#videoModal').modal('hide');
-			})
-		}
-		// if(videoplayer != null && event.key === "Escape") {
-		// 	nav.style.top = "0";
-		// 	videoplayer.pause();
-		// 	videoplayer.currentTime = 0;
-		// 	$('#videoModal').modal('hide');
+		// var videoPlayPromise = videoplayer.play();
+		// if (videoPlayPromise !== undefined && event.key === "Escape") {
+		// 	videoPlayPromise.then(_ => {
+		// 		videoplayer.pause();
+		// 		nav.style.top = "0";
+		// 		videoplayer.currentTime = 0;
+		// 		$('#videoModal').modal('hide');
+		// 	})
 		// }
+		if(videoplayer != null && event.key === "Escape") {
+			videoplayer.pause();
+			nav.style.top = "0";
+			videoplayer.currentTime = 0;
+			$('#videoModal').modal('hide');
+		}
 	}
 	
 	// FUNCTIONALITY: VIDEO PLAYER OPTIONS - ON SHOW
 	$('#videoModal').on('show.bs.modal', function() {
 		var videoPlayPromise = videoplayer.play();
 		if (videoPlayPromise !== undefined) {
-			videoPlayPromise.then(_ => {
+			videoPlayPromise.then(message => {
+				console.log("Promise Fulfilled: Video started " + message);
 				nav.style.top = "-100%";
 			})
+			.catch(message => {
+				console.log(message)
+			});
 		}
 	});
 
 	// FUNCTIONALITY: VIDEO PLAYER OPTIONS - ON HIDE
 	$('#videoModal').on('hide.bs.modal', function() {
-		var videoPlayPromise = videoplayer.play();
-		if (videoPlayPromise !== undefined) {
-			videoPlayPromise.then(_ => {
-				videoplayer.pause();
-				nav.style.top = "0";
-				videoplayer.currentTime = 0;
-			})
-		}
-		// if (videoplayer != null) {
-		// 	nav.style.top = "0";
-		// 	videoplayer.pause();
-		// 	videoplayer.currentTime = 0;
+		// var videoPlayPromise = videoplayer.play();
+		// if (videoPlayPromise !== undefined) {
+		// 	videoPlayPromise.then(_ => {
+		// 		videoplayer.pause();
+		// 		nav.style.top = "0";
+		// 		videoplayer.currentTime = 0;
+		// 	})
 		// }
+		if (videoplayer != null) {
+			videoplayer.pause();
+			nav.style.top = "0";
+			videoplayer.currentTime = 0;
+		}
 	});
 }
 
