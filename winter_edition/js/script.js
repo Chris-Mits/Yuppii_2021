@@ -4,7 +4,6 @@ const navLogo = document.querySelector('.nav-logo');
 const carouselInner = document.querySelector('.carousel-inner');
 const galleryThumbs = document.querySelectorAll(".gallery-item");
 const videoplayer = document.getElementById("videoplayer");
-const isPlaying = video.currentTime > 0 && !video.paused && !video.ended && video.readyState > video.HAVE_CURRENT_DATA;
 
 // #### GET YEAR SCRIPT ####
 $('#year').text(new Date().getFullYear());
@@ -115,9 +114,9 @@ if(body) {
 		}
 	}
 	
-	// FUNCTIONALITY: LOWER NAV 
+	// FUNCTIONALITY: CLOSE VIDEO MODAL ON ESC PRESS
 	function closeModalOnEsc(event) {
-		if(isPlaying && event.key === "Escape") {
+		if(videoplayer != null && event.key === "Escape") {
 			nav.style.top = "0";
 			videoplayer.pause();
 			videoplayer.currentTime = 0;
@@ -126,17 +125,18 @@ if(body) {
 	}
 	
 	// FUNCTIONALITY: VIDEO PLAYER OPTIONS - ON SHOW
-	$('#videoModal').on('show.bs.modal', function(event) {
-		if (!isPlaying) {
+	$('#videoModal').on('show.bs.modal', function() {
+		if (videoplayer != null) {
 			nav.style.top = "-100%";
-			videoplayer.play();
-			// videoplayer.play();
+			setTimeout(function () {      
+				videoplayer.play();
+		 }, 150);
 		}
 	});
-	
+
 	// FUNCTIONALITY: VIDEO PLAYER OPTIONS - ON HIDE
-	$('#videoModal').on('hidden.bs.modal', function() {
-		if (!isPlaying) {
+	$('#videoModal').on('hide.bs.modal', function() {
+		if (videoplayer != null) {
 			nav.style.top = "0";
 			videoplayer.pause();
 			videoplayer.currentTime = 0;
