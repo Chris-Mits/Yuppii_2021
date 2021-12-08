@@ -563,39 +563,36 @@ body {
     border: none;
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-    background-color: transparent; }
+    padding: 20px 15px; }
     #directions-info .card.details-info .card-header {
-      padding-top: 25px !important;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px; }
+      padding: 15px 0px;
+      background: none; }
       #directions-info .card.details-info .card-header img {
-        width: 250px; }
+        width: 200px; }
     #directions-info .card.details-info .card-body {
-      padding-bottom: 25px !important;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px; }
+      padding: 15px 0px; }
       #directions-info .card.details-info .card-body hr {
-        margin: 30px 0px; }
+        margin: 25px 0px; }
       #directions-info .card.details-info .card-body .icon {
-        width: 50px;
-        height: 50px;
+        min-width: 40px;
+        height: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #f59fba;
-        margin-right: 15px;
+        margin-right: 10px;
         border-radius: 5px;
         border: 1px solid #030404; }
         #directions-info .card.details-info .card-body .icon i.fas {
-          font-size: 25px; }
-      #directions-info .card.details-info .card-body .details {
-        height: 50px; }
-        #directions-info .card.details-info .card-body .details h4 {
-          font-family: 'Commissioner Variable';
-          font-weight: 700;
-          letter-spacing: 1px; }
-        #directions-info .card.details-info .card-body .details p {
-          font-size: 18px; }
+          font-size: 22px; }
+      #directions-info .card.details-info .card-body .details h4 {
+        font-family: 'Commissioner Variable';
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        font-size: 18px; }
+      #directions-info .card.details-info .card-body .details p {
+        white-space: nowrap;
+        font-size: 15px; }
   #directions-info .card.map-container {
     height: 100%;
     border-radius: 10px;
@@ -660,15 +657,17 @@ body {
   background-color: #fce2ea; }
   #games-presentation .container {
     position: relative !important; }
-  #games-presentation .container div[role="tabpanel"] .row .col-md-3 a img {
-    border-radius: 5px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); }
-  #games-presentation .container div[role="tabpanel"] .row .col-md-3 a img:hover {
-    transform: scale(1.05);
-    transition: transform 0.2s ease-in; }
-  #games-presentation .container div[role="tabpanel"] .row .col-md-3 a img:not(:hover) {
-    transform: scale(1);
-    transition: transform 0.2s ease-out; }
+    #games-presentation .container div[role="tabpanel"] .row:nth-child(1) .lead span {
+      font-weight: 600; }
+    #games-presentation .container div[role="tabpanel"] .row:nth-child(2) .col-md-3 a img,
+    #games-presentation .container div[role="tabpanel"] .row:nth-child(3) .col-md-3 a img {
+      border-radius: 5px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+      transition: transform 0.2s ease-out; }
+      #games-presentation .container div[role="tabpanel"] .row:nth-child(2) .col-md-3 a img:hover,
+      #games-presentation .container div[role="tabpanel"] .row:nth-child(3) .col-md-3 a img:hover {
+        transform: scale(1.05);
+        transition: transform 0.2s ease-in; }
   #games-presentation .game-selection-btn {
     position: absolute !important;
     top: 4px;
@@ -850,6 +849,8 @@ body {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); }
   #rentals .row:nth-child(2) .col-lg-7 .lead a[role="button"] {
     color: #F2788F;
+    font-weight: 700; }
+  #rentals .row:nth-child(2) .col-lg-7 .lead span {
     font-weight: 700; }
 
 #gamesModal .modal-content,
@@ -1103,6 +1104,39 @@ body {
     #mainMap .customInfobox .infobox-header .infobox-title {
       font-size: 16px !important;
       font-weight: 600 !important; }
+
+  #gamesModal .modal-content .modal-header,
+  #partiesModal .modal-content .modal-header,
+  #coffeeModal .modal-content .modal-header,
+  #tripsModal .modal-content .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; }
+    #gamesModal .modal-content .modal-header .modal-title,
+    #partiesModal .modal-content .modal-header .modal-title,
+    #coffeeModal .modal-content .modal-header .modal-title,
+    #tripsModal .modal-content .modal-header .modal-title {
+      font-size: 22px; }
+    #gamesModal .modal-content .modal-header .close,
+    #partiesModal .modal-content .modal-header .close,
+    #coffeeModal .modal-content .modal-header .close,
+    #tripsModal .modal-content .modal-header .close {
+      position: static;
+      margin: 0;
+      padding: 0px;
+      font-size: 30px; }
+  #gamesModal .modal-content .modal-body,
+  #partiesModal .modal-content .modal-body,
+  #coffeeModal .modal-content .modal-body,
+  #tripsModal .modal-content .modal-body {
+    padding: 10px 20px;
+    font-size: 18px; }
+  #gamesModal .modal-content .modal-footer,
+  #partiesModal .modal-content .modal-footer,
+  #coffeeModal .modal-content .modal-footer,
+  #tripsModal .modal-content .modal-footer {
+    padding: 10px 20px; }
 
   #gameSelection .modal-dialog .modal-content .modal-header .modal-title {
     font-size: 17px; }
