@@ -12,14 +12,20 @@
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff8a01">
 	
 	<!-- FONT AWESOME CSS -->
-	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	
 	<!-- BOOTSTRAP CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
+	
 	<!-- PHOTOSWIPE CSS -->
 	<link rel="stylesheet" href="css/photoswipe/photoswipe.css">
+	
+	<!-- MAPBOX CSS -->
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+	
 	<!-- CUSTOM CSS -->
 	<link rel="stylesheet" href="css/style.css">
+	
 	<title>Αρχική | Yuppii Luna Park•Αλεξανδρούπολη</title>
 </head>
 <body>
@@ -681,7 +687,7 @@
 					</ul>
 				</div>
 				
-				<div class="col-lg-3 d-flex flex-column justify-content-between align-items-lg-start align-items-center text-lg-left text-center mb-resp weather-col">
+				<div class="col-lg-2 d-flex flex-column justify-content-between align-items-lg-start align-items-center text-lg-left text-center mb-resp weather-col">
 					<h4 class="text-uppercase m-0">
 						Ο Καιρος
 					</h4>
@@ -699,14 +705,14 @@
 					</ul>
 				</div>
 				
-				<div class="col-lg-4 d-flex flex-column justify-content-between align-items-lg-start align-items-center text-lg-left text-center map-col">
+				<div class="col-lg-5 d-flex flex-column justify-content-between align-items-lg-start align-items-center text-lg-left text-center map-col">
 					<h4 class="text-uppercase m-0">
 						Θα Μας Βρειτε
 					</h4>
 					<ul class="list-unstyled mb-0">
 						<li>Κάτω απο τον Φάρο Αλεξανδρούπολης</li>
 					</ul>
-					<div id="footerMap"></div>
+					<div id="footer-map"></div>
 				</div>
 			
 			</div>
@@ -878,13 +884,13 @@
 	<script src="js/weather/ui.js"></script>
 	<script src="js/weather/app.js"></script>
 	
-	<!-- CUSTOM MAP API -->
+	<!-- MAPBOX API & CUSTOM OPTIONS JS -->
 	<script 
-		async 
-		defer 
-		type='text/javascript' 
-		src='https://www.bing.com/api/maps/mapcontrol?callback=FooterMap&amp;branch=release&amp;setMkt=el-GR&amp;setLang=el'></script>
-	<script src="js/maps/map_footer.js"></script>
+		src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+	<script
+		defer
+		async
+		src="js/footer_mapbox.js"></script>
 	
 	<!-- CUSTOM EMBEDDED SCRIPTS -->
 	<script type="module">

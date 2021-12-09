@@ -370,32 +370,32 @@ body {
     border: none;
     background: rgba(69, 100, 193, 0.3);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4); }
-    #contact .container .row:nth-child(2) .col-md-5 .card #map {
+    #contact .container .row:nth-child(2) .col-md-5 .card #mapbox {
       border-radius: 10px; }
-      #contact .container .row:nth-child(2) .col-md-5 .card #map .mapboxgl-popup {
+      #contact .container .row:nth-child(2) .col-md-5 .card #mapbox .mapboxgl-popup {
         max-width: 100% !important; }
-        #contact .container .row:nth-child(2) .col-md-5 .card #map .mapboxgl-popup .mapboxgl-popup-tip {
+        #contact .container .row:nth-child(2) .col-md-5 .card #mapbox .mapboxgl-popup .mapboxgl-popup-tip {
           border-top-color: #B28951; }
-        #contact .container .row:nth-child(2) .col-md-5 .card #map .mapboxgl-popup .mapboxgl-popup-content {
+        #contact .container .row:nth-child(2) .col-md-5 .card #mapbox .mapboxgl-popup .mapboxgl-popup-content {
           padding: 10px !important;
           border-radius: 10px;
           border: 1px solid #B28951;
           background-color: #F1E7C5;
           color: #0C1F48; }
-          #contact .container .row:nth-child(2) .col-md-5 .card #map .mapboxgl-popup .mapboxgl-popup-content .header {
+          #contact .container .row:nth-child(2) .col-md-5 .card #mapbox .mapboxgl-popup .mapboxgl-popup-content .header {
             display: flex;
-            justify-content: space-between;
             align-items: center;
             padding-bottom: 10px;
             border-bottom: 1px solid #0C1F48; }
-            #contact .container .row:nth-child(2) .col-md-5 .card #map .mapboxgl-popup .mapboxgl-popup-content .header img {
-              width: 35px; }
-            #contact .container .row:nth-child(2) .col-md-5 .card #map .mapboxgl-popup .mapboxgl-popup-content .header h5 {
+            #contact .container .row:nth-child(2) .col-md-5 .card #mapbox .mapboxgl-popup .mapboxgl-popup-content .header img {
+              width: 35px;
+              margin-right: 5px; }
+            #contact .container .row:nth-child(2) .col-md-5 .card #mapbox .mapboxgl-popup .mapboxgl-popup-content .header h5 {
               font-size: 15px;
               font-weight: 700;
               letter-spacing: 0px;
               margin: 0; }
-          #contact .container .row:nth-child(2) .col-md-5 .card #map .mapboxgl-popup .mapboxgl-popup-content .body p {
+          #contact .container .row:nth-child(2) .col-md-5 .card #mapbox .mapboxgl-popup .mapboxgl-popup-content .body p {
             margin: 0; }
 
 #contact-success-nav {
