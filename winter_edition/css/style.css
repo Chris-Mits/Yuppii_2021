@@ -475,21 +475,17 @@ body {
   background-color: #B28951;
   border: none; }
   #videoModal .modal-dialog .modal-content .modal-body {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+    display: flex;
     position: relative;
-    padding: 35px 0; }
+    padding: 20px 0; }
     #videoModal .modal-dialog .modal-content .modal-body .close {
-      color: #F1E7C5;
-      position: absolute;
-      opacity: 1;
       color: #0C1F48;
-      top: 2px;
-      right: 5px; }
-      #videoModal .modal-dialog .modal-content .modal-body .close span i.far {
-        color: #F1E7C5;
-        font-size: 30px; }
+      opacity: 1; }
+      #videoModal .modal-dialog .modal-content .modal-body .close i.fas {
+        font-size: 22px;
+        position: absolute;
+        top: 0px;
+        right: 5px; }
 
 @media (max-width: 1199px) {
   #gallery .container .row:nth-child(2) .col-photos {
