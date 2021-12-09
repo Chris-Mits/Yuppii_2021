@@ -568,24 +568,24 @@ body {
   #showcase #xmas-carousel .carousel-control-next {
     right: 10px; }
   #showcase #xmas-carousel .carousel-inner .image-0 {
-    background-image: url("../images/SHOWCASE/Mobile/image_0_mobile.webp");
+    background-image: url("../images/parko/BANNERS/ΣΥΝΟΠΤΙΚΟ_mobile.webp");
     background-size: cover !important; }
   #showcase #xmas-carousel .carousel-inner .image-1 {
-    background-image: url("../images/SHOWCASE/Mobile/image_1-1_mobile.webp"); }
+    background-image: url("../images/parko/MOBILE/ΕΙΣΟΔΟΣ.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-2 {
-    background-image: url("../images/SHOWCASE/Mobile/image_2_mobile.webp"); }
+    background-image: url("../images/parko/MOBILE/ΠΑΓΟΔΡΟΜΙΟ5.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-3 {
-    background-image: url("../images/SHOWCASE/Mobile/image_3_mobile.webp"); }
+    background-image: url("../images/parko/MOBILE/ΒΙΒΛΙΟ_ΨΑΓΜΕΝΗ_mobile.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-4 {
-    background-image: url("../images/SHOWCASE/Mobile/image_4_mobile.webp"); }
+    background-image: url("../images/parko/MOBILE/ΑΗ_ΒΑΣΙΛΗΣ1_mobile.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-5 {
-    background-image: url("../images/SHOWCASE/Mobile/image_5_mobile.webp"); }
+    background-image: url("../images/parko/MOBILE/ΑΗ_ΒΑΣΙΛΗΣ_ΓΡΑΜΜΑ.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-6 {
-    background-image: url("../images/SHOWCASE/Mobile/image_6_mobile.webp"); }
+    background-image: url("../images/parko/MOBILE/ΠΑΓΟΔΡΟΜΙΟ4_mobile.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-7 {
-    background-image: url("../images/SHOWCASE/Mobile/image_7_mobile.webp"); }
+    background-image: url("../images/parko/MOBILE/AH_ΒΑΣΙΛΗΣ_ΠΑΙΔΙ_mobile.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-8 {
-    background-image: url("../images/SHOWCASE/Mobile/image_8_mobile.webp"); } }
+    background-image: url("../images/parelasi/mobile/pikachu.webp"); } }
 @media (max-width: 502px) {
   .mb-resp {
     margin-bottom: 1rem; }
