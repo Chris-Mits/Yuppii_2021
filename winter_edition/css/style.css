@@ -189,6 +189,32 @@ body {
   #showcase #xmas-carousel .carousel-inner .image-8 {
     background-image: url("../images/SHOWCASE/Desktop/image_8.webp"); }
 
+#events {
+  background-color: rgba(12, 31, 72, 0.4); }
+  #events .container .row:nth-child(2) .table {
+    width: 100%;
+    table-layout: fixed;
+    border: 5px solid #F1E7C5; }
+    #events .container .row:nth-child(2) .table thead {
+      position: sticky !important;
+      top: 59px !important;
+      color: #F1E7C5;
+      background-color: #646F8A; }
+    #events .container .row:nth-child(2) .table th[scope="col"] {
+      font-size: 20px;
+      border: 2px solid #F1E7C5; }
+    #events .container .row:nth-child(2) .table th[scope="row"] {
+      font-size: 20px; }
+    #events .container .row:nth-child(2) .table th,
+    #events .container .row:nth-child(2) .table td {
+      border-color: #F1E7C5;
+      border-style: dashed;
+      font-size: 18px;
+      border-width: 2px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 1.2; }
+
 #timer {
   background-color: rgba(178, 137, 81, 0.4); }
   #timer .container .jumbotron {
@@ -475,21 +501,17 @@ body {
   background-color: #B28951;
   border: none; }
   #videoModal .modal-dialog .modal-content .modal-body {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+    display: flex;
     position: relative;
-    padding: 35px 0; }
+    padding: 20px 0; }
     #videoModal .modal-dialog .modal-content .modal-body .close {
-      color: #F1E7C5;
-      position: absolute;
-      opacity: 1;
       color: #0C1F48;
-      top: 2px;
-      right: 5px; }
-      #videoModal .modal-dialog .modal-content .modal-body .close span i.far {
-        color: #F1E7C5;
-        font-size: 30px; }
+      opacity: 1; }
+      #videoModal .modal-dialog .modal-content .modal-body .close i.fas {
+        font-size: 22px;
+        position: absolute;
+        top: 0px;
+        right: 5px; }
 
 @media (max-width: 1199px) {
   #gallery .container .row:nth-child(2) .col-photos {
@@ -568,24 +590,24 @@ body {
   #showcase #xmas-carousel .carousel-control-next {
     right: 10px; }
   #showcase #xmas-carousel .carousel-inner .image-0 {
-    background-image: url("../images/SHOWCASE/Mobile/image_0_mobile.webp");
+    background-image: url("../images/parko/BANNERS/ΣΥΝΟΠΤΙΚΟ_mobile.webp");
     background-size: cover !important; }
   #showcase #xmas-carousel .carousel-inner .image-1 {
-    background-image: url("../images/SHOWCASE/Mobile/image_1-1_mobile.webp"); }
+    background-image: url("../images/parko/MOBILE/ΕΙΣΟΔΟΣ.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-2 {
-    background-image: url("../images/SHOWCASE/Mobile/image_2_mobile.webp"); }
+    background-image: url("../images/parko/MOBILE/ΠΑΓΟΔΡΟΜΙΟ5.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-3 {
-    background-image: url("../images/SHOWCASE/Mobile/image_3_mobile.webp"); }
+    background-image: url("../images/parko/MOBILE/ΒΙΒΛΙΟ_ΨΑΓΜΕΝΗ_mobile.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-4 {
-    background-image: url("../images/SHOWCASE/Mobile/image_4_mobile.webp"); }
+    background-image: url("../images/parko/MOBILE/ΑΗ_ΒΑΣΙΛΗΣ1_mobile.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-5 {
-    background-image: url("../images/SHOWCASE/Mobile/image_5_mobile.webp"); }
+    background-image: url("../images/parko/MOBILE/ΑΗ_ΒΑΣΙΛΗΣ_ΓΡΑΜΜΑ.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-6 {
-    background-image: url("../images/SHOWCASE/Mobile/image_6_mobile.webp"); }
+    background-image: url("../images/parko/MOBILE/ΠΑΓΟΔΡΟΜΙΟ4_mobile.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-7 {
-    background-image: url("../images/SHOWCASE/Mobile/image_7_mobile.webp"); }
+    background-image: url("../images/parko/MOBILE/AH_ΒΑΣΙΛΗΣ_ΠΑΙΔΙ_mobile.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-8 {
-    background-image: url("../images/SHOWCASE/Mobile/image_8_mobile.webp"); } }
+    background-image: url("../images/parelasi/mobile/pikachu.webp"); } }
 @media (max-width: 502px) {
   .mb-resp {
     margin-bottom: 1rem; }
