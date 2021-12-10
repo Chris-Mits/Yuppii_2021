@@ -189,6 +189,32 @@ body {
   #showcase #xmas-carousel .carousel-inner .image-8 {
     background-image: url("../images/SHOWCASE/Desktop/image_8.webp"); }
 
+#events {
+  background-color: rgba(12, 31, 72, 0.4); }
+  #events .container .row:nth-child(2) .table {
+    width: 100%;
+    table-layout: fixed;
+    border: 5px solid #F1E7C5; }
+    #events .container .row:nth-child(2) .table thead {
+      position: sticky !important;
+      top: 59px !important;
+      color: #F1E7C5;
+      background-color: #646F8A; }
+    #events .container .row:nth-child(2) .table th[scope="col"] {
+      font-size: 20px;
+      border: 2px solid #F1E7C5; }
+    #events .container .row:nth-child(2) .table th[scope="row"] {
+      font-size: 20px; }
+    #events .container .row:nth-child(2) .table th,
+    #events .container .row:nth-child(2) .table td {
+      border-color: #F1E7C5;
+      border-style: dashed;
+      font-size: 18px;
+      border-width: 2px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 1.2; }
+
 #timer {
   background-color: rgba(178, 137, 81, 0.4); }
   #timer .container .jumbotron {
