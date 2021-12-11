@@ -192,27 +192,38 @@ body {
 #events {
   background-color: rgba(12, 31, 72, 0.4); }
   #events .container .row:nth-child(2) .table {
+    background-color: rgba(192, 38, 40, 0.8);
     width: 100%;
     table-layout: fixed;
-    border: 5px solid #F1E7C5; }
+    border-top: none;
+    border-right: 5px solid #B28951;
+    border-bottom: 5px solid #B28951;
+    border-left: 5px solid #B28951;
+    border-radius: 10px;
+    border-collapse: separate;
+    border-spacing: 0; }
     #events .container .row:nth-child(2) .table thead {
       position: sticky;
-      top: 58.5px;
+      top: 61px;
       color: #F1E7C5;
-      background-color: #646F8A; }
+      background-color: #C02628; }
       #events .container .row:nth-child(2) .table thead tr th[scope="col"] {
+        border-top: 5px solid #B28951;
+        border-right: 2px solid #B28951;
+        border-bottom: 5px solid #B28951;
+        border-left: 2px solid #B28951;
         font-size: 20px;
         letter-spacing: 2px;
-        border: 2px solid #F1E7C5;
         text-align: center; }
     #events .container .row:nth-child(2) .table tbody tr th[scope="row"] {
       font-size: 20px; }
     #events .container .row:nth-child(2) .table tbody tr th,
     #events .container .row:nth-child(2) .table tbody tr td {
-      border-color: #F1E7C5;
-      border-style: dashed;
+      border-color: #B28951;
+      color: #F1E7C5;
+      border-style: dotted;
+      border-width: 1px;
       font-size: 17px;
-      border-width: 2px;
       text-align: center;
       vertical-align: middle;
       line-height: 1; }
