@@ -192,7 +192,7 @@ body {
 #events {
   background-color: rgba(12, 31, 72, 0.4); }
   #events .container .row:nth-child(2) .table {
-    background-color: rgba(192, 38, 40, 0.8);
+    background-color: #DA1616;
     width: 100%;
     table-layout: fixed;
     border-top: none;
@@ -206,27 +206,67 @@ body {
       position: sticky;
       top: 61px;
       color: #F1E7C5;
-      background-color: #C02628; }
+      background-color: #C01111; }
       #events .container .row:nth-child(2) .table thead tr th[scope="col"] {
         border-top: 5px solid #B28951;
         border-right: 2px solid #B28951;
         border-bottom: 5px solid #B28951;
         border-left: 2px solid #B28951;
-        font-size: 20px;
-        letter-spacing: 2px;
-        text-align: center; }
+        font-size: 18px;
+        letter-spacing: 1px;
+        text-align: center;
+        padding: 15px 10px; }
+      #events .container .row:nth-child(2) .table thead tr th[scope="col"]:first-child {
+        position: relative; }
+        #events .container .row:nth-child(2) .table thead tr th[scope="col"]:first-child::before {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 500;
+          font-size: 12px;
+          content: "\f073";
+          position: absolute;
+          top: 0;
+          right: 5px; }
+      #events .container .row:nth-child(2) .table thead tr th[scope="col"]:nth-child(2) {
+        position: relative; }
+        #events .container .row:nth-child(2) .table thead tr th[scope="col"]:nth-child(2)::before {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 500;
+          font-size: 12px;
+          content: "\f185";
+          position: absolute;
+          top: 0;
+          right: 5px; }
+      #events .container .row:nth-child(2) .table thead tr th[scope="col"]:last-child {
+        position: relative; }
+        #events .container .row:nth-child(2) .table thead tr th[scope="col"]:last-child::before {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 500;
+          font-size: 12px;
+          content: "\f186";
+          position: absolute;
+          top: 0;
+          right: 5px; }
     #events .container .row:nth-child(2) .table tbody tr th[scope="row"] {
-      font-size: 20px; }
+      font-size: 22px;
+      background: linear-gradient(to bottom right, #F1E7C5 0%, #B28951 100%);
+      background: -webkit-linear-gradient(to bottom right, #F1E7C5 0%, #B28951 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+      #events .container .row:nth-child(2) .table tbody tr th[scope="row"] hr {
+        margin: 5px 0;
+        border-top: 0.5px solid #F1E7C5; }
     #events .container .row:nth-child(2) .table tbody tr th,
     #events .container .row:nth-child(2) .table tbody tr td {
       border-color: #B28951;
-      color: #F1E7C5;
+      color: #fff;
       border-style: dotted;
       border-width: 1px;
-      font-size: 17px;
+      font-size: 15px;
       text-align: center;
       vertical-align: middle;
-      line-height: 1; }
+      line-height: 1;
+      padding: 8px; }
 
 #timer {
   background-color: rgba(178, 137, 81, 0.4); }
