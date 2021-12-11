@@ -7,6 +7,9 @@
     <loc>https://yuppii.gr/winter_edition/index.html</loc>
   </url>
   <url>
+    <loc>https://yuppii.gr/winter_edition/contact-success.html</loc>
+  </url>
+  <url>
     <loc>https://yuppii.gr/summer_edition/index.html</loc>
   </url>
   <url>
@@ -20,5 +23,8 @@
   </url>
   <url>
     <loc>https://yuppii.gr/summer_edition/contact.html</loc>
+  </url>
+  <url>
+    <loc>https://yuppii.gr/summer_edition/contact-success.html</loc>
   </url>
 </urlset>
