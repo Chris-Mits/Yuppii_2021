@@ -89,7 +89,7 @@ body {
     color: #F1E7C5;
     text-shadow: 2px 2px #030404; }
   #nav .nav-item {
-    font-size: 1.5rem; }
+    font-size: 20px; }
   #nav .nav-item:nth-child(1),
   #nav .nav-item:nth-child(2),
   #nav .nav-item:nth-child(3),
@@ -192,28 +192,41 @@ body {
 #events {
   background-color: rgba(12, 31, 72, 0.4); }
   #events .container .row:nth-child(2) .table {
+    background-color: rgba(192, 38, 40, 0.8);
     width: 100%;
     table-layout: fixed;
-    border: 5px solid #F1E7C5; }
+    border-top: none;
+    border-right: 5px solid #B28951;
+    border-bottom: 5px solid #B28951;
+    border-left: 5px solid #B28951;
+    border-radius: 10px;
+    border-collapse: separate;
+    border-spacing: 0; }
     #events .container .row:nth-child(2) .table thead {
-      position: sticky !important;
-      top: 59px !important;
+      position: sticky;
+      top: 61px;
       color: #F1E7C5;
-      background-color: #646F8A; }
-    #events .container .row:nth-child(2) .table th[scope="col"] {
-      font-size: 20px;
-      border: 2px solid #F1E7C5; }
-    #events .container .row:nth-child(2) .table th[scope="row"] {
+      background-color: #C02628; }
+      #events .container .row:nth-child(2) .table thead tr th[scope="col"] {
+        border-top: 5px solid #B28951;
+        border-right: 2px solid #B28951;
+        border-bottom: 5px solid #B28951;
+        border-left: 2px solid #B28951;
+        font-size: 20px;
+        letter-spacing: 2px;
+        text-align: center; }
+    #events .container .row:nth-child(2) .table tbody tr th[scope="row"] {
       font-size: 20px; }
-    #events .container .row:nth-child(2) .table th,
-    #events .container .row:nth-child(2) .table td {
-      border-color: #F1E7C5;
-      border-style: dashed;
-      font-size: 18px;
-      border-width: 2px;
+    #events .container .row:nth-child(2) .table tbody tr th,
+    #events .container .row:nth-child(2) .table tbody tr td {
+      border-color: #B28951;
+      color: #F1E7C5;
+      border-style: dotted;
+      border-width: 1px;
+      font-size: 17px;
       text-align: center;
       vertical-align: middle;
-      line-height: 1.2; }
+      line-height: 1; }
 
 #timer {
   background-color: rgba(178, 137, 81, 0.4); }
@@ -278,10 +291,10 @@ body {
         margin: 5px 0; }
       #activities .container .row:nth-child(2) .custom-card-body span.schedule::before,
       #activities .container .row:nth-child(3) .custom-card-body span.schedule::before {
-        content: "\f054";
+        content: "\f05a";
         font-family: "Font Awesome 5 Free";
         font-weight: 600;
-        font-size: 20px;
+        font-size: 18px;
         margin-right: 5px; }
       #activities .container .row:nth-child(2) .custom-card-body h2,
       #activities .container .row:nth-child(3) .custom-card-body h2 {
