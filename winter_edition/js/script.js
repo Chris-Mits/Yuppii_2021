@@ -4,6 +4,8 @@ const navLogo = document.querySelector('.nav-logo');
 const carouselInner = document.querySelector('.carousel-inner');
 const galleryThumbs = document.querySelectorAll(".gallery-item");
 const videoplayer = document.getElementById("christmas-video");
+const listMenuBtn = document.querySelector(".list-menu-toggler");
+const listMenu = document.querySelector(".list-group");
 
 // #### GET YEAR SCRIPT ####
 $('#year').text(new Date().getFullYear());
@@ -49,9 +51,11 @@ if(body) {
 	
 	// #### SMOOTH SCROLLING ANIMATION - CONTACT ANCHORS ####
 	$('#activities span a').on('click', function(e) {
+		
 		if(this.hash !== '') {
 			e.preventDefault();
 			const hash = this.hash;
+			
 			$('html, body').animate({
 				scrollTop: $(hash).offset().top
 			}, 500, function() {
@@ -62,15 +66,18 @@ if(body) {
 		
 	// #### EVENT LISTENERS ####
 	window.addEventListener('scroll', adjustNav);
+	body.addEventListener('keyup', event => closeModalOnEsc(event));
 	
-	body.addEventListener('keyup', (event) => {
-		lowerNav(event);
-		closeModalOnEsc(event);
-	})
+	listMenuBtn.addEventListener('click', toggleMenu);
 	
-	for (var i = 0; i < galleryThumbs.length; i++) {
-		galleryThumbs[i].addEventListener("mousedown", raiseNav);
+	function toggleMenu() {
+		console.log("hello");
+		listMenu.classList.toggle("visible");
 	}
+	
+	galleryThumbs.forEach(galleryThumb => {
+		galleryThumb.addEventListener("mousedown", hideNav);
+	})
 	
 	// #### FUNCTIONS ####
 	// FUNCTIONALITY: ADJUST NAV ON SCROLL
@@ -102,16 +109,9 @@ if(body) {
 		}
 	})
 	
-	// FUNCTIONALITY: RAISE NAV
-	function raiseNav() {
+	// FUNCTIONALITY: HIDE NAV
+	function hideNav() {
 		nav.style.top = "-100%";
-	}
-	
-	// FUNCTIONALITY: LOWER NAV
-	function lowerNav(event) {
-		if (nav.style.top === "-100%" && event.key === "Escape") {
-			nav.style.top = "0";
-		}
 	}
 	
 	// FUNCTIONALITY: CLOSE VIDEO MODAL ON ESC PRESS
@@ -126,7 +126,7 @@ if(body) {
 	
 	// FUNCTIONALITY: VIDEO PLAYER OPTIONS - ON SHOW
 	$('#videoModal').on('shown.bs.modal', function() {
-		nav.style.top = "-100%";
+		hideNav();
 		videoplayer.play();
 	});
 
