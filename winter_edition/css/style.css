@@ -422,19 +422,20 @@ body {
     border-color: rgba(12, 31, 72, 0.4);
     padding-bottom: 0px; }
     #gallery .container .row:nth-child(1) .col .section-header .list-menu-toggler {
-      z-index: 10000000000;
       cursor: pointer;
       position: absolute;
       width: 160px;
       display: inline-block;
-      position: relative;
       left: 0px;
-      bottom: -22px;
+      bottom: -21px;
       background-color: #4564C1;
       padding: 5px;
       border-radius: 10px;
       text-decoration: none;
-      border: 2px solid rgba(12, 31, 72, 0.4); }
+      border: 1px solid rgba(178, 137, 81, 0.4); }
+      #gallery .container .row:nth-child(1) .col .section-header .list-menu-toggler:hover {
+        background-color: #0C1F48;
+        transition: background-color 0.3s ease-in-out; }
       #gallery .container .row:nth-child(1) .col .section-header .list-menu-toggler span {
         font-size: 20px;
         color: #030404;
@@ -443,39 +444,45 @@ body {
         width: 20px; }
   #gallery .container .row:nth-child(2) {
     padding-bottom: 50px;
-    border-bottom: 2px solid rgba(12, 31, 72, 0.4); }
-    #gallery .container .row:nth-child(2) .col-menu .list-group {
-      position: relative;
-      top: 0px;
-      left: 0px;
-      background-color: #F1E7C5;
-      border-radius: 10px;
-      border: none;
-      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4); }
-      #gallery .container .row:nth-child(2) .col-menu .list-group .list-group-item {
-        font-size: 20px;
-        color: #030404;
-        border: 0;
-        background-color: unset; }
-        #gallery .container .row:nth-child(2) .col-menu .list-group .list-group-item img {
-          width: 25px; }
-        #gallery .container .row:nth-child(2) .col-menu .list-group .list-group-item.active {
-          border: 1px solid #000;
-          color: #F1E7C5;
-          background-color: #4564C1;
-          transition: all 0.3s ease-in-out; }
-      #gallery .container .row:nth-child(2) .col-menu .list-group.visible {
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out; }
-    #gallery .container .row:nth-child(2) .col-gallery .tab-content .tab-pane .grid-gallery-lg,
-    #gallery .container .row:nth-child(2) .col-gallery .tab-content .tab-pane .grid-gallery-sm {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 15px; }
-      #gallery .container .row:nth-child(2) .col-gallery .tab-content .tab-pane .grid-gallery-lg .gallery-item img,
-      #gallery .container .row:nth-child(2) .col-gallery .tab-content .tab-pane .grid-gallery-sm .gallery-item img {
-        border-radius: 5%;
+    border-bottom: 2px solid rgba(12, 31, 72, 0.4);
+    flex-wrap: nowrap; }
+    #gallery .container .row:nth-child(2) .col-menu {
+      transition: all 0.3s ease-in-out; }
+      #gallery .container .row:nth-child(2) .col-menu .list-group {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        background-color: #F1E7C5;
+        border-radius: 10px;
+        border: none;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4); }
+        #gallery .container .row:nth-child(2) .col-menu .list-group .list-group-item {
+          font-size: 20px;
+          color: #030404;
+          border: 0;
+          background-color: unset; }
+          #gallery .container .row:nth-child(2) .col-menu .list-group .list-group-item img {
+            width: 25px; }
+          #gallery .container .row:nth-child(2) .col-menu .list-group .list-group-item.active {
+            color: #F1E7C5;
+            background-color: #4564C1;
+            transition: all 0.3s ease-in-out; }
+      #gallery .container .row:nth-child(2) .col-menu.removed {
+        z-index: -100000;
+        max-width: 190px;
+        position: absolute;
+        opacity: 0;
+        transform: translateX(-200px);
+        transition: all 0.3s ease-in-out; }
+    #gallery .container .row:nth-child(2) .col-gallery {
+      transition: all 0.45s ease-in-out; }
+      #gallery .container .row:nth-child(2) .col-gallery .tab-content .tab-pane .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px; }
+        #gallery .container .row:nth-child(2) .col-gallery .tab-content .tab-pane .gallery .gallery-item img {
+          border-radius: 0.4rem;
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4); }
 
 #video {
   background-color: rgba(12, 31, 72, 0.4); }
@@ -675,28 +682,41 @@ body {
     width: 100%;
     margin: auto; }
 
-  #gallery .container .row:nth-child(2) .col-menu {
-    padding: 0px; }
-    #gallery .container .row:nth-child(2) .col-menu .list-menu-toggler {
-      position: absolute;
-      top: -45px;
-      left: 10px;
+  #gallery .container .row:nth-child(1) .col .section-header {
+    z-index: 0;
+    position: relative;
+    border-color: rgba(12, 31, 72, 0.4);
+    padding-bottom: 0px; }
+    #gallery .container .row:nth-child(1) .col .section-header .list-menu-toggler {
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 50px;
+      height: 50px;
+      left: -10px;
+      bottom: -26px;
+      background-color: #F1E7C5;
+      padding: unset;
       border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      padding: unset; }
-      #gallery .container .row:nth-child(2) .col-menu .list-menu-toggler:active {
-        transform: scale(0.6);
-        transition: transform 0.3s ease-out; }
+      border: 2px solid #0C1F48; }
+      #gallery .container .row:nth-child(1) .col .section-header .list-menu-toggler span {
+        font-size: 20px;
+        color: #030404;
+        color: #fff; }
+      #gallery .container .row:nth-child(1) .col .section-header .list-menu-toggler img {
+        width: 25px; }
+  #gallery .container .row:nth-child(2) .col-menu {
+    padding: 0px; }
     #gallery .container .row:nth-child(2) .col-menu .list-group {
       top: 0;
       left: 0px;
       border-top-left-radius: 0px;
       border-bottom-left-radius: 0px;
       transition: left 0.8s ease-out; }
+      #gallery .container .row:nth-child(2) .col-menu .list-group .list-group-item img {
+        width: 20px; }
+  #gallery .container .row:nth-child(2) .col-gallery .tab-content .tab-pane .gallery {
+    grid-template-columns: repeat(2, 1fr); }
 
   #contact-success {
     background-color: rgba(178, 137, 81, 0.4); }
@@ -800,3 +820,5 @@ body {
       font-size: 22px; }
     #video .container .row a.video {
       font-size: 15px; } }
+
+/*# sourceMappingURL=style.css.map */

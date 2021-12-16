@@ -4,6 +4,8 @@ const navLogo = document.querySelector('.nav-logo');
 const carouselInner = document.querySelector('.carousel-inner');
 const galleryThumbs = document.querySelectorAll(".gallery-item");
 const videoplayer = document.getElementById("christmas-video");
+const galleryCol = document.querySelector(".col-gallery");
+const listMenuCol = document.querySelector(".col-menu");
 const listMenuBtn = document.querySelector(".list-menu-toggler");
 const listMenu = document.querySelector(".list-group");
 
@@ -71,8 +73,17 @@ if(body) {
 	listMenuBtn.addEventListener('click', toggleMenu);
 	
 	function toggleMenu() {
-		console.log("hello");
-		listMenu.classList.toggle("visible");
+		// listMenuCol.classList.toggle("removed");
+		setTimeout(function() {
+			listMenuCol.classList.toggle("removed");
+		}, 50);
+			
+		if(!galleryCol.classList.contains("col-12")) {
+			galleryCol.classList.add("col-12");
+		}
+		else {
+			galleryCol.classList.remove("col-12");
+		}
 	}
 	
 	galleryThumbs.forEach(galleryThumb => {
@@ -102,6 +113,7 @@ if(body) {
 	body.addEventListener('click', function(event) {
 		if (event.target.classList.contains('pswp__item') 
 			|| event.target.classList.contains('pswp-close-svg') 
+			|| event.target.classList.contains('pswp__img')
 			|| event.target.classList.contains('pswp-close-path')
 			|| event.target.classList.contains('pswp__button--close')
 			|| event.key === "Escape") {
