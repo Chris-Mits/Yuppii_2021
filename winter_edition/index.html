@@ -179,7 +179,7 @@
 	<!-- SECTION UNIFIER -->
 	<section class="section-blue-to-blue py-3"></section>
 	
-	<!-- SECTION EVENTS -->
+	<!-- ##### SECTION EVENTS ##### -->
 	<section id="events" class="py-3">
 		<div class="container">
 			
@@ -531,7 +531,7 @@
 						<span class="d-block text-left"><i class="fas fa-chevron-right"></i> Πιστοποιητικό εμβολιασμού </span> 
 						<span class="d-block text-left"><i class="fas fa-chevron-right"></i> Πιστοποιητικό νόσησης </span> 
 						<span class="d-block text-left"><i class="fas fa-chevron-right"></i> Βεβαίωση αρνητικού διαγνωστικού ελέγχου για κορωνοϊό (PCR ή Rapid Test) </span>
-						Οι ανήλικοι επισκέπτες απο τεσσάρων εώς και δεκαεπτά ετών, μπορούν εναλλακτικά να προσκομίζουν δήλωση αρνητικού αυτοδιαγνωστικού ελέγχου (Self Test)
+						Οι ανήλικοι επισκέπτες από τεσσάρων εώς και δεκαεπτά ετών, μπορούν εναλλακτικά να προσκομίζουν δήλωση αρνητικού αυτοδιαγνωστικού ελέγχου (Self Test)
 					</p>
 				</div>
 			</div>
@@ -767,7 +767,7 @@
 				</div>
 				
 				<!-- GALLERIES -->
-				<div class="col col-gallery">
+				<div class="col-10 col-gallery">
 					<div id="tabContent" class="tab-content text-center">
 						
 						<!-- ΓΕΝΙΚΑ -->
@@ -1813,7 +1813,7 @@
 	<script 
 		defer  
 		type="text/javascript" 
-		src="js/script.js"></script>
+		src="js/app.js"></script>
 		
 	<!-- COUNTDOWN YEAR JS FILE -->
 	<script 
@@ -1864,7 +1864,7 @@
 		const singleImgOptions = {
 			closeSVG: closeBtnSVGString,
 			zoomSVG: zoomBtnSVGString,
-			gallery: '.intro',
+			gallery: '.col-md-5',
 			children: 'a',
 			pswpModule: '/winter_edition/js/photoswipe/photoswipe.esm.js',
 			arrowKeys: true,
@@ -1881,9 +1881,9 @@
 			pswpModule: '/winter_edition/js/photoswipe/photoswipe.esm.js',
 			arrowKeys: true,
 			loop: false,
-			tapAction: 'close',
-			imageClickAction: "next",
-			closeOnVerticalDrag: false
+			closeOnVerticalDrag: false,
+			tapAction: 'zoom',
+			imageClickAction: false,
 		};
 		
 		const single = new PhotoSwipeLightbox(singleImgOptions);
