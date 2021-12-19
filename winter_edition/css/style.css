@@ -236,14 +236,7 @@ body {
           font-size: 30px;
           letter-spacing: 2px;
           color: #F1E7C5;
-          background-color: #F1E7C5;
-          background-image: linear-gradient(to bottom right, #F1E7C5 0%, #B28951 100%);
-          background-size: 100%;
-          background-clip: text;
-          -webkit-background-clip: text;
-          -moz-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          -moz-text-fill-color: transparent; }
+          font-family: "PF Din Pro Light"; }
       #events .container #events-anchor table thead tr:nth-child(2) {
         position: sticky;
         top: 61px;
@@ -295,14 +288,7 @@ body {
       #events .container #events-anchor table tbody tr th[scope="row"] {
         font-size: 22px;
         color: #F1E7C5;
-        background-color: #F1E7C5;
-        background-image: linear-gradient(to bottom right, #F1E7C5 0%, #B28951 100%);
-        background-size: 100%;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent; }
+        font-family: "PF Din Pro Light"; }
         #events .container #events-anchor table tbody tr th[scope="row"] hr {
           margin: 5px 0;
           border-top: 0.5px solid #F1E7C5; }
