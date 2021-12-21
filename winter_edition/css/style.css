@@ -94,7 +94,7 @@ body {
   #nav .nav-item:nth-child(3),
   #nav .nav-item:nth-child(4),
   #nav .nav-item:nth-child(5) {
-    margin: 0px 0.5rem; }
+    margin: 0 0.5rem; }
   #nav .nav-item {
     text-align: center; }
   #nav .navbar-toggler {
@@ -109,12 +109,11 @@ body {
   bottom: 15px;
   display: flex;
   max-width: 300px;
-  margin: 0px auto !important;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
   text-align: center; }
   #showcase #xmas-carousel .carousel-indicators li {
@@ -163,12 +162,12 @@ body {
   transition: all 0.3s ease-in-out; }
   #showcase #xmas-carousel .carousel-inner .carousel-item {
     height: 100%;
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important; }
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
   #showcase #xmas-carousel .carousel-inner .image-0 {
     background-image: url("../images/SHOWCASE/Desktop/christmas_banner.webp");
-    background-size: contain !important;
+    background-size: contain;
     background-color: #030E21; }
   #showcase #xmas-carousel .carousel-inner .image-1 {
     background-image: url("../images/SHOWCASE/Desktop/image_1.webp"); }
@@ -182,7 +181,7 @@ body {
     background-image: url("../images/SHOWCASE/Desktop/image_5.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-6 {
     background-image: url("../images/SHOWCASE/Desktop/image_6.webp");
-    background-position: center bottom !important; }
+    background-position: center bottom; }
   #showcase #xmas-carousel .carousel-inner .image-7 {
     background-image: url("../images/SHOWCASE/Desktop/image_7.webp"); }
   #showcase #xmas-carousel .carousel-inner .image-8 {
@@ -194,7 +193,7 @@ body {
     width: 75%;
     background: #D3CFC0;
     border: 2px solid #B28951;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
     border-radius: 10px; }
     #events .container .intro-card .row .col-md-5 a img {
       border-top-left-radius: 8px;
@@ -217,17 +216,17 @@ body {
     background-color: #a00404;
     color: #F1E7C5;
     border: 2px solid #B28951;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
     border-radius: 10px; }
     #events .container .schedule .card {
       background-color: #DA1616;
       border: 2px double #B28951;
-      box-shadow: 0px 0px 10px rgba(241, 231, 197, 0.4);
+      box-shadow: 0 0 10px rgba(241, 231, 197, 0.4);
       border-radius: 10px; }
       #events .container .schedule .card .col-lg-4 .date {
         font-family: "PF Din Pro Bold";
         font-size: 30px;
-        text-shadow: 0px 0px 10px #B28951;
+        text-shadow: 0 0 10px #B28951;
         -webkit-text-stroke: 0.8px #B28951;
         white-space: nowrap; }
       #events .container .schedule .card .col-lg-8 .row .col-6 .morning,
@@ -270,6 +269,7 @@ body {
   #activities .container .row:nth-child(3) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
     gap: 30px;
     width: 100%;
     margin: auto; }
@@ -323,7 +323,7 @@ body {
         color: #0C1F48;
         text-align: justify;
         font-size: 22px;
-        margin: auto 0px; }
+        margin: auto 0; }
       #activities .container .row:nth-child(2) .custom-card-body a.btn,
       #activities .container .row:nth-child(3) .custom-card-body a.btn {
         color: #030404;
@@ -403,7 +403,7 @@ body {
     border-radius: 10px;
     border: none;
     background: rgba(69, 100, 193, 0.3);
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4); }
     #contact .container .row:nth-child(2) .col-md-7 .card .card-body h3 {
       font-size: 26px; }
     #contact .container .row:nth-child(2) .col-md-7 .card .card-body hr {
@@ -435,7 +435,7 @@ body {
     border-radius: 10px;
     border: none;
     background: rgba(69, 100, 193, 0.3);
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4); }
     #contact .container .row:nth-child(2) .col-md-5 .card #mapbox {
       border-radius: 10px; }
       #contact .container .row:nth-child(2) .col-md-5 .card #mapbox .mapboxgl-popup {
@@ -459,7 +459,7 @@ body {
             #contact .container .row:nth-child(2) .col-md-5 .card #mapbox .mapboxgl-popup .mapboxgl-popup-content .header h5 {
               font-size: 16px;
               font-weight: 700;
-              letter-spacing: 0px;
+              letter-spacing: 0;
               margin: 0; }
           #contact .container .row:nth-child(2) .col-md-5 .card #mapbox .mapboxgl-popup .mapboxgl-popup-content .body p {
             margin: 0; }
@@ -478,7 +478,7 @@ body {
       background-color: rgba(69, 100, 193, 0.4);
       border: 1px solid #0C1F48;
       width: 50%;
-      margin: 0px auto; }
+      margin: 0 auto; }
       #contact-success .container .col .card .card-body .card-title {
         border-bottom: 1px solid #0C1F48;
         font-size: 35px; }
@@ -515,7 +515,7 @@ body {
         left: 23%; }
     #footer .row:nth-child(1) .list-inline .list-inline-item .btn:hover {
       transform: scale(1.1);
-      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
       transition: all 0.2s ease-in-out; }
   #footer .row:nth-child(2) {
     border-top: 2px solid rgba(12, 31, 72, 0.4);
@@ -550,7 +550,7 @@ body {
       #videoModal .modal-dialog .modal-content .modal-body .close i.fas {
         font-size: 22px;
         position: absolute;
-        top: 0px;
+        top: 0;
         right: 5px; }
 
 #gallery-selection-modal .modal-dialog .modal-content {
@@ -594,6 +594,7 @@ body {
   #activities .container .row:nth-child(3) {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
     gap: 30px;
     width: 100%;
     margin: auto; }
@@ -606,9 +607,9 @@ body {
     justify-content: center;
     width: auto; }
     #gallery .container:nth-child(2) .gallery-selection-button:hover {
-      transform: unset;
-      transition: unset;
-      box-shadow: unset; }
+      transform: none;
+      transition: none;
+      box-shadow: none; }
     #gallery .container:nth-child(2) .gallery-selection-button:active {
       transform: scale(0.7);
       transition: all 0.1s ease-in-out; }
