@@ -19,7 +19,6 @@
 ███████╗██║╚██████╔╝██║  ██║   ██║   ██║  ██║╚██████╔╝╚██████╔╝███████║███████╗
 ╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚══════╝╚══════╝
 */
-@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
 @font-face {
   font-family: 'PF Din Pro';
   src: url("../fonts/PF_Din_Text_Comp_Pro/PFDinTextCompPro-Regular.ttf");
@@ -191,118 +190,59 @@ body {
 
 #events {
   background-color: rgba(12, 31, 72, 0.4); }
-  #events .container .card {
+  #events .container .intro-card {
     width: 75%;
     background: #D3CFC0;
     border: 2px solid #B28951;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
     border-radius: 10px; }
-    #events .container .card .row .col-md-5 a img {
+    #events .container .intro-card .row .col-md-5 a img {
       border-top-left-radius: 8px;
       border-bottom-left-radius: 8px; }
-    #events .container .card .row .col-md-7 .card-body .card-title {
+    #events .container .intro-card .row .col-md-7 .card-body .card-title {
       font-size: 30px;
       font-weight: 600; }
-    #events .container .card .row .col-md-7 .card-body .card-text {
+    #events .container .intro-card .row .col-md-7 .card-body .card-text {
       font-size: 20px;
       line-height: 1.2; }
-    #events .container .card .row .col-md-7 .card-body span {
+    #events .container .intro-card .row .col-md-7 .card-body span {
       display: block;
       font-size: 20px; }
-      #events .container .card .row .col-md-7 .card-body span:first-of-type {
+      #events .container .intro-card .row .col-md-7 .card-body span:first-of-type {
         font-size: 22px;
         font-weight: 600; }
-      #events .container .card .row .col-md-7 .card-body span i {
+      #events .container .intro-card .row .col-md-7 .card-body span i {
         font-size: 17px; }
-  #events .container #events-anchor {
-    padding-top: 60px; }
-    #events .container #events-anchor table {
+  #events .container .schedule {
+    background-color: #a00404;
+    color: #F1E7C5;
+    border: 2px solid #B28951;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px; }
+    #events .container .schedule .card {
       background-color: #DA1616;
-      width: 100%;
-      table-layout: fixed;
-      border-top: none;
-      border-right: 5px solid #B28951;
-      border-bottom: 5px solid #B28951;
-      border-left: 5px solid #B28951;
-      border-radius: 10px;
-      border-collapse: separate;
-      border-spacing: 0; }
-      #events .container #events-anchor table thead tr:first-child {
-        background-color: #a00404; }
-        #events .container #events-anchor table thead tr:first-child th[colspan="3"] {
-          text-align: center;
-          border: 0;
-          border-top: 5px solid #B28951;
-          font-size: 30px;
-          letter-spacing: 2px;
-          color: #F1E7C5;
-          font-family: "PF Din Pro Light"; }
-      #events .container #events-anchor table thead tr:nth-child(2) {
-        position: sticky;
-        top: 61px;
-        color: #F1E7C5;
-        background-color: #a00404; }
-        #events .container #events-anchor table thead tr:nth-child(2) th[scope="col"] {
-          border-top: 5px solid #B28951;
-          border-bottom: 5px solid #B28951;
-          border-right: 0;
-          border-left: 0;
-          font-size: 18px;
-          letter-spacing: 1px;
-          text-align: center;
-          padding: 15px 10px; }
-        #events .container #events-anchor table thead tr:nth-child(2) th[scope="col"]:first-child {
-          position: relative;
-          border-right: 2.5px solid #B28951; }
-          #events .container #events-anchor table thead tr:nth-child(2) th[scope="col"]:first-child::before {
-            font-family: "Font Awesome 5 Free";
-            font-weight: 500;
-            font-size: 12px;
-            content: "\f073";
-            position: absolute;
-            top: 0;
-            right: 5px; }
-        #events .container #events-anchor table thead tr:nth-child(2) th[scope="col"]:nth-child(2) {
-          position: relative;
-          border-right: 2.5px solid #B28951;
-          border-left: 2.5px solid #B28951; }
-          #events .container #events-anchor table thead tr:nth-child(2) th[scope="col"]:nth-child(2)::before {
-            font-family: "Font Awesome 5 Free";
-            font-weight: 500;
-            font-size: 12px;
-            content: "\f185";
-            position: absolute;
-            top: 0;
-            right: 5px; }
-        #events .container #events-anchor table thead tr:nth-child(2) th[scope="col"]:last-child {
-          position: relative;
-          border-left: 2.5px solid #B28951; }
-          #events .container #events-anchor table thead tr:nth-child(2) th[scope="col"]:last-child::before {
-            font-family: "Font Awesome 5 Free";
-            font-weight: 500;
-            font-size: 12px;
-            content: "\f186";
-            position: absolute;
-            top: 0;
-            right: 5px; }
-      #events .container #events-anchor table tbody tr th[scope="row"] {
-        font-size: 22px;
-        color: #F1E7C5;
-        font-family: "PF Din Pro Light"; }
-        #events .container #events-anchor table tbody tr th[scope="row"] hr {
-          margin: 5px 0;
-          border-top: 0.5px solid #F1E7C5; }
-      #events .container #events-anchor table tbody tr th,
-      #events .container #events-anchor table tbody tr td {
-        border-color: #B28951;
-        color: #fff;
-        border-style: dotted;
-        border-width: 1px;
-        font-size: 16px;
+      border: 2px double #B28951;
+      box-shadow: 0px 0px 10px rgba(241, 231, 197, 0.4);
+      border-radius: 10px; }
+      #events .container .schedule .card .col-lg-4 .date {
+        font-family: "PF Din Pro Bold";
+        font-size: 30px;
+        text-shadow: 0px 0px 10px #B28951;
+        -webkit-text-stroke: 0.8px #B28951;
+        white-space: nowrap; }
+      #events .container .schedule .card .col-lg-8 .row .col-6 .morning,
+      #events .container .schedule .card .col-lg-8 .row .col-6 .afternoon {
+        border-bottom: 1px solid #F1E7C5;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        #events .container .schedule .card .col-lg-8 .row .col-6 .morning .fas,
+        #events .container .schedule .card .col-lg-8 .row .col-6 .afternoon .fas {
+          font-size: 10px;
+          margin-right: 5px; }
+      #events .container .schedule .card .col-lg-8 .row .col-6 .desc {
         text-align: center;
-        vertical-align: middle;
-        line-height: 1;
-        padding: 8px; }
+        line-height: 1.2; }
 
 #timer {
   background-color: rgba(178, 137, 81, 0.4); }
@@ -410,84 +350,39 @@ body {
 
 #gallery {
   background-color: rgba(12, 31, 72, 0.4); }
-  #gallery .container .row:nth-child(1) .col .section-header {
-    z-index: 0;
+  #gallery .container:first-child .col .section-header {
+    border-bottom-color: rgba(12, 31, 72, 0.4); }
+  #gallery .container:nth-child(2) {
     position: relative;
-    border-color: rgba(12, 31, 72, 0.4);
-    padding-bottom: 0px; }
-    #gallery .container .row:nth-child(1) .col .section-header .list-menu-toggler {
-      cursor: pointer;
-      position: absolute;
-      width: 160px;
-      display: inline-block;
-      left: 0px;
-      bottom: -21px;
-      background-color: #4564C1;
-      padding: 5px;
-      border-radius: 10px;
-      text-decoration: none;
-      border: 1px solid rgba(178, 137, 81, 0.4); }
-      #gallery .container .row:nth-child(1) .col .section-header .list-menu-toggler:hover {
-        background-color: #B28951;
-        transition: background-color 0.3s ease-in-out; }
-      #gallery .container .row:nth-child(1) .col .section-header .list-menu-toggler span {
-        font-size: 20px;
-        color: #030404;
-        color: #fff; }
-      #gallery .container .row:nth-child(1) .col .section-header .list-menu-toggler img {
-        width: 20px; }
-  #gallery .container .row:nth-child(2) {
     padding-bottom: 50px;
-    border-bottom: 2px solid rgba(12, 31, 72, 0.4);
-    flex-wrap: nowrap; }
-    #gallery .container .row:nth-child(2) .col-menu {
-      transition: all 0.3s ease-in-out; }
-      #gallery .container .row:nth-child(2) .col-menu .list-group {
-        position: relative;
-        top: 0px;
-        left: 0px;
-        background-color: #F1E7C5;
-        border-radius: 10px;
-        border: none;
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4); }
-        #gallery .container .row:nth-child(2) .col-menu .list-group .list-group-item {
-          font-size: 20px;
-          color: #030404;
-          border: 0;
-          background-color: unset; }
-          #gallery .container .row:nth-child(2) .col-menu .list-group .list-group-item img {
-            width: 25px; }
-          #gallery .container .row:nth-child(2) .col-menu .list-group .list-group-item.active {
-            color: #F1E7C5;
-            background-color: #4564C1;
-            transition: background-color 0.3s ease-in-out; }
-      #gallery .container .row:nth-child(2) .col-menu.removed {
-        z-index: -100;
-        max-width: 190px;
-        position: absolute;
-        opacity: 0;
-        transform: translateX(-100%);
-        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; }
-    #gallery .container .row:nth-child(2) .col-gallery {
-      transition: flex 0.3s ease-out, max-width 0.3s ease-in-out; }
-      #gallery .container .row:nth-child(2) .col-gallery .tab-content .tab-pane .gallery-header .gallery-title {
-        font-size: 28px;
-        margin-bottom: 10px; }
-      #gallery .container .row:nth-child(2) .col-gallery .tab-content .tab-pane .gallery-header .gallery-text {
-        font-family: "PF Din Pro Light";
-        text-align: justify;
-        text-align-last: center;
-        line-height: 1;
-        margin-bottom: 10px; }
-        #gallery .container .row:nth-child(2) .col-gallery .tab-content .tab-pane .gallery-header .gallery-text span {
-          font-family: "PF Din Pro Bold"; }
-      #gallery .container .row:nth-child(2) .col-gallery .tab-content .tab-pane .gallery {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px; }
-        #gallery .container .row:nth-child(2) .col-gallery .tab-content .tab-pane .gallery .gallery-item img {
-          border-radius: 5px;
-          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4); }
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(12, 31, 72, 0.4); }
+    #gallery .container:nth-child(2) .gallery-selection-button {
+      position: absolute;
+      top: 0;
+      right: 15px;
+      z-index: 5;
+      text-decoration: none;
+      background-color: #F1E7C5;
+      padding: 5px 20px;
+      border-radius: 20px;
+      font-size: 20px;
+      color: #4564C1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 110px;
+      border: 1px solid #B28951; }
+      #gallery .container:nth-child(2) .gallery-selection-button:hover {
+        transform: scale(1.05);
+        border-width: 2px;
+        transition: all 0.2s ease-in-out;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); }
+    #gallery .container:nth-child(2) .row .col .tab-content .tab-pane .row:nth-child(2) img,
+    #gallery .container:nth-child(2) .row .col .tab-content .tab-pane .row:nth-child(3) img {
+      border-radius: 5px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); }
 
 #video {
   background-color: rgba(12, 31, 72, 0.4); }
@@ -658,6 +553,20 @@ body {
         top: 0px;
         right: 5px; }
 
+#gallery-selection-modal .modal-dialog .modal-content {
+  background-color: #F1E7C5;
+  color: #0C1F48;
+  border: 2px solid #B28951; }
+  #gallery-selection-modal .modal-dialog .modal-content .modal-header {
+    border-bottom-color: #B28951; }
+    #gallery-selection-modal .modal-dialog .modal-content .modal-header h3 {
+      font-size: 20px; }
+  #gallery-selection-modal .modal-dialog .modal-content .modal-body .nav .nav-link {
+    color: #0C1F48; }
+    #gallery-selection-modal .modal-dialog .modal-content .modal-body .nav .nav-link.active {
+      background-color: #0C1F48;
+      color: #F1E7C5; }
+
 @media (max-width: 991px) {
   #timer .container .jumbotron .row:nth-child(1) h1 {
     font-size: 60px; }
@@ -670,11 +579,13 @@ body {
   .mb-resp {
     margin-bottom: 1rem; }
 
-  #events .container .card {
+  #events .container .intro-card {
     width: 100%; }
-    #events .container .card .row .col-md-5 a img {
+    #events .container .intro-card .row .col-md-5 a img {
       border-bottom-left-radius: unset;
       border-top-right-radius: 8px; }
+  #events .container .schedule .row:first-child .schedule-header {
+    font-size: 35px; }
 
   #timer .container .jumbotron .row:nth-child(1) h1 {
     font-size: 44px; }
@@ -687,51 +598,28 @@ body {
     width: 100%;
     margin: auto; }
 
-  #gallery .container .row:nth-child(1) .col .section-header {
-    z-index: 0;
-    position: relative;
-    border-color: rgba(12, 31, 72, 0.4);
-    padding-bottom: 0px; }
-    #gallery .container .row:nth-child(1) .col .section-header .list-menu-toggler {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 50px;
-      height: 50px;
-      left: -10px;
-      bottom: -26px;
-      background-color: #F1E7C5;
-      padding: unset;
-      border-radius: 50%;
-      border: 2px solid #0C1F48; }
-      #gallery .container .row:nth-child(1) .col .section-header .list-menu-toggler:hover {
-        background-color: #F1E7C5;
-        transition: none; }
-      #gallery .container .row:nth-child(1) .col .section-header .list-menu-toggler:active {
-        background-color: #B28951;
-        transform: scale(0.8);
-        transition: background-color 0.3s ease-in-out, transform 0.3s ease-in; }
-      #gallery .container .row:nth-child(1) .col .section-header .list-menu-toggler span {
-        font-size: 20px;
-        color: #030404;
-        color: #fff; }
-      #gallery .container .row:nth-child(1) .col .section-header .list-menu-toggler img {
-        width: 25px; }
-  #gallery .container .row:nth-child(2) .col-menu {
-    padding: 0px; }
-    #gallery .container .row:nth-child(2) .col-menu .list-group {
-      top: 0;
-      left: 0px;
-      border-top-left-radius: 0px;
-      border-bottom-left-radius: 0px;
-      transition: left 0.8s ease-out; }
-      #gallery .container .row:nth-child(2) .col-menu .list-group .list-group-item img {
-        width: 20px;
-        height: 35px; }
-    #gallery .container .row:nth-child(2) .col-menu.removed {
-      max-width: 60px; }
-  #gallery .container .row:nth-child(2) .col-gallery .tab-content .tab-pane .gallery {
-    grid-template-columns: repeat(2, 1fr); }
+  #gallery .container:nth-child(2) .gallery-selection-button {
+    top: -5px;
+    right: 15px;
+    padding: 8px;
+    border-radius: 50%;
+    justify-content: center;
+    width: auto; }
+    #gallery .container:nth-child(2) .gallery-selection-button:hover {
+      transform: unset;
+      transition: unset;
+      box-shadow: unset; }
+    #gallery .container:nth-child(2) .gallery-selection-button:active {
+      transform: scale(0.7);
+      transition: all 0.1s ease-in-out; }
+    #gallery .container:nth-child(2) .gallery-selection-button span {
+      display: none; }
+  #gallery .container:nth-child(2) .row .col .tab-content .tab-pane .row:nth-child(1) h2 {
+    font-size: 28px; }
+  #gallery .container:nth-child(2) .row .col .tab-content .tab-pane .row:nth-child(1) .lead {
+    line-height: 1.2;
+    text-align: justify;
+    text-align-last: center; }
 
   #contact-success {
     background-color: rgba(178, 137, 81, 0.4); }

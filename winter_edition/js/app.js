@@ -30,17 +30,17 @@ if(body) {
 		}
 	};
 	
-	const toggleMenu = function() {
-		listMenuCol.classList.toggle("removed");
-			
-		if(galleryCol.classList.contains("col-10")) {
-			galleryCol.classList.remove("col-10");
-			galleryCol.classList.add("col-12");
-		} else {
-			galleryCol.classList.remove("col-12");
-			galleryCol.classList.add("col-10");
-		}
-	};
+	// const toggleMenu = function() {
+	// 	listMenuCol.classList.toggle("removed");
+	// 		
+	// 	if(galleryCol.classList.contains("col-10")) {
+	// 		galleryCol.classList.remove("col-10");
+	// 		galleryCol.classList.add("col-12");
+	// 	} else {
+	// 		galleryCol.classList.remove("col-12");
+	// 		galleryCol.classList.add("col-10");
+	// 	}
+	// };
 	
 	const collapseNavbarMenu = function() {
 		setTimeout(function() {
@@ -81,14 +81,19 @@ if(body) {
 	};
 	
 	// #### EVENT LISTENERS ####
+	
 	// Window event listener. Adjusts navbar height 
 	window.addEventListener('scroll', adjustNav);
+	
 	// Nav-links event listener. Collapses nav-menu after selection (mobile)
 	navLinks.forEach(navlink => navlink.addEventListener("click", collapseNavbarMenu));
+	
 	// Gallery items event listener. Hides nav after selection, to allow full screen view
 	galleryThumbs.forEach(galleryThumb => galleryThumb.addEventListener("click", hideNav))
+	
 	// Gallery menu button event listener to allow user to hide/show meny
-	listMenuBtn.addEventListener('click', toggleMenu);
+	// listMenuBtn.addEventListener('click', toggleMenu);
+	
 	// Event Delegation: On click close enlarged image
 	body.addEventListener('click', (event) => {closeOpenedGalleryImage(event)});
 	
@@ -98,8 +103,6 @@ if(body) {
 			$('#videoModal').modal('hide');
 		}
 	})
-	
-	document.getElementById('year').innerText = new Date().getFullYear();
 	
 	// ##################
 	//    JQUERY STUFF
@@ -146,17 +149,39 @@ if(body) {
 		}
 	})
 	
-	// FUNCTIONALITY: VIDEO PLAYER OPTIONS - ON SHOW
+	// FUNCTIONALITY: IF VIDEO MODAL SHOWN
 	// 
 	$('#videoModal').on('shown.bs.modal', function() {
 		hideNav();
 		videoplayer.play();
 	});
 
-	// FUNCTIONALITY: VIDEO PLAYER OPTIONS - ON HIDE
+	// FUNCTIONALITY: IF VIDEO MODAL HIDDEN
 	$('#videoModal').on('hidden.bs.modal', function() {
 		nav.style.top = "0";
 		videoplayer.pause();
 		videoplayer.currentTime = 0;
 	});
+	
+	// FUNCTIONALITY: CLOSE MODAL ON SELECTION
+	function closeModal() {
+		setTimeout(function() {
+			$("#gallery-selection-modal").modal("hide");
+		}, 50);
+	}
+	
+	/// FUNCTIONALITY: IF GAME SELECTION MODAL SHOWS
+	$('#gallery-selection-modal').on('show.bs.modal', function() {
+		hideNav();
+		$(".gallery-selection-button").fadeOut();
+	});
+	
+	// FUNCTIONALITY:  IF GAME SELECTION MODAL HIDES
+	$('#gallery-selection-modal').on('hide.bs.modal', function() {
+		nav.style.top = "0";
+		$(".gallery-selection-button").fadeIn();
+	});
+	
+	// GET CURRENT YEAR
+	document.getElementById('year').innerText = new Date().getFullYear();
 }
