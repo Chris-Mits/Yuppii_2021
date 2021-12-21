@@ -222,7 +222,13 @@ body {
       background-color: #DA1616;
       border: 2px double #B28951;
       box-shadow: 0 0 10px rgba(241, 231, 197, 0.4);
-      border-radius: 10px; }
+      border-radius: 10px;
+      transform: scale(0.7);
+      opacity: 0;
+      transition: transform 750ms ease-in-out, opacity 750ms ease-in-out; }
+      #events .container .schedule .card.appear {
+        opacity: 1;
+        transform: scale(1); }
       #events .container .schedule .card .col-lg-4 .date {
         font-family: "PF Din Pro Bold";
         font-size: 30px;
