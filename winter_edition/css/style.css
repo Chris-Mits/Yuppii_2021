@@ -222,13 +222,7 @@ body {
       background-color: #DA1616;
       border: 2px double #B28951;
       box-shadow: 0 0 10px rgba(241, 231, 197, 0.4);
-      border-radius: 10px;
-      transform: scale(0.7);
-      opacity: 0;
-      transition: transform 750ms ease-in-out, opacity 750ms ease-in-out; }
-      #events .container .schedule .card.appear {
-        opacity: 1;
-        transform: scale(1); }
+      border-radius: 10px; }
       #events .container .schedule .card .col-lg-4 .date {
         font-family: "PF Din Pro Bold";
         font-size: 30px;
@@ -329,19 +323,7 @@ body {
         color: #0C1F48;
         text-align: justify;
         font-size: 22px;
-        margin: auto 0; }
-      #activities .container .row:nth-child(2) .custom-card-body a.btn,
-      #activities .container .row:nth-child(3) .custom-card-body a.btn {
-        color: #030404;
-        height: 100%;
-        margin-top: auto;
-        font-size: 22px;
-        letter-spacing: 2px;
-        transition: all 0.3s ease-in-out; }
-        #activities .container .row:nth-child(2) .custom-card-body a.btn:hover,
-        #activities .container .row:nth-child(3) .custom-card-body a.btn:hover {
-          font-family: "PF Din Pro Bold", sans-serif;
-          letter-spacing: 3px; }
+        margin: 0; }
 
 #covid {
   background-color: rgba(178, 137, 81, 0.4); }
@@ -700,6 +682,19 @@ body {
   .section-header p {
     font-size: 22px; }
 
+  #events .container .intro-card .row .col-md-7 .card-body {
+    padding: 10px; }
+    #events .container .intro-card .row .col-md-7 .card-body span {
+      display: block;
+      font-size: 15px; }
+      #events .container .intro-card .row .col-md-7 .card-body span i {
+        font-size: 16px; }
+      #events .container .intro-card .row .col-md-7 .card-body span:first-of-type {
+        font-size: 22px;
+        font-weight: 600; }
+        #events .container .intro-card .row .col-md-7 .card-body span:first-of-type i {
+          font-size: 20px; }
+
   #timer .container .jumbotron .row:nth-child(1) {
     padding-bottom: 32px !important; }
     #timer .container .jumbotron .row:nth-child(1) h1 {
@@ -713,14 +708,22 @@ body {
   #timer .container .jumbotron div.row:nth-child(2) .time p {
     font-size: 25px; }
 
-  #activities .container .row:nth-child(2) .custom-card .custom-card-body h2,
-  #activities .container .row:nth-child(3) .custom-card .custom-card-body h2 {
-    font-size: 28px; }
-  #activities .container .row:nth-child(2) .custom-card .custom-card-body p,
-  #activities .container .row:nth-child(2) .custom-card .custom-card-body a.btn,
-  #activities .container .row:nth-child(3) .custom-card .custom-card-body p,
-  #activities .container .row:nth-child(3) .custom-card .custom-card-body a.btn {
-    font-size: 20px; }
+  #activities .container .row:nth-child(2) .custom-card .custom-card-body,
+  #activities .container .row:nth-child(3) .custom-card .custom-card-body {
+    padding: 10px;
+    min-height: 170px; }
+    #activities .container .row:nth-child(2) .custom-card .custom-card-body h2,
+    #activities .container .row:nth-child(3) .custom-card .custom-card-body h2 {
+      font-size: 28px;
+      padding-bottom: 0; }
+    #activities .container .row:nth-child(2) .custom-card .custom-card-body p,
+    #activities .container .row:nth-child(3) .custom-card .custom-card-body p {
+      font-size: 18px;
+      line-height: 1.2; }
+  #activities .container .row:nth-child(3) .custom-card:first-child .custom-card-body .lead .schedule {
+    font-size: 15px; }
+    #activities .container .row:nth-child(3) .custom-card:first-child .custom-card-body .lead .schedule::before {
+      font-size: 16px; }
 
   #video {
     background-color: rgba(12, 31, 72, 0.4); }
