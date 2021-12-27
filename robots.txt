@@ -15,5 +15,5 @@ Disallow: /summer_edition/images
 Disallow: /summer_edition/js
 Disallow: /summer_edition/videos
 
-Sitemap: https://yuppii.gr/sitemap.xml
 Sitemap: http://yuppii.gr/sitemap.xml
+Sitemap: https://yuppii.gr/sitemap.xml
