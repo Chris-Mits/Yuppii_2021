@@ -524,6 +524,68 @@ body {
       font-size: 22px; }
   #footer .row:nth-child(3) .col h5 {
     font-size: 25px; }
+  #footer .row:nth-child(3) .col .marketing span {
+    position: relative;
+    cursor: pointer;
+    font-family: 'Pushster', cursive;
+    letter-spacing: 0px;
+    background: inherit;
+    background: -webkit-linear-gradient(200deg, #de39fc 0%, #2d2dfd 50%, #00aac0 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  #footer .row:nth-child(3) .col .marketing .popup {
+    visibility: hidden;
+    z-index: -1;
+    opacity: 0;
+    position: absolute;
+    color: #0B0051;
+    background-image: linear-gradient(to right bottom, #edabf8, #d99ff9, #c294fa, #a68bfc, #8283fd);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    top: 0px;
+    right: 15px;
+    transform: translateY(-105%) scale(0);
+    padding: 10px;
+    transition: 350ms ease-in-out; }
+    #footer .row:nth-child(3) .col .marketing .popup .popup-header img {
+      width: 25px;
+      vertical-align: top;
+      border-radius: 50%;
+      border: 1px solid #0B0051; }
+    #footer .row:nth-child(3) .col .marketing .popup .popup-header .popup-title {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 20px;
+      margin: 0; }
+    #footer .row:nth-child(3) .col .marketing .popup .popup-body .popup-email,
+    #footer .row:nth-child(3) .col .marketing .popup .popup-body .popup-phone {
+      font-size: 16px;
+      margin: 0; }
+      #footer .row:nth-child(3) .col .marketing .popup .popup-body .popup-email a,
+      #footer .row:nth-child(3) .col .marketing .popup .popup-body .popup-phone a {
+        color: #0B0051;
+        text-decoration: none; }
+        #footer .row:nth-child(3) .col .marketing .popup .popup-body .popup-email a i,
+        #footer .row:nth-child(3) .col .marketing .popup .popup-body .popup-phone a i {
+          width: 25px;
+          height: 25px;
+          display: inline-flex;
+          font-size: 12px;
+          justify-content: center;
+          align-items: center;
+          background-color: #00BCFF;
+          border: 1px solid #0B0051;
+          border-radius: 50%;
+          text-decoration: none; }
+    #footer .row:nth-child(3) .col .marketing .popup .popup-body .popup-phone {
+      margin: 5px 0; }
+    #footer .row:nth-child(3) .col .marketing .popup.show {
+      visibility: visible;
+      opacity: 1;
+      z-index: 1;
+      transform: translateY(-100%) scale(1);
+      transition: 350ms ease-in-out; }
 
 #videoModal .modal-dialog .modal-content {
   background-color: #B28951;
