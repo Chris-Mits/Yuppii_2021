@@ -9,6 +9,17 @@ const galleryCol = document.querySelector(".col-gallery");
 const listMenuCol = document.querySelector(".col-menu");
 const listMenuBtn = document.querySelector(".list-menu-toggler");
 const listMenu = document.querySelector(".list-group");
+const popupBtn = document.querySelector(".popup-btn");
+const popup = document.querySelector(".popup");
+
+// popupBtn.addEventListener("click", (e) => { 
+// 	// console.log(e.target);
+// 	if(e.target === popupBtn) {
+// 		popup.classList.toggle("show");
+// 	}
+// 	
+// 
+// });
 
 if(body) {
 	
@@ -29,18 +40,6 @@ if(body) {
 			carouselInner.style.marginTop = '81px';
 		}
 	};
-	
-	// const toggleMenu = function() {
-	// 	listMenuCol.classList.toggle("removed");
-	// 		
-	// 	if(galleryCol.classList.contains("col-10")) {
-	// 		galleryCol.classList.remove("col-10");
-	// 		galleryCol.classList.add("col-12");
-	// 	} else {
-	// 		galleryCol.classList.remove("col-12");
-	// 		galleryCol.classList.add("col-10");
-	// 	}
-	// };
 	
 	const collapseNavbarMenu = function() {
 		setTimeout(function() {
@@ -89,14 +88,21 @@ if(body) {
 	navLinks.forEach(navlink => navlink.addEventListener("click", collapseNavbarMenu));
 	
 	// Gallery items event listener. Hides nav after selection, to allow full screen view
-	galleryThumbs.forEach(galleryThumb => galleryThumb.addEventListener("click", hideNav))
+	galleryThumbs.forEach(galleryThumb => galleryThumb.addEventListener("click", hideNav));
 	
-	// Gallery menu button event listener to allow user to hide/show meny
-	// listMenuBtn.addEventListener('click', toggleMenu);
+	// Event Delegation: On body click, close enlarged gallery image
+	body.addEventListener('click', (e) => { 
+		
+		if(e.target === popupBtn) {
+			popup.classList.toggle("show");
+		} else {
+			popup.classList.remove("show");
+		}
+		
+		closeOpenedGalleryImage(e);
+	});
 	
-	// Event Delegation: On click close enlarged image
-	body.addEventListener('click', (event) => {closeOpenedGalleryImage(event)});
-	
+	// Event Delegation: On escape keyup, show nav & hide video modal 
 	body.addEventListener('keyup', (event) => {
 		showNavOnEsc(event);
 		if(event.key === "Escape") {
@@ -181,6 +187,11 @@ if(body) {
 		nav.style.top = "0";
 		$(".gallery-selection-button").fadeIn();
 	});
+	
+	// FUNCTIONALITY: POPOVER INIT
+	// $(function() {
+	// 	$('[data-toggle="popover"]').popover();
+	// });
 	
 	// GET CURRENT YEAR
 	document.getElementById('year').innerText = new Date().getFullYear();
